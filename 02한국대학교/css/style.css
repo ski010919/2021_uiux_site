@@ -20,9 +20,11 @@ header#header .headerWrap .header1 .util{width: 290px;position: absolute;right: 
 header#header .headerWrap .header1 .util li{float: left;padding: 0 6px;}
 header#header .headerWrap .header1 .util li>a{
     display: block;text-align: center;line-height: 40px;
-    font-size: 12px;font-weight: bold;color: #D1D1D3;
+    font-size: 12px;font-weight: bold;color: #fff;
 }
+header#header .headerWrap .header1 .util li:first-child>a:first-child{color:#D1D1D3;}
 .box{width: 34px;height: 16px;position: relative;}
+.box p{color: #9B9B9B ;}
 .box .minor{
     width: 16px;height: 16px;background-color: #fff;
     position: absolute;left: 0;top: 12px;
@@ -31,12 +33,9 @@ header#header .headerWrap .header1 .util li>a{
 .box .plus{
     width: 16px;height: 16px;background-color: #fff;
     position: absolute;right: 0;top: 12px;
+    display: flex;justify-content: center;align-items: center;
 }
-.box div.bar{width: 6px;height: 2px;background: #9B9B9B;}
-.box div.bar1{
-    width: 6px;height: 2px;background: #9B9B9B;
-}
-.box div.bar2{width: 2px;height: 6px;background: #9B9B9B;}
+
 
 header#header .header2{width: 1200px;margin: 0 auto;position: relative;}
 header#header .header2 .headlogo{margin: 32px 0;position: relative;width: 230px;}
