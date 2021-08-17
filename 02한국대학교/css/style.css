@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+header#header{}
+header#header .headerWrap{width: 100%;background-color: #0044AF;}
+header#header .headerWrap .header1{width: 1200px;margin: 0 auto;position: relative;}
+header#header .headerWrap .header1 .headerTab{width: 364px;height: 40px;}
+header#header .headerWrap .header1 .headerTab li{width: 120px;margin-right: 2px;float: left;}
+header#header .headerWrap .header1 .headerTab li>a{
+    display: block;text-align: center;line-height: 40px;
+    color:#fff;font-weight: bold;
+}
+header#header .headerWrap .header1 .headerTab li:first-child>a:first-child{color:#6B6B6B}
+
+header#header .headerWrap .header1 .headerTab li:nth-child(1){background-color: #fff;}
+header#header .headerWrap .header1 .headerTab li:nth-child(2){background-color: #00163B;}
+header#header .headerWrap .header1 .headerTab li:nth-child(3){margin-right: 0;background-color: #00163B;}
+
+header#header .headerWrap .header1 .util{width: 290px;position: absolute;right: 0;top: 0;}
+header#header .headerWrap .header1 .util li{float: left;padding: 0 6px;}
+header#header .headerWrap .header1 .util li>a{
+    display: block;text-align: center;line-height: 40px;
+    font-size: 12px;font-weight: bold;color: #D1D1D3;
+}
+.box{width: 34px;height: 16px;position: relative;}
+.box .minor{
+    width: 16px;height: 16px;background-color: #fff;
+    position: absolute;left: 0;top: 12px;
+    display: flex;justify-content: center;align-items: center;
+}
+.box .plus{
+    width: 16px;height: 16px;background-color: #fff;
+    position: absolute;right: 0;top: 12px;
+}
+.box div.bar{width: 6px;height: 2px;background: #9B9B9B;}
+.box div.bar1{
+    width: 6px;height: 2px;background: #9B9B9B;
+}
+.box div.bar2{width: 2px;height: 6px;background: #9B9B9B;}
+
+header#header .header2{width: 1200px;margin: 0 auto;position: relative;}
+header#header .header2 .headlogo{margin: 32px 0;position: relative;width: 230px;}
+.headlogo .logo{width: 58px;}
+header#header .header2 .headlogo .logotxt{
+    position: absolute;right: 0;top: 5px;
+    margin: 0 10px;color: #6C6C6C;
+}
+.logotxt h2{font-size: 26px;letter-spacing: 5px;position: relative;margin-bottom: 5px;}
+.logotxt h2:after{
+    content:"";width: 147px;height: 1px;background-color: #D2D2D2;
+    position: absolute;bottom: -2px;left: 0;
+}
+.logotxt h4{font-size: 14px;letter-spacing: -6%;}
+
+
+header#header .headGnb{position: absolute;right: 0;top: 20px;}
+header#header .headGnb .gnb{width: 595px;}
+header#header .headGnb li{float: left;width: 20%;}
+header#header .headGnb a{
+    display: block;text-align: center;line-height: 20px;
+    font-size: 20px;color: #464646;
+}
