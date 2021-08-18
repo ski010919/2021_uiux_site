@@ -1,6 +1,32 @@
 @charset "utf-8";
 body{font-family: 'Nanum Gothic', sans-serif;}
 
+.bx-wrapper {
+    -moz-box-shadow:0 none;
+    -webkit-box-shadow:0 none;
+    box-shadow:0 none;
+    border:0 none;
+    background:0 none;}
+
+.bx-wrapper .bx-pager{
+    bottom: 40px;
+}
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #535353;
+    padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0043B0;
+}
+
+
+/* header */
 header#header{}
 header#header .headerWrap{width: 100%;background-color: #0044AF;}
 header#header .headerWrap .header1{width: 1200px;margin: 0 auto;position: relative;}
@@ -59,3 +85,52 @@ header#header .headGnb a{
     display: block;text-align: center;line-height: 20px;
     font-size: 20px;color: #464646;
 }
+
+/* content */
+div#content{
+    background-image: url(../images/bg01.jpg);background-repeat: no-repeat;
+}
+div#content .content1{width: 1200px;margin: 0 auto;padding-top: 65px;margin-bottom: 42px;}
+
+div#content .content1 .con_txt{color:#fff;display: inline-block;}
+div#content .content1 .con_txt h2{font-size: 50px;margin-bottom: 11px;letter-spacing: -3px;font-weight: normal;}
+div#content .content1 .con_txt h1{font-size: 72px;font-weight: bold;letter-spacing: -7px;}
+
+div#content .content1 .con_icon{width: 438px;float: right;padding-top: 13px;}
+div#content .content1 .con_icon li{
+    float: left;width: 102px;margin-right: 10px;
+    font-weight: bold;height: 120px;position: relative;cursor: pointer;
+}
+div#content .content1 .con_icon li p{
+    font-size: 14px;color:#fff;position: absolute;bottom: 0;
+    ;text-align: center;width: 102px;letter-spacing: 1px;
+}
+div#content .content1 .con_icon li:last-child{margin-right:0;}
+
+div#content .content1 .con_icon li div.icon{
+    background-image: url(../images/icon.png);width: 102px;height: 102px;background-repeat: no-repeat;
+}
+div#content .content1 .con_icon li:nth-child(1) .icon{background-position: -12px -8px;}
+div#content .content1 .con_icon li:nth-child(2) .icon{background-position: -108px -8px;}
+div#content .content1 .con_icon li:nth-child(3) .icon{background-position: -205px -8px;}
+div#content .content1 .con_icon li:nth-child(4) .icon{background-position: -302px -8px;}
+
+div#content .content2{width: 1200px;height: 900px;margin: 0 auto;background: skyblue;}
+
+div#content .content2 li.conBox1{
+    width: 75%;height: 50%;position: relative;
+}
+div#content .content2 li.conBox1 .conB_txt{-padding: 83px 87px;position: absolute;left: 87px;top: 83px;}
+div#content .content2 li.conBox1 .conB_txt h1{font-size: 70px;font-weight: normal;color: #1651B7;margin-bottom: 19px;}
+div#content .content2 li.conBox1 .conB_txt .btn{
+    width: 168px;height: 40px;background-color: #192D4E;
+    position: relative;cursor: pointer;
+}
+div#content .content2 li.conBox1 .conB_txt .btn p{
+    font-size: 16px;font-weight: bold;color:#fff;
+    position: absolute;left: 39px;top: 11px;
+}
+div#content .content2 li.conBox1 .conB_txt .btn img{position: absolute;right: 39px;top: 15px;}
+
+div#content .content2 li.conBox1 .nextBtn{position: absolute;right: 0;top: 188px;}
+div#content .content2 li.conBox1 .prevBtn{position: absolute;left: 0;top: 188px;}
