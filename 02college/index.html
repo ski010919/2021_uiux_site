@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,7 +25,15 @@
             $('.prevBtn').click(function(){
                 myslide.goToPrevSlide();
             });
-            $('.slider2').bxSlider()
+            $('.slider2').bxSlider({
+                controls:false,
+                auto:true,
+            })
+            $('.slider3').bxSlider({
+                mode:"vertical",
+                controls:false,
+                pager:false,
+            })
         });
     </script>
 </head>
@@ -49,8 +57,8 @@
             </div>
         </div>
         <div class="header2">
-            <div class="headlogo">
-                <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
                 <div class="logotxt">
                     <h2>한국대학교</h2>
                     <h4>HANGUK UNIVERSITY</h4>
@@ -156,22 +164,197 @@
                          </div>
                      </div>
                  </li>
-                 <li class="conBox3"></li>
-                 <li class="conBox4"></li>
-                 <li class="conBox5"></li>
-                 <li class="conBox6"></li>
-                 <li class="conBox7"></li>
+                 <li class="conBox3">
+                     <div class="conB_txt3">
+                         <h4>HOT LINK</h4>
+                         <ul class="clearfix">
+                             <li>
+                                 <img src="images/hot_link01.png" alt="">
+                                 <p>국제교류 <br> 센터</p>
+                             </li>
+                             <li>
+                                 <img src="images/hot_link02.png" alt="">
+                                 <p>원격지원 <br> 시스템</p>
+                             </li>
+                             <li>
+                                 <img src="images/hot_link03.png" alt="">
+                                 <p>예산 / 결산 <br> 공고</p>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="conBox4">
+                     <div class="conB_txt4">
+                         <h4>공지사항</h4>
+                         <ul class="notice clearfix">
+                             <li>
+                                 <img src="images/notice.png" alt="">
+                                <div class="n_txt">
+                                    <p>
+                                        [공지] 한국대학교 웹진...
+                                        <span>2016-06-12</span>
+                                    </p>
+                                </div>
+                             </li>
+                             <li>
+                                 <img src="images/notice.png" alt="">
+                                <div class="n_txt">
+                                    <p>
+                                        [보도] 우수대학교 선정 수상
+                                        <span>2016-06-17</span>
+                                    </p>
+                                </div>
+                             </li>
+                             <li>
+                                 <img src="images/notice.png" alt="">
+                                <div class="n_txt">
+                                    <p>
+                                        [공지] 대학입시 설명회
+                                        <span>2016-06-05</span>
+                                    </p>
+                                </div>
+                             </li>
+                             <li>
+                                 <img src="images/notice.png" alt="">
+                                <div class="n_txt">
+                                    <p>
+                                        [공지] 2016년 1학기 성적...
+                                        <span>2016-05-14</span>
+                                    </p>
+                                </div>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="conBox5">
+                     <div class="conB_txt5">
+                         <h4>SNS NEWS</h4>
+                         <div class="box5">
+                             <img src="images/sns.png" alt="">
+                             한국 대학교는<br>2017학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...
+                         </div>
+                         <ul class="snsbox clearfix">
+                             <li><img src="images/snslink01.png" alt=""></li>
+                             <li><img src="images/snslink02.png" alt=""></li>
+                             <li><img src="images/snslink03.png" alt=""></li>
+                             <li><img src="images/snslink04.png" alt=""></li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="conBox6">
+                     <div class="conB_txt6">
+                         <h3>캠퍼스 투어</h3>
+                     </div>
+                 </li>
+                 <li class="conBox7">
+                     <img src="images/play.png" alt="">
+                 </li>
                  <li class="conBox8">
                      <ul class="slider2">
-                         <li><img src="images/slide01_1.png" alt=""></li>
-                         <li><img src="images/slide01_2.png" alt=""></li>
-                         <li><img src="images/slide01_3.png" alt=""></li>
-                         <li><img src="images/slide01_4.png" alt=""></li>
+                         <li>
+                             <img src="images/slide01_1.png" alt="">
+                             <div class="conB_txt8">
+                                 <h3>2017년 신 · 편입생 2차 모집</h3>
+                                 <h2>2017.7.1 ~ 7.10</h2>
+                                 <div class="con8_btn">
+                                    <p>입학사전예약</p>
+                                    <img src="images/Polygon 2.png" alt="">
+                                </div>
+                             </div>
+                            </li>
+                         <li>
+                             <img src="images/slide01_2.png" alt="">
+                             <div class="conB_txt8">
+                                <h3>2017년 신 · 편입생 2차 모집</h3>
+                                <h2>2017.7.1 ~ 7.10</h2>
+                                <div class="con8_btn">
+                                   <p>입학사전예약</p>
+                                   <img src="images/Polygon 2.png" alt="">
+                            </li>
+                         <li>
+                             <img src="images/slide01_3.png" alt="">
+                             <div class="conB_txt8">
+                                <h3>2017년 신 · 편입생 2차 모집</h3>
+                                <h2>2017.7.1 ~ 7.10</h2>
+                                <div class="con8_btn">
+                                   <p>입학사전예약</p>
+                                   <img src="images/Polygon 2.png" alt="">
+                            </li>
+                         <li>
+                             <img src="images/slide01_4.png" alt="">
+                             <div class="conB_txt8">
+                                <h3>2017년 신 · 편입생 2차 모집</h3>
+                                <h2>2017.7.1 ~ 7.10</h2>
+                                <div class="con8_btn">
+                                   <p>입학사전예약</p>
+                                   <img src="images/Polygon 2.png" alt="">
+                            </li>
                      </ul>
                  </li>
              </ul>
          </div>
+         <div class="content3 clearfix">
+             <ul class="left clearfix">
+                 <li>학사일정</li>
+                 <li>
+                     <img src="images/left.png" alt="">
+                     2016.07
+                     <img src="images/right.png" alt="">
+                    </li>
+             </ul>
+             <div class="bar"></div>
+             <div class="right">
+                 <p>2016 - 1학기 성적 열람 및 상담 신청</p>
+                 <ul class="slider3">
+                     <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                     <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                     <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                 </ul>
+                 <div class="ud_btn">
+                     <div class="upBtn">
+                         <img src="images/up.png" alt="">
+                     </div>
+                     <div class="downBtn">
+                         <img src="images/down.png" alt="">
+                     </div>
+                 </div>
+            </div>
+         </div>
     </div>
     <!-- content end -->
+
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="footerWrap clearfix">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+                <div class="logotxt">
+                    <h2>한국대학교</h2>
+                    <h4>HANGUK UNIVERSITY</h4>
+                </div>
+            </div>
+            <div class="footer_a">
+                <ul class="footerU clearfix">
+                    <li>회사소개</li>
+                    <li>한국 대학교</li>
+                    <li>개인정보취급방침</li>
+                    <li>이용정책</li>
+                    <li>입점/제휴문의 및 광고</li>
+                    <li>이메일 무단수집거부</li>
+                </ul>
+                <div class="f_txt">
+                    <address>
+                        대표자 : 홍길동 서울 특별시 구로구 구로로 300 (구로동 6가)  사업자등록번호 : 123-56-7890234
+                        <br>
+                        통신판매업 신고번호 : 제 1234-서울 구로구-1004호    개인정보관리 책임자 : 홍길동    소비자피해보상보험
+                        <br>
+                        고객센터 : 1234-5678    FAX : 02-1234-5678  HANGUKUNIVERSITY@HANGUK.com
+                    </address>
+                    <p>COPYRIGHT ⓒ HANGUK. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
 </body>
 </html>
