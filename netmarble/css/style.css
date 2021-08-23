@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+body{font-family: 'Noto Sans KR', sans-serif;}
+
 /* header */
 #header{position: fixed;background: #fff;z-index: 100;width: 100%;height: 76px;}
 #header .headWrap{
@@ -63,21 +65,111 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
 /* section */
 
 /* section 1 */
-#section1{width: 100%;}
-#section1 .sectionWrap{width: 1200px;margin: 0 auto;padding: 160px 0;position: relative;}
+#section1{width: 100%;color: #1e1e1e;}
+#section1 .sectionWrap{
+    width: 1215px;margin: 0 auto;
+    padding: 160px 0;position: relative;
+}
 #section1 .sectionWrap .sectionU{height: 200px;margin-bottom: 100px;}
-#section1 .sectionWrap .sectionU h3{font-size: 44px;float: left;}
+#section1 .sectionWrap .sectionU h3{
+    font-size: 44px;float: left;
+    letter-spacing:-2px;font-weight: 700;
+}
 #section1 .sectionWrap .sectionU h3:after{
     content:"";display: block;margin-top: 20px;
     width: 70px;height: 5px;background: #FFD44A;
 }
-#section1 .sectionWrap .sectionU p{font-size: 18px;float: right;letter-spacing: -0.6px;}
+#section1 .sectionWrap .sectionU p{
+    font-size: 18px;letter-spacing: -0.6px;
+    position: absolute;top: 310px;right: 0;
+    
+}
+
+
 #section1 .sectionWrap .sectionM{}
-#section1 .sectionWrap .sectionM li{float: left;width: 378.666px;margin-right: 32px;}
+#section1 .sectionWrap .sectionM li{
+    float: left;width: 384px;
+    margin-right: 30px;margin-bottom: 160px;
+}
 #section1 .sectionWrap .sectionM li:last-child{margin-right: 0;}
 #section1 .sectionWrap .sectionM li .txt{padding: 20px 16px 0 16px;}
-.txtU{position: relative;}
-.txtU img{position: absolute;left: 113px;;top:5px;}
+#section1 .sectionWrap .sectionM li .txt .txtU{
+    position: relative;font-size: 21px;
+    font-weight: 700;letter-spacing:-0.6px;
+    margin-bottom: 10px;
+}
+#section1 .sectionWrap .sectionM li .txt .txtU img{
+    position: absolute;left: 113px;top:5px;
+}
+#section1 .sectionWrap .sectionM li .txt p{
+    font-size: 15px;line-height: 24px;
+    letter-spacing:-0.6px;
+}
 
-.f21{font-size: 21px;}
-.fwb{font-weight: bold;}
+
+#section1 .sectionWrap .sectionD .conbox{position: relative;height: 462px;}
+#section1 .sectionWrap .sectionD .conbox .txt2{
+    width: 1114px;height: 338px;
+    padding: 102px 520px 102px 104px;
+    background: #ffd44a;
+    position: absolute;
+}
+#section1 .sectionWrap .sectionD .conbox .txt2 h3{
+    font-size: 28px;font-weight: 500;
+    letter-spacing:-1px;margin-bottom: 24px;
+}
+#section1 .sectionWrap .sectionD .conbox .txt2 p{
+    font-size: 15px;letter-spacing:-0.6px;font-weight: 500;
+}
+#section1 .sectionWrap .sectionD .conbox img{position: absolute;right: 0;top: 102px;}
+
+/* section2 */
+#section2{background: #f7f8f9;color: #1e1e1e;width: 100%;}
+#section2 .section2Wrap{padding: 160px 0;margin: 0 auto;width: 1215px;}
+
+#section2 .section2Wrap .section2_title{position: relative;margin-bottom: 28px;}
+#section2 .section2Wrap .section2_title h3{
+    font-size: 44px;font-weight: 700;letter-spacing:-2px;
+}
+#section2 .section2Wrap .section2_title h3:after{
+    content:"";display: block;margin-top: 20px;
+    width: 70px;height: 5px;background: #FFD44A;
+}
+
+#section2 .section2Wrap .section2_title .tap{
+    position: absolute;right: 0;top: 60px;
+}
+#section2 .section2Wrap .section2_title .tap button{
+    height: 38px;margin-left: 8px;padding: 0 24px;
+    border-radius: 19px;
+    font-size: 14px;font-weight: 500;line-height:38px;
+    /* color:rgba(30,30,30,0.5); */
+    border: 0 none;
+}
+
+#section2 .section2Wrap .section_card{
+    padding: 32px 0;
+}
+#section2 .section2Wrap .section_card li{
+    width: 360px;height: 466px;background: #fff;
+    position: relative;
+}
+#section2 .section2Wrap .section_card li .txtbox{padding: 32px;letter-spacing:-0.6px;}
+#section2 .section2Wrap .section_card li .txtbox h4{
+    font-size: 21px;font-weight: 500;margin-bottom: 12px;
+}
+#section2 .section2Wrap .section_card li .txtbox h6{
+    font-size: 15px;line-height:24px;
+    font-weight: 400;
+    color:rgba(30,30,30,0.6);
+}
+#section2 .section2Wrap .section_card li p{
+    position: absolute;left: 32px;bottom: 32px;
+    font-size: 13px;letter-spacing:-0.4px;
+    color: rgba(30,30,30,0.4);
+}
+
+#section2 .section2Wrap .section_card .card_swiper{
+    text-align: center;justify-content: center;align-items: center;
+    max-width: 100%;
+}
