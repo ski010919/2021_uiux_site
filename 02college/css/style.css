@@ -8,12 +8,13 @@ div#content div.content2 li.conBox1 .bx-wrapper .bx-pager{
     font-weight: bold;
     color: #535353;
     padding-top: 20px;
-    bottom: 40px; 
+    bottom: 40px;
+    left: 401px;
 }
 
 div#content div.content2 li.conBox1 .bx-wrapper .bx-pager.bx-default-pager a:hover, 
-.bx-wrapper .bx-pager.bx-default-pager a.active, 
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
+li.conBox1 .bx-wrapper .bx-pager.bx-default-pager a.active, 
+li.conBox1 .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #0043B0;
 }
 
@@ -24,14 +25,14 @@ div#content div.content2 li.conBox8 .bx-wrapper .bx-pager{
     font-weight: bold;
     color: #535353;
     padding-top: 20px;
-    bottom: 40px;
-    /* top: 20px;right: 20px;  */
+    top: 6px;right: 34px; 
 }
-/* div#content div.content2 li.conBox8 .bx-wrapper .bx-pager.bx-default-pager a:hover, 
-.bx-wrapper .bx-pager.bx-default-pager a.active, 
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
+
+div#content div.content2 li.conBox8 .bx-wrapper .bx-pager.bx-default-pager a:hover, 
+li.conBox8 .bx-wrapper .bx-pager.bx-default-pager a.active, 
+li.conBox8 .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #F74237;
-} */
+}
 
 
 .logo{margin: 32px 0;position: relative;width: 230px;}
@@ -298,12 +299,15 @@ div#content .content3 .bar{
     position: absolute;left: 298px;top: 0;
 }
 div#content .content3 .right{float: left;position: relative;width: 900px;}
-div#content .content3 .right p{font-size: 16px;padding: 21px 39px;color: #585858;font-weight: 700;}
+div#content .content3 .right p{
+    font-size: 16px;padding: 21px 39px;
+    color: #585858;font-weight: 700;
+    width: 330px;}
 div#content .content3 .right .slider3{
     position: absolute; right: 0;top: 0;
     font-size: 14px;color: #6B6B6B;position: relative;
 }
-div#content .content3 .right .slider3 .list{height: 60px;line-height: 40px;}
+div#content .content3 .right .slider3 .list{height: 60px;line-height: 60px;}
 div#content .content3 .right .slider3 .ud_btn{position: absolute; right: 0;height: 60px;}
 div#content .content3 .right .slider3 .ud_btn .downBtn{margin-bottom: 0;}
 
