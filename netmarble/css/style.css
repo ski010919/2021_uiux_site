@@ -178,15 +178,16 @@ footer#footer .footerWrap p{
     margin-bottom: 46px;
 }
 footer#footer .footerWrap li{
-    float: left;font-size: 12px;
+    float: left;font-size: 12px;font-weight: 500;
     line-height: 20px;color:#9b9b9b;letter-spacing:-0.6px;
-    margin: 0 10px;position: relative;
+    margin: 0 14px;position: relative;
 }
 footer#footer .footerWrap li:first-child{margin-left: 0;}
+footer#footer .footerWrap li:last-child::after{display: none;}
 footer#footer .footerWrap li:after{
     content:"";width: 1px;height: 12px;
     background: #9b9b9b;display: block;
-    position: absolute;right: -10px;top: 5px;
+    position: absolute;right: -14px;top: 5px;
 }
 
 footer#footer .footerWrap .sns{position: absolute;right: 0;bottom: 0;}
