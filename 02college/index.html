@@ -20,6 +20,7 @@
     <script>
         $(document).ready(function(){
             var myslide = $('.slider1').bxSlider({controls:false,})
+            var slider3 = $('.slider3').bxSlider({mode:"vertical",controls:false,pager:false,})
 
             $('.nextBtn').click(function(){
                 myslide.goToNextSlide();
@@ -27,15 +28,25 @@
             $('.prevBtn').click(function(){
                 myslide.goToPrevSlide();
             });
+
             $('.slider2').bxSlider({
                 controls:false,
                 auto:true,
             })
-            $('.slider3').bxSlider({
-                mode:"vertical",
-                controls:false,
-                pager:false,
-            })
+
+            // $('.slider3').bxSlider({
+            //     mode:"vertical",
+            //     controls:false,
+            //     pager:false,
+            // })
+
+            $('.upBtn').click(function(){
+                slider3.goToPrevSlide();
+            });
+            $('.downBtn').click(function(){
+                slider3.goToNextSlide();
+            });
+
             $(".play").colorbox({
                 iframe:true,
                 innerWidth:700,
@@ -312,18 +323,20 @@
              <div class="bar"></div>
              <div class="right clearfix">
                  <p>2016 - 1학기 성적 열람 및 상담 신청</p>
-                 <ul class="slider3">
-                     <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
-                     <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
-                     <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
-                 </ul>
-                 <div class="ud_btn">
-                     <div class="upBtn">
-                         <img src="images/up.png" alt="">
-                     </div>
-                     <div class="downBtn">
-                         <img src="images/down.png" alt="">
-                     </div>
+                 <div class="slider3Wrap">
+                     <ul class="slider3">
+                         <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                         <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                         <li class="list">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</li>
+                     </ul>
+                     <div class="ud_btn">
+                        <div class="upBtn">
+                            <img src="images/up.png" alt="">
+                        </div>
+                        <div class="downBtn">
+                            <img src="images/down.png" alt="">
+                        </div>
+                    </div>
                  </div>
             </div>
          </div>
