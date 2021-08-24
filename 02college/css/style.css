@@ -60,9 +60,7 @@ header#header .headerWrap .header1 .headerTab a{
     color:#fff;font-weight: bold;background: #00163B;
 }
 header#header .headerWrap .header1 .headerTab a:active,
-header#header .headerWrap .header1 .headerTab a:hover{
-    background: #fff;color:#6B6B6B;
-}
+header#header .headerWrap .header1 .headerTab a:hover{background: #fff;color:#6B6B6B;}
 
 header#header .headerWrap .header1 .util{float: right;}
 header#header .headerWrap .header1 .util li{float: left;padding: 0 6px}
@@ -189,7 +187,7 @@ div#content .content2 li.conBox3 .conB_txt3 h4{
     font-size: 24px;font-family: 'Noto Sans KR', sans-serif;line-height: 24px;
     color: #fff; margin-bottom: 33px;
 }
-div#content .content2 li.conBox3 .conB_txt3 ul>li{float: left;margin-left: 20px;}
+div#content .content2 li.conBox3 .conB_txt3 ul>li{float: left;margin-left: 20px;cursor: pointer;}
 div#content .content2 li.conBox3 .conB_txt3 ul>li img{margin-bottom: 8px;}
 div#content .content2 li.conBox3 .conB_txt3 ul>li p{
     font-size: 14px;color: #fff;font-weight: 300;
@@ -251,7 +249,7 @@ div#content .content2 li.conBox7{
     background-image: url(../images/content03.png);
     position: relative;
 }
-div#content .content2 li.conBox7 img{position: absolute;top: 75px;left: 113px;}
+div#content .content2 li.conBox7 img{position: absolute;top: 75px;left: 113px;cursor: pointer;}
 
 div#content .content2 li.conBox8{position: relative;}
 div#content .content2 li.conBox8 .conB_txt8{
@@ -298,16 +296,19 @@ div#content .content3 .bar{
     width: 2px;height: 60px;background: #6B6B6B;
     position: absolute;left: 298px;top: 0;
 }
-div#content .content3 .right{float: left;position: relative;width: 900px;}
+div#content .content3 .right{float: left;position: relative;}
 div#content .content3 .right p{
-    font-size: 16px;padding: 21px 39px;
+    font-size: 16px;_padding: 21px 39px;
     color: #585858;font-weight: 700;
-    width: 330px;}
-div#content .content3 .right .slider3{
-    position: absolute; right: 0;top: 0;
-    font-size: 14px;color: #6B6B6B;position: relative;
+    position: absolute;top: 21px;left: 39px;
 }
-div#content .content3 .right .slider3 .list{height: 60px;line-height: 60px;}
+div#content .content3 .right .slider3{
+    position: absolute; right: 0;
+    font-size: 14px;color: #6B6B6B;
+    position: relative;
+}
+
+div#content .content3 .right .slider3 .list{height: 60px;line-height: 60px;width: 570px;}
 div#content .content3 .right .slider3 .ud_btn{position: absolute; right: 0;height: 60px;}
 div#content .content3 .right .slider3 .ud_btn .downBtn{margin-bottom: 0;}
 
