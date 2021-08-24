@@ -54,7 +54,7 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
     float: left;color: #fff;margin-right: 5px;
 }
 .bannertxt .consol p{
-    display: inline-block;line-height: 32px;letter-spacing: -0.6px;font-weight: bold;
+    display: inline-block;line-height: 32px;letter-spacing: -0.6px;font-weight: 500;
     margin-left: 30px;position: absolute;left: 39px;color:#fff
 }
 .bannertxt .consol .btn{position: absolute;right: 0;}
@@ -127,7 +127,7 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
 #section2{background: #f7f8f9;color: #1e1e1e;width: 100%;}
 #section2 .section2Wrap{padding: 160px 0;margin: 0 auto;width: 1215px;}
 
-#section2 .section2Wrap .section2_title{position: relative;margin-bottom: 28px;}
+#section2 .section2Wrap .section2_title{position: relative;margin-bottom: 56px;}
 #section2 .section2Wrap .section2_title h3{
     font-size: 44px;font-weight: 700;letter-spacing:-2px;
 }
@@ -142,19 +142,18 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
 #section2 .section2Wrap .section2_title .tap button{
     height: 38px;margin-left: 8px;padding: 0 24px;
     border-radius: 19px;
-    font-size: 14px;font-weight: 500;line-height:38px;
+    font-size: 14px;font-weight: 700;line-height:38px;letter-spacing: -1px;
     /* color:rgba(30,30,30,0.5); */
-    border: 0 none;
+    border: 0 none;cursor: pointer;
 }
 
-#section2 .section2Wrap .section_card{
-    padding: 32px 0;
-}
 #section2 .section2Wrap .section_card li{
     width: 360px;height: 466px;background: #fff;
     position: relative;
 }
-#section2 .section2Wrap .section_card li .txtbox{padding: 32px;letter-spacing:-0.6px;}
+#section2 .section2Wrap .section_card li .txtbox{
+    padding: 32px;letter-spacing:-0.6px;margin-bottom: 30px;
+}
 #section2 .section2Wrap .section_card li .txtbox h4{
     font-size: 21px;font-weight: 500;margin-bottom: 12px;
 }
@@ -164,12 +163,42 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
     color:rgba(30,30,30,0.6);
 }
 #section2 .section2Wrap .section_card li p{
-    position: absolute;left: 32px;bottom: 32px;
     font-size: 13px;letter-spacing:-0.4px;
     color: rgba(30,30,30,0.4);
+    position: absolute;bottom: 32px;left: 32px;
 }
 
-#section2 .section2Wrap .section_card .card_swiper{
-    text-align: center;justify-content: center;align-items: center;
-    max-width: 100%;
+/* footer */
+footer#footer{background: #171717;width: 100%;padding: 64px 0;}
+footer#footer .footerWrap{width: 1215px;margin: 0 auto;position: relative;}
+footer#footer .footerWrap .footer_logo{margin-bottom: 26px;}
+footer#footer .footerWrap p{
+    font-size: 11px;line-height: 20px;
+    color:#757575;letter-spacing:-0.6px;
+    margin-bottom: 46px;
+}
+footer#footer .footerWrap li{
+    float: left;font-size: 12px;
+    line-height: 20px;color:#9b9b9b;letter-spacing:-0.6px;
+    margin: 0 10px;position: relative;
+}
+footer#footer .footerWrap li:first-child{margin-left: 0;}
+footer#footer .footerWrap li:after{
+    content:"";width: 1px;height: 12px;
+    background: #9b9b9b;display: block;
+    position: absolute;right: -10px;top: 5px;
+}
+
+footer#footer .footerWrap .sns{position: absolute;right: 0;bottom: 0;}
+footer#footer .footerWrap .sns img{margin-left: 24px;cursor: pointer;}
+
+footer#footer .footerWrap .familysite{
+    position: absolute;top: 0;right: 0;
+}
+footer#footer .footerWrap .familysite button{
+    background: #080808;color:#747474;
+    font-size: 11px;letter-spacing:-0.6px;line-height: 32px;
+    width: 180px;height: 32px;
+    border: 0 none;text-align: left;padding: 0 25px;
+    cursor: pointer;
 }
