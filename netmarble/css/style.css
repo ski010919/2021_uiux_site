@@ -32,11 +32,11 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
 .bannerWrap .slideLi{height: 100vh;}
 .sliderBox{position: relative;}
 .bannertxt{
-    width: 456px;
+    width: 456px;height: 384px;
     position: absolute;top: 50%;left: 350px;margin-top: -130px;;
 }
 .bannertxt h1{
-    font-size: 80px;line-height: 104px;
+    font-size: 80px;line-height: 104px;height: 210px;
     font-weight: bold;color: #fff; letter-spacing: -4px;
     margin: 0 0 14px 0; width: 100%;
 }
