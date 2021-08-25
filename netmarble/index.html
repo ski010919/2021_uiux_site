@@ -17,11 +17,18 @@
 
     <script>
         $(document).ready(function(){
-            $('.banner').bxSlider({
+           var myslide = $('.banner').bxSlider({
                 pager:false,
                 controls:false,
                 auto:true
             })
+            $('.n_btn').click(function(){
+                myslide.goToNextSlide();
+            });
+            $('.pre_btn').click(function(){
+                myslide.goToPrevSlide();
+            });
+
             $('.section_card').bxSlider({
                 controls:false,
                 maxSlides: 3,
@@ -67,8 +74,8 @@
                             </ul>
                             <p>게임소통교육</p>
                             <ul class="btn clearfix">
-                                <li><img src="images/btn_prev.png" alt=""></li>
-                                <li><img src="images/btn_next.png" alt=""></li>
+                                <li class="pre_btn"><img src="images/btn_prev.png" alt=""></li>
+                                <li class="n_btn"><img src="images/btn_next.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -90,8 +97,8 @@
                             </ul>
                             <p>전국 장애학생 e페스티벌</p>
                             <ul class="btn clearfix">
-                                <li><img src="images/btn_prev.png" alt=""></li>
-                                <li><img src="images/btn_next.png" alt=""></li>
+                                <li class="pre_btn"><img src="images/btn_prev.png" alt=""></li>
+                                <li class="n_btn"><img src="images/btn_next.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -112,8 +119,8 @@
                             </ul>
                             <p>견학프로그램</p>
                             <ul class="btn clearfix">
-                                <li><img src="images/btn_prev.png" alt=""></li>
-                                <li><img src="images/btn_next.png" alt=""></li>
+                                <li class="pre_btn"><img src="images/btn_prev.png" alt=""></li>
+                                <li class="n_btn"><img src="images/btn_next.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -134,8 +141,8 @@
                             </ul>
                             <p>게임아카데미</p>
                             <ul class="btn clearfix">
-                                <li><img src="images/btn_prev.png" alt=""></li>
-                                <li><img src="images/btn_next.png" alt=""></li>
+                                <li class="pre_btn"><img src="images/btn_prev.png" alt=""></li>
+                                <li class="n_btn"><img src="images/btn_next.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -156,8 +163,8 @@
                             </ul>
                             <p>어깨동무문고</p>
                             <ul class="btn clearfix">
-                                <li><img src="images/btn_prev.png" alt=""></li>
-                                <li><img src="images/btn_next.png" alt=""></li>
+                                <li class="pre_btn"><img src="images/btn_prev.png" alt=""></li>
+                                <li class="n_btn"><img src="images/btn_next.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -345,7 +352,7 @@
                     <li><a href="javascript:void(0)">어깨동무문고</a></li>
                     <li><a href="javascript:void(0)">넷마블게임포털</a></li>
                 </ul>
-                <button>Family Site</button> -->
+                <button type="button" class="f_btn">Family Site</button> -->
             </div>
         </div>
     </footer>
