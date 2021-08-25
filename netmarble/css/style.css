@@ -5,14 +5,14 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 /* header */
 #header{position: fixed;background: #fff;z-index: 100;width: 100%;height: 76px;}
 #header .headWrap{
-    width: 1200px;margin: 0 auto;position: relative;
+    width: 1215px;margin: 0 auto;position: relative;
 }
 .headWrap img{width: 165px;height: 35px;position: absolute;left: 0;margin: 20px 0;}
-nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
+nav{width: 510px;position: absolute;right: 0;_margin: 0 10px;}
 .headWrap li{float: left;width: calc(100% / 3);}
 .headWrap li a{
     text-align: center;display: block;line-height: 76px;
-    font-size: 20px;font-weight: bold;color:#1e1e1e
+    font-size: 20px;font-weight: 700;color:#1e1e1e
 }
 
 /* banner */
@@ -146,12 +146,17 @@ nav{width: 510px;position: absolute;right: 0;margin: 0 10px;}
 #section2 .section2Wrap .section2_title .tap{
     position: absolute;right: 0;top: 60px;
 }
-#section2 .section2Wrap .section2_title .tap button{
+#section2 .section2Wrap .section2_title .tap a{
     height: 38px;margin-left: 8px;padding: 0 24px;
-    border-radius: 19px;
-    font-size: 14px;font-weight: 700;line-height:38px;letter-spacing: -1px;
-    /* color:rgba(30,30,30,0.5); */
-    border: 0 none;cursor: pointer;
+    font-size: 14px;font-weight: normal;
+    line-height:38px;letter-spacing: -1px;
+    cursor: pointer;color: #8a8b8b;
+    text-align: center;display: block;float: left;
+}
+#section2 .section2Wrap .section2_title .tap a.active{
+    color: #1E1E1E;background: #F0F1F2;
+    font-weight: 500;line-height: 38px;
+    height: 38px;border-radius: 19px;
 }
 
 #section2 .section2Wrap .bx-wrapper .bx-viewport{margin: 32px 0;height: 530px;}
