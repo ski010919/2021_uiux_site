@@ -231,6 +231,12 @@
             <div class="section2_title">
                 <h3>재단소식</h3>
                 <div class="tap clearfix">
+                    <!-- <label for="notice">공지사항</label>
+                    <label for="news">뉴스룸</label>
+                    <label for="sns">소셜미디어</label>
+                    <input type="radio" name="btn" id="notice" value="공지사항" checked>
+                    <input type="radio" name="btn" id="news" value="뉴스룸">
+                    <input type="radio" name="btn" id="sns" value="소셜미디어"> -->
                     <a href="javascript:void(0)" class="active">공지사항</a>
                     <a href="javascript:void(0)">뉴스룸</a>
                     <a href="javascript:void(0)">소셜미디어</a>
@@ -315,7 +321,7 @@
                 서울특별시 구로구 디지털로26길 38, G-Tower 넷마블
                 <br>Copyright © Netmarble Corp. All Rights Reserved.
             </p>
-            <ul class="clearfix">
+            <ul class="policy clearfix">
                 <li>개인정보처리방침</li>
                 <li>SNS 저작물 이용 동의서</li>
                 <li>이메일 문의</li>
@@ -327,7 +333,19 @@
                 <img src="images/sns1.png" alt="">
             </div>
             <div class="familysite">
-                <button>Family Site</button>
+                <label for="select" class="hide"></label>
+                <select name="select-f" id="select" class="fsite">
+                    <option selected>Family Site</option>
+                    <option >Game in Life</option>
+                    <option >어깨동무문고</option>
+                    <option >넷마블게임포털</option>
+                </select>
+                <!-- <ul class="fsite">
+                    <li><a href="javascript:void(0)">Game in Life 공모전</a></li>
+                    <li><a href="javascript:void(0)">어깨동무문고</a></li>
+                    <li><a href="javascript:void(0)">넷마블게임포털</a></li>
+                </ul>
+                <button>Family Site</button> -->
             </div>
         </div>
     </footer>
