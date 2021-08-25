@@ -159,11 +159,11 @@ nav{width: 510px;position: absolute;right: 0;_margin: 0 10px;}
     height: 38px;border-radius: 19px;
 }
 
-#section2 .section2Wrap .bx-wrapper .bx-viewport{margin: 32px 0;height: 530px;}
+/* #section2 .section2Wrap .bx-wrapper .bx-viewport{height: 530px;} */
 #section2 .section2Wrap .section_card{cursor: pointer;}
 #section2 .section2Wrap .section_card li{
     width: 360px;height: 466px;background: #fff;
-    position: relative;
+    position: relative;margin: 32px 0;
 }
 #section2 .section2Wrap .section_card li:hover{
     transform:translateY(-15px);
@@ -172,7 +172,7 @@ nav{width: 510px;position: absolute;right: 0;_margin: 0 10px;}
 }
 
 #section2 .section2Wrap .section_card li .txtbox{
-    padding: 32px;letter-spacing:-0.6px;margin-bottom: 30px;
+    padding: 32px;letter-spacing:-0.6px;
 }
 #section2 .section2Wrap .section_card li .txtbox h4{
     font-size: 21px;font-weight: 500;margin-bottom: 12px;
