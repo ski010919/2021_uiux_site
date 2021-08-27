@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+/* header */
+.hdTopWrap{background: #0762a1 url(../images/header.jpg) no-repeat center;}
+.hdTop{
+    height: 90px;width: 980px;margin: 0 auto;
+    display: flex;justify-content:space-between;align-items: center;
+}
+.hdTop h1{
+    background: url(../images/main_logo.png) no-repeat center;
+    width: 152px;height: 48px;
+    text-indent: -9999px;
+}
+input[type="text"]{outline: none;}
+.hdTop form{position: relative;}
+.hdTop .searchInp{
+    width: 290px;height: 30px;
+    border-radius: 15px;border: 0 none;
+    font-size: 14px; color: #717274;
+    text-indent: 84px;
+}
+.hdTop .searchTitle{
+    display: block;position: absolute;
+    width: 60px;height: 20px;
+    background-image: url(../images/searchtext.jpg);
+    text-indent: -9999px;
+    top: 50%;left: 12px;transform: translateY(-50%);
+}
+.hdTop .searchBtn{
+    display: block;position: absolute;
+    width: 20px;height: 20px;
+    background: url(../images/search.jpg) no-repeat center;
+    top: 50%;right: 15px; transform: translateY(-50%);
+    border:0 none;text-indent: -9999px;
+}
+
+.hdTop .hd_right{display: flex;justify-content:space-between;align-items: center;}
+.hdTop .hd_right h3{
+    font-size: 28px;color:#FEFEFF;
+    font-weight: 800;letter-spacing:-2px;
+    margin-right: 14px;
+}
+.hdTop .hd_right .sns>li{float: left;margin-right: 6px;height: 24px;}
+.hdTop .hd_right .sns>li:last-child{margin-right: 0;}
+
+.hdDownWrap{
+    background: #F3F3F3;height: 64px;border-bottom: 5px solid #0E73A7;
+}
+.hdDownWrap .hdDown{
+    width: 980px;margin: 0 auto;
+}
+.hdDownWrap .hdDown>li{float: left;width:calc( 100% /6 );position: relative;}
+.hdDownWrap .hdDown>li>a{
+    display: block;text-align: center;line-height: 59px;
+    font-size: 18px;font-weight: 700;color:#172530;
+}
+.hdDownWrap .hdDown>li>a:after{
+    content:"";
+    width: 1px;height: 59px;background: #E6E6E6;
+    _display: block;position: absolute;right: 0;top: 0;
+}
+.hdDownWrap .hdDown>li:first-child>a:before{
+    content:"";display: block;
+    width: 1px;height: 59px;background: #E6E6E6;
+    position: absolute;top: 0;left: 0;
+}
+
+/* content */
+div#content{
+    background-image: url(../images/dot2.png), url(../images/bodybg02.png);
+    min-width:980px;background-repeat:repeat, no-repeat;
+    background-size: auto, cover;
+    background-position:center;
+    height: 1200px;
+}

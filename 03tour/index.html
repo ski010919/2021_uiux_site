@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header id="header">
+        <div class="hdTopWrap"> <!-- 100% -->
+            <div class="hdTop"> <!-- 980px -->
+                <h1><a href="#">tour</a></h1>
+                <form action="#" method="POST">
+                    <label for="search" class="searchTitle">search</label>
+                    <input type="text" id="search" placeholder="검색어를 입력하세요." class="searchInp">
+                    <input type="submit" value="search" class="searchBtn">
+                </form>
+                <div class="hd_right">
+                    <h3>+82 02 1234 5678</h3>
+                    <ul class="sns clearfix">
+                        <li><a href="#"><img src="images/sns_link01.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/sns_link02.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/sns_link03.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="images/sns_link04.png" alt="inliked"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hdDownWrap">
+            <ul class="hdDown clearfix">
+                <li><a href="#">여행도시</a></li>
+                <li><a href="#">호텔예약</a></li>
+                <li><a href="#">렌트카</a></li>
+                <li><a href="#">여행TIP</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div id="content"> <!-- 100% + 배경-->
+        <div class="conTop"> <!-- 980px-->
+            <div class="conTop_left">
+                <div class="rsv_slider">
+                    <ul class="slider01">
+                        <li>
+                            <form action="#" method="POST">
+                                <fieldset>
+                                    <label for="country" class="rsc_country">가고싶은 나라를 선택하세요.</label>
+                                    <select name="country" id="country">
+                                        <option value="선택하세요." selected>선택하세요.</option>
+                                        <option value="유럽">유럽</option>
+                                        <option value="일본">일본</option>
+                                        <option value="중국">중국</option>
+                                        <option value="홍콩">홍콩</option>
+                                        <option value="미국">미국</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="g_date" class="g_date">출발일</label>
+                                    <input type="text" id="g_date" placeholder="2014/12/01" class="gdateinp">
+                                    <input type="button" id="g_date" class="gdatebtn" value="출발일">
+
+                                    <label for="b_date" class="b_date">도착일</label>
+                                    <input type="text" id="b_date" placeholder="2014/12/01" class="bdateinp">
+                                    <input type="button" id="b_date" class="bdatebtn" value="도착일">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="seat" class="seat">좌석등급</label>
+                                    <select name="seat" id="seat">
+                                        <option value="이코노미" selected>이코노미</option>
+                                        <option value="비지니스">비지니스</option>
+                                        <option value="퍼스트">퍼스트</option>
+                                    </select>
+                                    <label for="person" class="person">성인</label>
+                                    <select name="person" id="person">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <label for="kids" class="kids">아이</label>
+                                    <select name="kids" id="kids">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </fieldset>
+                                <input type="submit" value="search" class="rsv_search">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="conT_card">
+                    <li><a href="#">
+                        <img src="" alt="">
+                        <div class="conT_txt">
+                            <!-- <h6>프랑스</h6>
+                                <p>￦1,900,000~</p>
+                                <img src="" alt=""> -->
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!-- content end -->
+</body>
+</html>
