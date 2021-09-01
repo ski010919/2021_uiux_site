@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{font-family: 'Nanum Gothic', sans-serif;}
+body{font-family: 'Nanum Gothic', sans-serif;overflow-x: hidden;}
 .mb14{margin-bottom: 14px !important;}
 .mb16{margin-bottom: 16px !important;}
 .mb23{margin-bottom: 23px !important;}
@@ -58,6 +58,7 @@ input[type="text"]{outline: none;}
     width: 980px;margin: 0 auto;
 }
 .hdDownWrap .hdDown>li{float: left;width:calc( 100% /6 );position: relative;}
+.hdDownWrap .hdDown>li:hover a{background: #0E73A7;color: white;}
 .hdDownWrap .hdDown>li>a{
     display: block;text-align: center;line-height: 59px;
     font-size: 18px;font-weight: 700;color:#172530;
@@ -79,6 +80,7 @@ div#content{
     min-width:980px;background-repeat:repeat, no-repeat;
     background-size: auto, cover;
     background-position:center;
+    position: relative;
     _height: 1200px;
 }
 div#content .conTop{
@@ -88,34 +90,94 @@ div#content .conTop{
 
 .bal01{
     position: absolute;
-    bottom:-64px;right: 61px;
+    bottom:10px;right: 61px;
     animation-name:bal01;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 @keyframes bal01{
-    to{bottom: 10px;right: 61px;}
+    to{bottom: -64px;right: 61px;}
 }
 .bal02{
     position: absolute;
     bottom: 17px;right: -31px;
+    animation-name:bal02;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: scale(1.1);
 }
+@keyframes bal02{to{bottom: 82px;}}
 .bal03{
     position: absolute;
     bottom: -112px;right: -61px;
+    animation-name:bal03;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes bal03{to{bottom: 20px;}}
 .bal04{
     position: absolute;
-    top: 174px;right: 306px;
+    top: 220px;right: 306px;
+    animation-name:bal04;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes bal04{to{top: 80px;}}
 .bal05{
     position: absolute;
-    bottom: 88px;right: -93px;
+    top: 100px;right: 196px;
+    animation-name:bal05;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+@keyframes bal05{to{top: -10px;}}
 .bal06{
     position: absolute;
-    bottom: 208px;right: -85px;
+    top: 242px;right: -85px;
+    animation-name:bal06;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes bal06{
+    to{top: 337px;}
+}
+
+.air01{
+    position: absolute;
+    bottom: 100px;left: -487px;
+    animation-name:air01;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+    transform: scale(0.3) rotate(15deg);
+}
+@keyframes air01{
+    to{
+        bottom: 600px;left: 1800px;
+        transform: scale(1.2) rotate(15deg);
+    }
+}
+.air02{
+    position: absolute;
+    top: 346px;right: -200px;
+    animation-name:air02;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
+}
+@keyframes air02{
+    to{
+        top: 56px;right: 1800px;
+        transform: scale(2.0);
+    }
 }
 
 
@@ -229,7 +291,10 @@ fieldset{border: 0;}
 .conT_card .conT_txt p{font-weight: 400;font-size: 18px;color: #6FC562;}
 
 div#content .conTop_right{width: 457px;float: right;position: relative;}
-div#content .conTop_right h2{font-size: 66px;font-weight: 800;position: relative;}
+div#content .conTop_right h2{
+    font-size: 66px;font-weight: 800;position: relative;
+    text-shadow: 0px 0px 5px #FFFFFF;
+}
 div#content .conTop_right h2:after{
     content: ""; width: 83px;height: 5px;
     background: #152630;
@@ -238,7 +303,7 @@ div#content .conTop_right h2:after{
 div#content .conTop_right p{
     font-size:32px;font-weight: 400;
     line-height: 40px;letter-spacing:-2.5px;
-    text-shadow: 0px 0px 10px #FFFFFF;
+    text-shadow: 0px 0px 5px #FFFFFF;
 }
 
 div#content .conM{width: 980px;margin: 0 auto;}
