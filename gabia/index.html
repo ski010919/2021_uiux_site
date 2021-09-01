@@ -5,24 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gabia</title>
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="header">
         <div class="headerWrap">    <!-- 1400px -->
             <h1><a href="#">logo</a></h1>
-            <ul>
+            <ul class="clearfix">
                 <li><a href="#">아마존 입점</a></li>
                 <li><a href="#">알리바바 입점</a></li>
                 <li><a href="#">쇼핑몰 제작</a></li>
                 <li><a href="#">국내몰 영업</a></li>
             </ul>
+            <button class="toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
         </div>
     </div>
+    <div class="swiper slider01">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/slider01.jpg" alt="">
+                <div class="txtWrap01">
+                    <img src="images/logo_sbdc.png" alt="">
+                    <h3>
+                        소상공인이라면 누구나!<br>스타상품에 도전해보세요.
+                    </h3>
+                    <p>판매,마케팅 그리고 브랜드 인지도까지 온라인 판매 대행 무료 지원!</p>
+                    <div class="btn">
+                        <p>자세히보기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slider02.jpg" alt="">
+                <div class="txtWrap01">
+                    <img src="images/logo_clickn.png" alt="">
+                    <h3>
+                        클릭엔 유튜브 오픈 이벤트<br>클릭엔 유튜브를 클릭해 봐!
+                    </h3>
+                    <p>구독 클릭+댓글 작성 시 아메리카노 증정</p>
+                    <div class="btn">
+                        <p>자세히보기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slider03.jpg" alt="">
+                <div class="txtWrap01">
+                    <img src="images/logo_firstmall.png" alt="">
+                    <h3>
+                        퍼스트몰 추석맞이 감사혜택<br>50%할인 + 6개월 무료연장
+                    </h3>
+                    <p>SMS/알림톡 19만건 추가 지급까지!</p>
+                    <div class="btn">
+                        <p>바로가기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide"i>
+                <img src="images/slider04.jpg" alt="">
+                <div class="txtWrap01">
+                    <img src="images/logo_kosme.png" alt="">
+                    <h3>
+                        중소벤처기업진흥공단<br>온라인수출지원사업 공식 수행기관 선정
+                    </h3>
+                    <p>2016년부터 6년 연속 선정, 가비아 CNS</p>
+                    <div class="btn">
+                        <p>자세히보기</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slider05.jpg" alt="">
+                <div class="txtWrap01">
+                    <img src="images/logo_alibaba.png" alt="">
+                    <h3>
+                        알리바바닷컴<br>GGS 멤버십 6월 할인
+                    </h3>
+                    <p>골드서플라이어(GGS) 멤버십 및 GGS 플러스 멤버십 단기 할인 프로모션</p>
+                    <div class="btn">
+                        <p>자세히보기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".slider01",{
+            loop:true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 </body>
 </html>
