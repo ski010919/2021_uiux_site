@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider01').bxSlider({
+                pagerCustom:'.bxpager',
+                mode:'vertical',
+                touchEnabled:false,
+                controls:false
+            });
+            var myslide = $('.slider02').bxSlider({controls:false,pager:false});
+            $('.n_btn').click(function(){
+                myslide.goToNextSlide();
+            });
+            $('.p_btn').click(function(){
+                myslide.goToPrevSlide();
+            });
+            var myslide02 = $('.slider03').bxSlider({controls:false,pager:false});
+            $('.n_btn02').click(function(){
+                myslide02.goToNextSlide();
+            });
+            $('.p_btn02').click(function(){
+                myslide02.goToPrevSlide();
+            });
+        });
+    </script>
+</head>
+<body class="sub">
+    <!-- header start -->
+    <header id="header">
+        <div class="hdTopWrap"> <!-- 100% -->
+            <div class="hdTop"> <!-- 980px -->
+                <h1><a href="index.html">tour</a></h1>
+                <form action="#" method="POST">
+                    <label for="search" class="searchTitle">search</label>
+                    <input type="text" id="search" placeholder="검색어를 입력하세요." class="searchInp">
+                    <input type="submit" value="search" class="searchBtn">
+                </form>
+                <div class="hd_right">
+                    <h3>+82 02 1234 5678</h3>
+                    <ul class="sns clearfix">
+                        <li><a href="#"><img src="images/sns_link01.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/sns_link02.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/sns_link03.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="images/sns_link04.png" alt="inliked"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hdDownWrap">
+            <ul class="hdDown clearfix">
+                <li><a href="citytour.html">여행도시</a></li>
+                <li><a href="hotel.html">호텔예약</a></li>
+                <li><a href="rentcar.html">렌트카</a></li>
+                <li><a href="tourtip.html">여행TIP</a></li>
+                <li class="active"><a href="company.html">회사소개</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- content start -->    
+    <div class="subContent company">
+        <div class="subImg">
+            <div class="subImgTitle">
+                <div class="title">
+                    <h3>COMPANY</h3>
+                    <i class="far fa-building fa-5x building"></i>
+                </div>
+                <p><b>회사소개</b> 하이미디어와 여행을 떠나세요</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="location mb16">
+                홈 | 회사소개 | 회사소개
+            </div>
+            <img src="images/company_img01.jpg" alt="" class="mb23">
+            <img src="images/company_img02.jpg" alt="">
+        </div>
+        <div id="footer" class="clearfix">
+            <h1><a href="#">tour</a></h1>
+            <div class="f_right">
+                <ul class="clearfix">
+                    <li><a href="#">이용약관</a></li>
+                    <li class="fw700"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">광고 및 제휴문의</a></li>
+                </ul>
+                <p>123-456  서울특별시 구로구 구로동 (주)하이미디어  사업자등록번호:  123-45-678910  대표이사 : 홍길동  대표번호 :  02-1234- 5678<br>
+                COPYRIGHT©2014 HIMEDIA TOUR.ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- content end -->
+</body>
+</html>

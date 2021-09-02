@@ -1,6 +1,10 @@
 @charset "utf-8";
 
-body{font-family: 'Nanum Gothic', sans-serif;overflow-x: hidden;}
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
+    min-width:980px;
+}
 .mb14{margin-bottom: 14px !important;}
 .mb16{margin-bottom: 16px !important;}
 .mb23{margin-bottom: 23px !important;}
@@ -17,8 +21,9 @@ body{font-family: 'Nanum Gothic', sans-serif;overflow-x: hidden;}
 .hdTop h1{
     background: url(../images/main_logo.png) no-repeat center;
     width: 152px;height: 48px;
-    text-indent: -9999px;
+    text-indent: -9999px;cursor: pointer;
 }
+.hdTop h1>a{text-indent: -9999px;display: block;height: 48px;}
 input[type="text"]{outline: none;}
 .hdTop form{position: relative;}
 .hdTop .searchInp{
@@ -58,6 +63,8 @@ input[type="text"]{outline: none;}
     width: 980px;margin: 0 auto;
 }
 .hdDownWrap .hdDown>li{float: left;width:calc( 100% /6 );position: relative;}
+.hdDownWrap .hdDown>li.active{background: #0E73A7;}
+.hdDownWrap .hdDown>li.active a{color: white;}
 .hdDownWrap .hdDown>li:hover a{background: #0E73A7;color: white;}
 .hdDownWrap .hdDown>li>a{
     display: block;text-align: center;line-height: 59px;
@@ -129,13 +136,13 @@ div#content .conTop{
 @keyframes bal04{to{top: 80px;}}
 .bal05{
     position: absolute;
-    top: 100px;right: 196px;
+    top: -10px;right: 196px;
     animation-name:bal05;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-@keyframes bal05{to{top: -10px;}}
+@keyframes bal05{to{top: 150px;}}
 .bal06{
     position: absolute;
     top: 242px;right: -85px;
@@ -338,10 +345,16 @@ div#content .conM .slider03Wrap{width: 233px;height: 240px;position: relative;}
 .slider03>li .img03{transition: 0.3s;}
 .slider03>li:hover .img03{transform: scale(1.1);}
 
-.weather{width: 233px;height: 240px;position: relative;}
+.weather{
+    width: 233px;height: 240px;
+    position: relative;overflow: hidden;
+    cursor: pointer;
+}
+.weather img{transition: 0.3s;}
+.weather:hover img{transform: scale(1.1);}
 .weather h3{
     font-size: 20px;font-weight: 700;color: #fff;
-    position: absolute;top: 19px;left: 84px;
+    position: absolute;top: 19px;left: 84px;z-index: 1;
 }
 .weather .w_txt{
     width: 233px;height: 65px;
@@ -361,7 +374,13 @@ div#content .conM .slider03Wrap{width: 233px;height: 240px;position: relative;}
     position: absolute;top: 38px;left: 18px;
 }
 
-.facebook{width: 233px;height: 240px;position: relative;}
+.facebook{
+    width: 233px;height: 240px;
+    position: relative;overflow: hidden;
+    cursor: pointer;
+}
+.facebook img{transition: 0.3s;}
+.facebook:hover img{transform: scale(1.1);}
 .facebook .fb_txt{
     width: 233px;height: 65px;
     background: #44619D;
@@ -442,7 +461,10 @@ div#content .conB{width: 980px;margin: 0 auto;margin-bottom: 30px;}
 
 /* footer */
 
-div#footer{width: 980px;margin: 0 auto;height: 80px;padding-bottom: 23px;}
+div#footer{
+    width: 980px;margin: 0 auto;height: 80px;
+    padding-bottom: 23px;
+}
 div#footer h1{
     background: url(../images/footer_logo.png) no-repeat center;
     width: 152px;height: 48px;
@@ -455,3 +477,157 @@ div#footer h1{
     margin-right: 23px;margin-bottom: 13px;
 }
 .f_right p{font-size: 12px;color: #737373;}
+
+
+/* subpage common*/
+body.sub{
+    background: #EFEFEF;
+    background-image: url(../images/dot2.png);
+    min-width:980px;background-repeat:repeat, no-repeat;
+    background-size: auto, cover;
+    background-position:center;
+    overflow-x: scroll;
+}
+.subContent .subImg{
+    height: 290px;
+    display: flex;justify-content: center;align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.subContent .subImgTitle{
+    text-align: center;transform:translateY(-30px);
+}
+.subContent .subImgTitle h3{
+    font-size: 64px;font-weight: 800;color: #fff;
+    _text-shadow: 0 0 10px #fff;
+    letter-spacing:-1px;
+}
+.subContent .subImgTitle p{
+    font-size: 18px;font-weight: 400;color: #fff;
+    _text-shadow: 0 0 10px #fff;
+    padding-top: 5px;
+}
+.subContent .subImgTitle h3:after{
+    content: "";display: block;
+    width: 350;height: 2px;
+    margin: 5px 0;
+    position: relative;bottom: 0;left:3px;
+    background: #fff;
+}
+.subContent .container{
+    width: 980px;margin: 0 auto;
+}
+.subContent .container img{
+    display: block;margin: 0 auto;
+}
+.subContent .location{
+    _width: 140px;margin: 0 auto;
+    font-size: 14px;
+    position: absolute;right: 60px;
+}
+.subContent .container{
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    border-top: 5px solid #0E73A7;
+    border-bottom: 5px solid #0E73A7;
+    position: relative;top: -69px;
+}
+    
+
+/* subpage company*/
+.subContent.company .subImg{
+    background-image: url(../images/subimg01.jpg);
+}
+.subContent.company .subImg .subImgTitle{
+    position: relative;left: -35px;
+}
+.building{
+    position: absolute;bottom: 31px;right: -73px;
+    color: #fff;
+}
+.subContent.company .container{padding: 58px 0;}
+
+/* subpage citytour */
+.subContent.citytour .subImg{
+    background-image: url(../images/subimg02.png);
+}
+.subContent.citytour .subImg .subImgTitle{
+    position: relative;left: -50px;
+}
+.plane{
+    position: absolute;bottom: 31px;right: -101px;
+    color: #fff;
+}
+.subContent.citytour .container .location{
+    top: 55px;
+}
+
+/* subpage hotel */
+.subContent.hotel .subImg{
+    background-image: url(../images/subimg03.png);
+}
+.subContent.hotel .subImg .subImgTitle{
+    position: relative;left: -15px;
+}
+.subContent.hotel .title{text-align: left;}
+.subContent.hotel .title h3{width: 210px;}
+.bed{
+    position: absolute;bottom: 21px;right: -26px;
+    color: #fff;
+}
+.subContent.hotel .container .location{
+    top: 55px;
+}
+
+/* subpage rentcar */
+.subContent.rentcar .subImg{
+    background-image: url(../images/subimg04.png);
+}
+.subContent.rentcar .subImg .subImgTitle{
+    position: relative;left: -40px;
+}
+.subContent.rentcar .title{text-align: left;}
+.subContent.rentcar .title h3{width: 310px;}
+.car{
+    position: absolute;bottom: 21px;right: -75px;
+    color: #fff;
+}
+.subContent.rentcar .container .location{
+    top: 55px;
+}
+
+/* subpage tourtip */
+.subContent.tourtip .subImg{
+    background-image: url(../images/subimg05.png);
+}
+.subContent.tourtip .subImg .subImgTitle{
+    position: relative;left: -40px;
+}
+.subContent.tourtip .title{text-align: left;}
+.subContent.tourtip .title h3{width: 310px;}
+.tip{
+    position: absolute;bottom: 31px;right: -45px;
+    color: #fff;
+}
+.subContent.tourtip .container .location{
+    top: 55px;
+}
+
+/* subpage community */
+.subContent.community .subImg{
+    background-image: url(../images/subimg06.png);
+}
+.subContent.community .subImg .subImgTitle{
+    position: relative;left: -40px;
+}
+.subContent.community .title{text-align: left;}
+.subContent.community .title h3{width: 410px;}
+.subContent.community .title h3:after{width: 435px;}
+.commu{
+    position: absolute;bottom: 30px;right: -65px;
+    color: #fff;
+}
+.subContent.community .container .location{
+    top: 55px;
+}

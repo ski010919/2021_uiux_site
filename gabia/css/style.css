@@ -2,6 +2,24 @@
 
 body{font-family: 'Noto Sans KR', sans-serif;}
 
+.slider01 .swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+.slider01 .swiper-pagination-bullet{
+    width: 12px; height: 12px;
+    background: transparent;
+    border: 1px solid #fff;
+    opacity: 1; transition:0.5s;
+}
+.slider01 .swiper-pagination-bullet-active{
+    width: 30px;
+    border-radius: 6px; background: #fff;
+    border: 1px solid transparent; }
+
 /* mobile */
 @media screen and (max-width: 767px){
     #header{
@@ -20,7 +38,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     }
     #header .headerWrap ul>li{
         display: none;
-        w
     }
 }
 /* mobile */
@@ -57,14 +74,36 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     .toggle{display: none;}
 
     /* slider */
-    .swiper-slide{position: relative;height: 643px;}
+    .swiper-slide{
+        position: relative;height: 643px;
+        overflow: hidden;}
+    .swiper-slide>img{
+        display: block;
+        transform-origin:center bottom;
+        _max-width: 1924px;height: 643px;width: 100%;
+    }
     .txtWrap01{
-        position: absolute;top: 0;left:calc(50% - 700px);
+        position: absolute;top: 0;_left:calc(50% - 700px);left: 260px;
         padding-top: 60px;margin-top: 120px;
         color: white;letter-spacing:-0.75px;
     }
-    .txtWrap01 img{position: absolute;top: 0;left: 0;}
+    .txtWrap01 img{
+        position: absolute;top: 0;left: 0;
+    }
     .txtWrap01 h3{font-size:50px;font-weight: 500;margin-bottom: 24px;line-height: 60px;}
-    .txtWrap01 p{font-size:19px;font-weight: 200;}
+    .txtWrap01 p{font-size:19px;font-weight: 200;margin-bottom: 45px;}
+    .txtWrap01 .btn{
+        padding: 0 39px;
+        border: 1px solid #fff;
+        border-radius: 24px;
+        width: 168px;height: 48px;min-width:168px;
+        cursor: pointer;transition: 0.3s;
+    }
+    .txtWrap01 .btn a{
+        text-align: center;display: block;line-height: 46px;
+        font-size: 15px;font-weight: 300;color: #fff;
+    }
+    .txtWrap01 .btn:hover{background: #fff;}
+    .txtWrap01 .btn:hover a{color: #333;}
 }
 /* pc */
