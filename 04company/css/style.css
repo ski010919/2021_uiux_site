@@ -1,0 +1,73 @@
+@charset "utf-8";
+html,body{height: 100%;}
+
+/* common */
+#header_top .logo{background: salmon;height: 50px;padding: 0 10px;}
+
+.sliderWrap .slideTxt{
+    position: absolute;left: 50%;top: 30%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+}
+.sliderWrap .slideTxt h3{font-size: 3em;}
+
+
+
+
+/* pc */
+@media screen and ( min-width:700px ){
+    #main_header{height: 1950px;background: #ddd;}
+
+    #header_top{
+        width: 1240px;background: pink;z-index: 1;
+        position: fixed;left: 50%;transform: translateX(-50%);top: 20px;
+        display: flex;justify-content: space-between;align-items: center;
+    }
+
+    #header_top .gnb{background: seagreen;}
+    #header_top .gnb li{float: left;}
+    #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding: 0 30px;}
+    .toggle{display: none;}
+
+    .sliderWrap .li_1st,.sliderWrap .li_2st{
+        height: 1000px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderWrap .li_1st{background-image: url(../images/mainimg01.jpg);}
+    .sliderWrap .li_2st{background-image: url(../images/mainimg02.jpg);}
+}/* pc media end */
+
+
+/* mobile */
+@media screen and ( max-width:699px ){
+    #main_header{background: #ddd;}
+
+    #header_top{
+        background: pink;padding: 0 16px;z-index: 1;
+        position: fixed;width: 100%;
+        display: flex;justify-content: space-between;align-items: center;
+    }
+
+    #header_top .gnb{display: none;}
+    .toggle{display: block;}
+    .toggle{width: 40px;height: 40px;background:sandybrown;position: relative;}
+    .toggle div{
+        position: absolute;width: 25px;height: 3px;background: white;
+        left: 50%;top:50%;transform: translate(-50%,-50%);
+    }
+    .toggle .bar1{top: 10px;}
+    .toggle .bar3{top: 30px;}
+
+    .sliderWrap .li_1st,.sliderWrap .li_2st{
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderWrap .li_1st{background-image: url(../images/mainimg01.jpg);}
+    .sliderWrap .li_2st{background-image: url(../images/mainimg02.jpg);}
+    
+    .sliderWrap .slideTxt{width: 300px;top: 50%;}
+}/* mobile media end */
