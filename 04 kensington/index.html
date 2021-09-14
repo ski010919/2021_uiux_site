@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 </head>
 <body>
     <header id="main_header">
@@ -34,6 +36,11 @@
                     <div class="kor"><a href="#">KOR</a></div>
                     <div class="eng"><a href="#">ENG</a></div>
                 </div>
+                <ul class="submenu_b clearfix">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">예약문의</a></li>
+                </ul>
             </nav>
             <div class="toggle">
                 <div class="bar1"></div>
@@ -70,6 +77,220 @@
             </ul>
             <img src="images/slider1 next.png" alt="" class="nextBtn">
             <img src="images/slider1 prev.png" alt="" class="prevBtn">
+        </div>
+        <div class="content">
+            <ul class="clearfix">
+                <li>
+                    <form action="#" class="form">
+                        <fieldset>
+                            <legend class="blind">예약하기</legend>
+                            <div class="hotel">
+                                <label for="hotel">방문 호텔 또는 리조트명</label>
+                                <input type="text" id="hotel" name="hotel" placeholder="호텔 또는 리조트 선택">
+                                <input type="submit" value="hotel" class="hotel_btn">
+                            </div>
+                            <div class="checkin">
+                                <label for="checkin">체크인&체크아웃</label>
+                                <input type="date" id="checkin">
+                            </div>
+                            <div class="mem">
+                                <label for="mem">객실수</label>
+                                <input type="number" id="mem" placeholder="1">
+                            </div>
+                            <div class="adult">
+                                <label for="num">성인</label>
+                                <input type="number" id="num" placeholder="1">
+                            </div>
+                            <div class="kids">
+                                <label for="num">아이</label>
+                                <input type="number" id="num" placeholder="1">
+                            </div>
+                            <div class="promotion">
+                                <label for="promo">법인/프로모션 코드 입력</label>
+                                <input type="text" id="promo" name="promo" placeholder="코드를 입력해주세요">
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="예약" class="btn_rsv">
+                    </form>
+                    <div class="dining">
+                        <p>새로워진 온라인 예약으로 빠르고 간편하게 예약 및 조회해보세요.</p>
+                        <div class="dining_right">
+                            <p>다이닝 예약 바로가기</p>
+                            <img src="images/dining_go.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">
+                    <div class="con1wrap">
+                        <img src="images/con_benefit.png" alt="" class="mb24">
+                        <h4>Package<br>Benefits</h4>
+                    </div>
+                </a></li>
+                <li>
+                    <a href="https://www.youtube.com/embed/CjxkndtrxfQ" class="youtube">
+                        <img src="images/modal.png" alt="">
+                    </a>
+                </li>
+                <li class="slider02Wrap">
+                    <ul class="slider02">
+                        <li>
+                            <div class="slider02_wrap clearfix">
+                                <div class="slider02_left clearfix">
+                                    <div class="slider02_txt">
+                                        <h4>어텀 고메<br>에디션</h4>
+                                        <p>깊어가는 가을 밤,<br>가을의 정취를 만끽하며<br>미식여행을 떠나보세요</p>
+                                    </div>
+                                    <div class="pager_prev">
+                                        <img src="images/con_prev.png" alt="">
+                                    </div>
+                                    <div class="pager_next">
+                                        <img src="images/con_next.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider02_right">
+                                    <a href="#"><img src="images/conslider1_01.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider02_wrap clearfix">
+                                <div class="slider02_left clearfix">
+                                    <div class="slider02_txt">
+                                        <h4>선물 같은<br>하루</h4>
+                                        <p>소중한 사람에게<br>선물하고 싶은<br>특별한 하루</p>
+                                    </div>
+                                    <div class="slider02_pager clearfix">
+                                        <div class="pager_prev">
+                                            <img src="images/con_prev.png" alt="">
+                                        </div>
+                                        <div class="pager_next">
+                                            <img src="images/con_next.png" alt="">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="slider02_right">
+                                    <a href="#"><img src="images/conslider1_02.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider02_wrap clearfix">
+                                <div class="slider02_left clearfix">
+                                    <div class="slider02_txt">
+                                        <h4>켄싱턴 스위트<br>컬렉션</h4>
+                                        <p>단7일간만<br>만나볼 수 있는<br>스위트한 혜택</p>
+                                    </div>
+                                    <div class="pager_prev">
+                                        <img src="images/con_prev.png" alt="">
+                                    </div>
+                                    <div class="pager_next">
+                                        <img src="images/con_next.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider02_right">
+                                    <a href="#"><img src="images/conslider1_03.png" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider02_wrap clearfix">
+                                <div class="slider02_left clearfix">
+                                    <div class="slider02_txt">
+                                        <h4>추캉스</h4>
+                                        <p class="mb61">미리 예약하는 가을 여행<br>추석 보너스는 없어도<br>대체 공휴일 보너스가 있다!</p>
+                                    </div>
+                                    <div class="pager_prev">
+                                        <img src="images/con_prev.png" alt="">
+                                    </div>
+                                    <div class="pager_next">
+                                        <img src="images/con_next.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider02_right">
+                                    <a href="#"><img src="images/conslider1_04.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider02_wrap clearfix">
+                                <div class="slider02_left clearfix">
+                                    <div class="slider02_txt">
+                                        <h4>시그니처<br>초이스</h4>
+                                        <p>켄싱턴에서 가장 사랑받는<br>베스트셀링 상품들을<br>만나보세요.</p>
+                                    </div>
+                                    <div class="pager_prev">
+                                        <img src="images/con_prev.png" alt="">
+                                    </div>
+                                    <div class="pager_next">
+                                        <img src="images/con_next.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider02_right">
+                                    <a href="#"><img src="images/conslider1_05.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider02_wrap clearfix">
+                                <div class="slider02_left clearfix">
+                                    <div class="slider02_txt">
+                                        <h4>키즈<br>&패밀리</h4>
+                                        <p>사랑하는 가족과 함께 하는<br>특별한 가을 여행을<br>떠나보세요.</p>
+                                    </div>
+                                    <div class="pager_prev">
+                                        <img src="images/con_prev.png" alt="">
+                                    </div>
+                                    <div class="pager_next">
+                                        <img src="images/con_next.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="slider02_right">
+                                    <a href="#"><img src="images/conslider1_06.jpg" alt=""></a>
+                                </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="con1_card">
+                        <div class="card_txt">
+                            <h4>ELAND CRUISE</h4>
+                            <p class="mb49">문화와 관광이 어우러진<br>도심속 복합 테마파크</p>
+                        </div>
+                        <div class="card_btn"><a href="#">자세히 보기</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="con1_card">
+                        <div class="card_txt">
+                            <h4>지점</h4>
+                            <p>켄싱턴 호텔의 지점들을 한눈에</p>
+                        </div>
+                        <div class="card_btn"><a href="#">자세히 보기</a></div>
+                    </div>
+                    <img src="images/con_location.png" alt="" class="card_location">
+                </li>
+                <li><a href="#">
+                    <div class="con1wrap">
+                        <img src="images/con_membership.png" alt="" class="mb24">
+                        <h4>Membership</h4>
+                    </div>
+                </a></li>
+                <li><a href="#">
+                    <div class="con1wrap">
+                        <img src="images/con_news.png" alt="">
+                        <h4>Latest<br>News</h4>
+                    </div>
+                </a></li>
+                <li>
+                    <div class="con1_card">
+                        <div class="card_txt">
+                            <h4>BEARS TOWN</h4>
+                            <p>사계절 즐거움이 가득한 곳</p>
+                        </div>
+                        <div class="card_btn"><a href="#">자세히 보기</a></div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </header>
 </body>
