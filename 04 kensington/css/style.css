@@ -58,6 +58,33 @@ body{font-family: 'Open Sans', sans-serif;}
 @media screen and ( max-width:699px ){
     #main_header{background: pink;}
     #header_top{
-        background: skyblue;padding: 0 20px;
+        padding: 0 20px;
+        position: fixed;width: 100%;
+        display: flex;justify-content:space-between;align-items: center;
     }
+    #header_top .logo{
+        background-image: url(../images/mobile_main_logo.png);
+        width: 140px;height: 24px;
+    }
+    #header_top .logo a{
+        text-indent:9999px;display: block;
+    }
+    #header_top .gnb{display: none;}
+    .toggle{display: block;}
+    .toggle{
+        width: 40px;height: 40px;position: relative;
+    }
+    .toggle div{
+        width: 25px;height: 3px;background: white;
+        border-radius: 2px;transition: 0.3s;cursor: pointer;
+        position: absolute;left: 50%;top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .toggle .bar1{top: 10px;}
+    .toggle .bar3{top: 30px;}
+
+    .toggle.active .bar1{transform: translate(-50%,-50%) rotate(45deg);top: 50%;}
+    .toggle.active .bar2{opacity: 0;}
+    .toggle.active .bar3{transform: translate(-50%,-50%) rotate(-45deg);top: 50%;}
+
 }/* mobile media end */

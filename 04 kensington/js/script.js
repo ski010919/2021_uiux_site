@@ -32,3 +32,15 @@
 //         $(".gnb").removeClass("view");
 //     });
 // });
+
+$(document).ready(function(){
+    $(".toggle").click(function(){
+        const toggle = $(".toggle").attr("class");
+
+        if(toggle == "toggle"){
+            $(".toggle").addClass("active");
+        }else{
+            $(".toggle").removeClass("active");
+        }
+    });
+});
