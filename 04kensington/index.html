@@ -93,20 +93,28 @@
                                 <label for="checkin">체크인&체크아웃</label>
                                 <input type="date" id="checkin">
                             </div>
-                            <div class="mem">
-                                <label for="mem">객실수</label>
-                                <input type="number" id="mem" placeholder="1">
-                            </div>
-                            <div class="adult">
-                                <label for="num">성인</label>
-                                <input type="number" id="num" placeholder="1">
-                            </div>
-                            <div class="kids">
-                                <label for="num">아이</label>
-                                <input type="number" id="num" placeholder="1">
+                            <div class="room">
+                                <div class="mem">
+                                    <label for="mem">객실수</label>
+                                    <input type="number" id="mem" placeholder="1">
+                                </div>
+                                <div class="adult">
+                                    <label for="num">성인</label>
+                                    <input type="number" id="num" placeholder="1">
+                                </div>
+                                <div class="kids">
+                                    <label for="num">
+                                        아이
+                                        <img src="images/rsv_q.png" alt="" class="rsvQ">
+                                    </label>
+                                    <input type="number" id="num" placeholder="1">
+                                </div>
                             </div>
                             <div class="promotion">
-                                <label for="promo">법인/프로모션 코드 입력</label>
+                                <label for="promo">
+                                    법인/프로모션 코드 입력
+                                    <img src="images/rsv_q.png" alt="" class="rsvQ">
+                                </label>
                                 <input type="text" id="promo" name="promo" placeholder="코드를 입력해주세요">
                             </div>
                         </fieldset>
@@ -114,16 +122,16 @@
                     </form>
                     <div class="dining">
                         <p>새로워진 온라인 예약으로 빠르고 간편하게 예약 및 조회해보세요.</p>
-                        <div class="dining_right">
+                        <div class="dining_right clearfix"><a href="#">
                             <p>다이닝 예약 바로가기</p>
                             <img src="images/dining_go.png" alt="">
-                        </div>
+                        </a></div>
                     </div>
                 </li>
                 <li><a href="#">
-                    <div class="con1wrap">
-                        <img src="images/con_benefit.png" alt="" class="mb24">
-                        <h4>Package<br>Benefits</h4>
+                    <div class="con1wrap con1_pack">
+                        <img src="images/con_benefit.png" alt="">
+                        <h4>Package<br><span>Benefits</span></h4>
                     </div>
                 </a></li>
                 <li>
@@ -159,13 +167,11 @@
                                         <h4>선물 같은<br>하루</h4>
                                         <p>소중한 사람에게<br>선물하고 싶은<br>특별한 하루</p>
                                     </div>
-                                    <div class="slider02_pager clearfix">
-                                        <div class="pager_prev">
-                                            <img src="images/con_prev.png" alt="">
-                                        </div>
-                                        <div class="pager_next">
-                                            <img src="images/con_next.png" alt="">
+                                    <div class="pager_prev">
+                                        <img src="images/con_prev.png" alt="">
                                     </div>
+                                    <div class="pager_next">
+                                        <img src="images/con_next.png" alt="">
                                     </div>
                                 </div>
                                 <div class="slider02_right">
@@ -260,25 +266,28 @@
                     </div>
                 </li>
                 <li>
-                    <div class="con1_card">
-                        <div class="card_txt">
-                            <h4>지점</h4>
-                            <p>켄싱턴 호텔의 지점들을 한눈에</p>
+                    <div class="con1_6">
+                        <div class="con1_card">
+                            <div class="card_txt">
+                                <h4>지점</h4>
+                                <p>켄싱턴 호텔의 지점들을 한눈에</p>
+                            </div>
+                            <div class="card_btn"><a href="#">자세히 보기</a></div>
                         </div>
-                        <div class="card_btn"><a href="#">자세히 보기</a></div>
+                        <img src="images/con_location.png" alt="" class="card_location">
+                        <img src="images/mo_con_location.png" alt="" class="mo_location">
                     </div>
-                    <img src="images/con_location.png" alt="" class="card_location">
                 </li>
                 <li><a href="#">
                     <div class="con1wrap">
-                        <img src="images/con_membership.png" alt="" class="mb24">
+                        <img src="images/con_membership.png" alt="">
                         <h4>Membership</h4>
                     </div>
                 </a></li>
                 <li><a href="#">
                     <div class="con1wrap">
                         <img src="images/con_news.png" alt="">
-                        <h4>Latest<br>News</h4>
+                        <h4><span>Latest</span><br>News</h4>
                     </div>
                 </a></li>
                 <li>
@@ -293,5 +302,45 @@
             </ul>
         </div>
     </header>
+    <section id="section">
+        <div class="sec01">
+            <div class="sec01_wrap">
+                <div class="sec01_txt">
+                    <h4>경영이념</h4>
+                    <h2>KENSINGTON</h2>
+                </div>
+                <ul class="sec01_card clearfix">
+                    <li>
+                        <img src="images/con2_sharing.png" alt="">
+                        <div class="sec01_cardT">
+                            <h4>SHARING</h4>
+                            <p>벌기 위해서가 아니라<br>쓰기 위해서 일합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/con2_rightness.png" alt="">
+                        <div class="sec01_cardT">
+                            <h4>RIGHTNESS</h4>
+                            <p>돌아가더라도 바른길을<br>가는 것이 지름길입니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/con2_growth.png" alt="">
+                        <div class="sec01_cardT">
+                            <h4>GROWTH</h4>
+                            <p>직장은 인생의 학교입니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/con2_serving.png" alt="">
+                        <div class="sec01_cardT">
+                            <h4>SERVING</h4>
+                            <p>만족한 고객이<br>최선의 광고입니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
