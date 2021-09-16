@@ -79,6 +79,63 @@ body{font-family: 'Open Sans', sans-serif;}
 .con1wrap img{margin: 0 auto;margin-bottom: 24px;}
 .content>ul>li:nth-child(8) .con1wrap img{margin: 0 auto;margin-bottom: 9px;}
 
+.artro_img.img01{background-image: url(../images/artro_img01.jpg);}
+.artro_img.img02{background-image: url(../images/artro_img02.jpg);}
+.artro_img.img03{background-image: url(../images/artro_img03.jpg);}
+.artro_img.img04{background-image: url(../images/artro_img04.jpg);}
+.artro_img.img05{background-image: url(../images/artro_img05.jpg);}
+.artro_img.img06{background-image: url(../images/artro_img06.jpg);}
+.artro_img.img07{background-image: url(../images/artro_img07.jpg);}
+.artro_img.img08{background-image: url(../images/artro_img08.jpg);}
+.artro_img.img09{background-image: url(../images/artro_img09.jpg);}
+.artro_img.img10{background-image: url(../images/artro_img10.jpg);}
+
+.btn_sns{
+    width: 32px;height: 32px;display: block;
+    border-radius: 50%;
+    text-indent: -9999px;margin-left: 20px;float: left;
+}
+.btn_sns.ft_youtube{
+    background:#aaa url(../images/ico_youtube_wh.png) no-repeat center;
+}
+.btn_sns.ft_youtube:hover{
+    background: #cc0000 url(../images/ico_youtube_wh.png) no-repeat center;
+}
+
+.btn_sns.ft_post{
+    background:#aaa url(../images/ico_post_wh.png) no-repeat center;
+}
+.btn_sns.ft_post:hover{
+    background: #2eb300 url(../images/ico_post_wh.png) no-repeat center;
+}
+
+.btn_sns.ft_blog{
+    background:#aaa url(../images/ico_blog_wh.png) no-repeat center;
+}
+.btn_sns.ft_blog:hover{
+    background: #2eb300 url(../images/ico_blog_wh.png) no-repeat center;
+}
+
+.btn_sns.ft_kakao{
+    background:#aaa url(../images/ico_kakao_wh.png) no-repeat center;
+}
+.btn_sns.ft_kakao:hover{
+    background: #ffd200 url(../images/ico_kakao_wh.png) no-repeat center;
+}
+
+.btn_sns.ft_instagram{
+    background:#aaa url(../images/ico_instagram_wh.png) no-repeat center;
+}
+.btn_sns.ft_instagram:hover{
+    background: #bd056f url(../images/ico_instagram_wh.png) no-repeat center;
+}
+
+.btn_sns.ft_facebook{
+    background:#aaa url(../images/ico_facebook_wh.png) no-repeat center;
+}
+.btn_sns.ft_facebook:hover{
+    background: #3c5a9a url(../images/ico_facebook_wh.png) no-repeat center;
+}
 
 
 /* pc */
@@ -94,6 +151,7 @@ body{font-family: 'Open Sans', sans-serif;}
     }
     .toggle{display: none;}
     .submenu_b{display: none;}
+    .gnb .sns_wrap{display: none;}
     #header_top .logo{
         background-image: url(../images/main_logo02.png);
         width: 290px;height: 50px;
@@ -263,6 +321,7 @@ body{font-family: 'Open Sans', sans-serif;}
     }
     .mo_location{display: none;}
 
+    .slider02Wrap{position: relative;}
     .slider02Wrap .slider02{position: relative;}
     .slider02>li{width: 620px;height: 310px;}
     .slider02>li>a{display: block;}
@@ -291,7 +350,10 @@ body{font-family: 'Open Sans', sans-serif;}
         width: 35px;height: 35px;cursor: pointer;
         border: 1px solid #ddd;float: left;
         display: flex;justify-content: center;align-items: center;
+        background: #B39579;
     }
+    .slider02_btn{position: absolute;left: 45px;bottom: 44px;}
+
     .slider02_right{
         float: right;
         width: 351px;height: 222px;
@@ -336,11 +398,11 @@ body{font-family: 'Open Sans', sans-serif;}
     }
 
     .sec02{
-        width: 1240px;height: 620px;margin: 0 auto;
+        width: 1240px;height: 620px;margin: 0 auto;margin-bottom: 80px;
         background: #FFFFFF;box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
     }
     .sec02_txt{
-        padding: 133px 32px;
+        padding: 133px 30px;
         width: 310px;height: 620px;float: left;position: relative;
     }
     .sec02_txt h2{
@@ -357,19 +419,9 @@ body{font-family: 'Open Sans', sans-serif;}
 
     .swiper{width: 930px;height: 620px;float: right;}
     .artro_img{
-        width: 310px;height: 310px;background: pink;
+        width: 310px;height: 310px;
         background-size: cover;background-position:center;background-repeat: no-repeat;
     }
-    .artro_img.img01{background-image: url(../images/artro_img01.jpg);}
-    .artro_img.img02{background-image: url(../images/artro_img02.jpg);}
-    .artro_img.img03{background-image: url(../images/artro_img03.jpg);}
-    .artro_img.img04{background-image: url(../images/artro_img04.jpg);}
-    .artro_img.img05{background-image: url(../images/artro_img05.jpg);}
-    .artro_img.img06{background-image: url(../images/artro_img06.jpg);}
-    .artro_img.img07{background-image: url(../images/artro_img07.jpg);}
-    .artro_img.img08{background-image: url(../images/artro_img08.jpg);}
-    .artro_img.img09{background-image: url(../images/artro_img09.jpg);}
-    .artro_img.img10{background-image: url(../images/artro_img10.jpg);}
 
     .artroU{position: relative;transition: 0.3s;}
     .artroU:hover .hoverTxt{display: block;}
@@ -383,8 +435,8 @@ body{font-family: 'Open Sans', sans-serif;}
         line-height: 33px;color: #000000;margin-bottom: 14px;
     }
     .hoverTxt h5{
-        font-weight: normal;font-size: 18px;
-        line-height: 25px;color: #000000;margin-bottom: 29px;
+        font-weight: 400;font-size: 16px;
+        line-height: 22px;color: #000000;margin-bottom: 29px;
     }
     .hoverTxt h5:after{
         content:"";display: block;
@@ -399,26 +451,98 @@ body{font-family: 'Open Sans', sans-serif;}
     .art_detail p:nth-child(2){left: 14px;top: 19px;}
     .art_detail p:nth-child(3){left: 28px;top: 38px;}
     .art_detail p:nth-child(4){left: 0;top: 57px;}
-    .art_detail span{margin-left: 15px;}
-    .art_detail span:before{
-        content:"";display: block;
-    }
+
     .swiper-button-next,.swiper-button-prev{
         position: absolute;
         width: 40px !important;height: 40px !important;
-        border: 1px solid #333;background: red !important;
+        border: 1px solid #333;
     }
     .swiper-button-next{
         background: url(../images/con_next.png) no-repeat center;
+        float: right;right: 0 !important;
     }
     .swiper-button-prev{
         background: url(../images/con_prev.png) no-repeat center;
+        float: left;left: 0 !important;
         /* left: 119px !important; */
     }
     .swiper-button-next::after,
     .swiper-button-prev::after {
       display: none;
-    }    
+    }
+    .sec02_btn{
+        position: absolute;width: 80px;height: 40px;
+        left: 203px;bottom: 37px;
+    }
+
+
+    .sec03{
+        width: 1240px;margin: 0 auto;margin-bottom: 79px;
+    }
+    .sec03_left,.sec03_right{
+        float: left;width: 620px;height: 312px;;
+        padding: 47px 49px;
+    }
+    .sec03_left{
+        background: url(../images/kenny_chef01.png) no-repeat right;
+    }
+    .sec03_right{
+        background: url(../images/kenny_model01.png) no-repeat right;
+    }
+
+    .sec03_txt{
+        width: 213px;height: 218px;
+    }
+    .sec03_txt h2{
+        background: url(../images/kenny_logo.png) no-repeat center;
+        text-indent: -9999px;width: 213px;height: 128px;margin-bottom: 40px;
+    }
+
+    .sec04{display: none;}
+
+    #footer{border-top: 1px solid #333;}
+    .footerWrap{width: 1240px;margin: 0 auto;padding: 27px 0;}
+    .foot_left{
+        float: left;
+        display: flex;justify-content: space-between;align-items:flex-start;
+    }
+    .foot_left h2{
+        background: url(../images/foot_logo01.png);
+        width: 172px;height: 30px;
+        margin-top: 16px;margin-right: 46px;
+    }
+    .foot_left h2>a{text-indent: -9999px;display: block;}
+
+    .ft_up>li,.ft_md01>li,.ft_md02>li{float: left;}
+    .ft_up>li{padding: 10px;position: relative;margin-right: 9px;}
+    .ft_up>li:after{
+        content:"";display: block;
+        width: 1px;height: 14px;background:#6B6B6B;
+        position: absolute;right: -4px;top: 14px;
+    }
+    .ft_up>li:last-child:after{display: none;}
+    .ft_up>li>a{
+        font-weight: 400;font-size: 16px;
+        line-height: 22px;letter-spacing: -0.05em;color: #888888;
+    }
+
+    .ft_md01>li,.ft_md02>li,.ft_address>p{
+        padding: 0 10px;font-weight: 400;font-size: 11px;
+        line-height: 24px;color: #888888;position: relative;
+    }
+    .ft_md01>li{letter-spacing: -0.02em;}
+    .ft_md02>li{letter-spacing: -0.03em;}
+    .ft_md01>li:after,.ft_md02>li:after{
+        display: block;content:"";
+        width: 1px;height: 7px;background: #bbb;
+        position: absolute;top:50%;right: 0;transform: translateY(-50%);
+    }
+    .ft_md01>li:last-child:after,.ft_md02>li:last-child:after{display: none;}
+    .ft_address p{letter-spacing: -0.03em;}
+
+    .foot_right{float: right;}
+    
+    
 
 }/* pc media end */
 
@@ -478,7 +602,7 @@ body{font-family: 'Open Sans', sans-serif;}
     }
     .gnb .language .eng a{line-height: 26px;}
     .gnb .submenu_b{
-        position: absolute;bottom: 30px;left: 50%;
+        position: absolute;bottom: 77px;left: 50%;
         transform: translateX(-50%);
     }
     .gnb .submenu_b li{float: left;padding: 5px 3px;position: relative;}
@@ -491,6 +615,13 @@ body{font-family: 'Open Sans', sans-serif;}
         font-weight: 600;font-size: 12px;
         line-height: 16px;letter-spacing: -0.05em;color: #FFFFFF;
     }
+
+    .gnb .sns_wrap{
+        position: absolute;bottom: 30px;left: 50%;
+        transform: translateX(-50%);width: 242px;
+    }
+    .gnb .sns_wrap>.btn_sns{margin-left: 10px;}
+    .gnb .sns_wrap>.btn_sns:first-child{margin-left: 0;}
 
     .toggle{display: block;}
     .toggle{
@@ -510,6 +641,7 @@ body{font-family: 'Open Sans', sans-serif;}
     .toggle.active .bar2{opacity: 0;}
     .toggle.active .bar3{transform: translate(-50%,-50%) rotate(-45deg);top: 50%;}
 
+    
     .sliderWrap .li_1st,
     .sliderWrap .li_2st,
     .sliderWrap .li_3st,
@@ -579,6 +711,7 @@ body{font-family: 'Open Sans', sans-serif;}
         background-repeat: no-repeat;
         background-position:center;
         background-size:cover;
+        margin-bottom: 20px;
     }
     .sec01_txt{
         margin: 0 auto;width: 156px;margin-bottom: 45px;
@@ -608,4 +741,171 @@ body{font-family: 'Open Sans', sans-serif;}
         font-weight: 400;font-size: 14px;line-height: 20px;
         text-align: center;letter-spacing: -0.095em;color: #FFFFFF;
     }
+
+    .sec02{margin-bottom: 20px;}
+    .sec02_txt h2{
+        background: url(../images/artro_logo.png) no-repeat center;
+        background-size: cover;position: relative;
+        width: 110px;height: 52px;margin: 0 auto;margin-bottom: 30px;
+    }
+    .sec02_txt h2:before{
+        display: block;content:"";
+        width: 2px;height: 50px;background:#171717;
+        position: relative;right: 3px;top: 2px;
+    }
+    .sec02_txt h2>a{
+        text-indent: -9999px;display: block;
+        width: 109px;height: 50px;
+    }
+    .sec02_txt>p,.sec02_btn{display: none;}
+
+    .swiper-slide{display: flex;flex-direction: row;}
+    .artroU{
+        width: 200px;height: 400px;float: left;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+    }
+    .artro_img{
+        width: 200px;height: 200px;background: pink;
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+
+    .hoverTxt{
+        padding: 20px 16px;
+        width: 200px;height: 200px;background: #fff;
+    }
+    .hoverTxt h4{
+        font-weight: 600;font-size: 16px;
+        line-height: 22px;color: #000000;margin-bottom: 5px;
+    }
+    .hoverTxt h5{
+        font-weight: 400;font-size: 12px;
+        line-height: 16px;color: #000000;margin-bottom: 11px;
+    }
+    .hoverTxt h5:after{
+        content:"";display: block;
+        width: 140px;height: 1px;background: #333;margin-top: 5px;
+    }
+    .art_detail{position: relative;}
+    .art_detail p{
+        font-weight: 400;font-size: 12px;
+        line-height: 16px;color: #888888;position: absolute;
+    }
+    .art_detail p:nth-child(1){left: 24px;}
+    .art_detail p:nth-child(2){left: 12px;top: 19px;}
+    .art_detail p:nth-child(3){left: 24px;top: 38px;}
+    .art_detail p:nth-child(4){left: 0;top: 57px;}
+
+    .sec03{display: none;}
+
+    .sec04{}
+    .sec04_b1{
+        background-image: url(../images/mo_cruise_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;height: 70px;margin-bottom: 20px;
+    }
+    .sec04_b1 h2{
+        background-image: url(../images/mo_cruise_logo.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:auto;
+        width: 360px;height: 70px;
+        margin: 0 auto;
+    }
+    .sec04_b1 h2>a{
+        text-indent: -9999px;display: block;text-align: center;height: 70px;
+    }
+
+    .magazine{padding: 0 20px;position: relative;}
+    .magazine>h4{
+        font-weight: 600;font-size: 18px;position: relative;
+        line-height: 25px;color: #333333;
+        text-align: center;margin-bottom: 21px;
+    }
+    .magazine>h4:after{
+        content: "";display: block;
+        width: 65px;height: 1px;background: #333;
+        position: absolute;bottom: -2px;left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mag_plus{
+        background-image: url(../images/btn_plus.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        width: 14px;height: 14px;
+        text-indent: -9999px;display: block;
+        position: absolute;right: 20px;top: 5px;
+    }
+    .mag{margin: 0 auto;width: 330px;margin-bottom: 40px;}
+    .mag img{
+        width: 178px;height: 105px;float: left;margin-right: 23px;
+    }
+    .kenny_txt{float: left;}
+    .kenny09{margin-bottom: 20px;}
+    .kenny_txt>h4{
+        font-weight: 600;font-size: 18px;
+        line-height: 25px;color: #B39579;margin-bottom: 3px;
+    }
+    .kenny_txt>p{
+        font-weight: 400;font-size: 16px;
+        line-height: 22px;letter-spacing: -0.12em;color: #333333;
+    }
+
+    .sec04_b2{
+        background-image: url(../images/mo_bears_bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 70px;margin-bottom: 20px;
+    }
+    .sec04_b2 h2{
+        background-image: url(../images/mo_bears_logo.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:auto;
+        width: 360px;height: 70px;
+        margin: 0 auto;
+    }
+    .sec04_b2 h2>a{
+        text-indent: -9999px;display: block;text-align: center;height: 70px;
+    }
+
+    .foot_right .sns_wrap{display: none;}
+    .ft_md01,.ft_md02{display: none;}
+    #footer{border-top: 1px solid #bbb;padding: 20px;}
+    .foot_left{
+        display: flex;justify-content: center;align-items: center;flex-direction: column;
+    }
+    .foot_left>h2{
+        background-image: url(../images/mo_foot_logo.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 86px;height: 15px;margin-bottom: 15px;
+    }
+    .foot_left>h2>a{
+        display: block;text-indent: -9999px;
+    }
+    .ft_up>li{
+        float: left;position: relative;
+        padding: 5px 3px;
+    }
+    .ft_up>li:after{
+        content: "";display: block;
+        width: 1px;height: 14px;background:#6B6B6B;
+        position: absolute;top:11px;right: -1px;
+    }
+    .ft_up>li>a{
+        font-weight: 400;font-size: 11px;
+        line-height: 15px;letter-spacing: -0.05em;color: #888888;
+    }
+    .ft_address>p{
+        font-weight: 400;font-size: 10px;
+        line-height: 24px;letter-spacing: -0.03em;color: #888888;
+    }
+
 }/* mobile media end */

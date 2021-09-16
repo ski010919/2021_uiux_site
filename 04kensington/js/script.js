@@ -1,6 +1,7 @@
 $(document).ready(function(){
     const slider1 = $(".slider").bxSlider({
-        controls:false
+        controls:false,
+        auto:true
     });
     $(".nextBtn").click(function(){
         slider1.goToNextSlide();
@@ -12,6 +13,7 @@ $(document).ready(function(){
     const slider2 = $(".slider02").bxSlider({
         controls:false,
         pager:false,
+        auto:true
     });
     $(".pager_next").click(function(){
         slider2.goToNextSlide();
@@ -60,6 +62,10 @@ $(document).ready(function(){
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
       });
 });
