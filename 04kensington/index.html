@@ -96,28 +96,29 @@
                             <legend class="blind">예약하기</legend>
                             <div class="hotel">
                                 <label for="hotel">방문 호텔 또는 리조트명</label>
-                                <input type="text" id="hotel" name="hotel" placeholder="호텔 또는 리조트 선택">
+                                <input type="text" id="hotel" name="hotel" placeholder="호텔 또는 리조트 선택" class="pc_hotel">
                                 <input type="submit" value="hotel" class="hotel_btn">
+                                <input type="text" id="mo_hotel" name="hotel" placeholder="지점 선택" class="mo_hotel">
                             </div>
                             <div class="checkin">
                                 <label for="checkin">체크인&체크아웃</label>
-                                <input type="date" id="checkin">
+                                <input type="date" id="checkin" class="check_calendar">
                             </div>
                             <div class="room">
                                 <div class="mem">
                                     <label for="mem">객실수</label>
-                                    <input type="number" id="mem" placeholder="1">
+                                    <input type="number" id="mem" placeholder="1" class="mo_room">
                                 </div>
                                 <div class="adult">
                                     <label for="num">성인</label>
-                                    <input type="number" id="num" placeholder="1">
+                                    <input type="number" id="num" placeholder="1" class="mo_room">
                                 </div>
                                 <div class="kids">
                                     <label for="num">
                                         아이
                                         <img src="images/rsv_q.png" alt="" class="rsvQ">
                                     </label>
-                                    <input type="number" id="num" placeholder="1">
+                                    <input type="number" id="num" placeholder="1" class="mo_room">
                                 </div>
                             </div>
                             <div class="promotion">
@@ -239,6 +240,10 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#" class="mo_promo"><div class="con1wrap">
+                        <img src="images/mo_con_promotion01.png" alt="">
+                        <h4>Promotion</h4>
+                    </div></a>
                 </li>
                 <li>
                     <div class="con1_card">
@@ -251,15 +256,15 @@
                 </li>
                 <li>
                     <div class="con1_6">
+                        <img src="images/mo_con_location01.png" alt="" class="mo_location">
                         <div class="con1_card">
                             <div class="card_txt">
-                                <h4>지점</h4>
+                                <h4 class="con_loca">지점</h4>
                                 <p>켄싱턴 호텔의 지점들을 한눈에</p>
                             </div>
                             <div class="card_btn"><a href="#">자세히 보기</a></div>
                         </div>
                         <img src="images/con_location.png" alt="" class="card_location">
-                        <img src="images/mo_con_location.png" alt="" class="mo_location">
                     </div>
                 </li>
                 <li><a href="#">
