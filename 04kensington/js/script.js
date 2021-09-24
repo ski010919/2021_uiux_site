@@ -87,5 +87,16 @@ $(document).ready(function(){
             conTitle[j].classList.add("on");
             conImg[j].classList.add("on");
         }
-    }
+    };
+
+    const header = document.querySelector(".headerWrap");
+    const headerHeight = header.getBoundingClientRect().height;
+
+    window.addEventListener("scroll",function(){
+        if(window.scrollY > headerHeight){
+            header.setAttribute("style","background:rgba(0, 0, 0, 0.7);");
+        }else{
+            header.setAttribute("style","background:transparent");
+        }
+    });
 });
