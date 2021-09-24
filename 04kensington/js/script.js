@@ -98,7 +98,7 @@ $(document).ready(function(){
         if(window.scrollY > headerHeight){
             header.setAttribute("style","background:rgba(0, 0, 0, 0.7);");
             headerTop.setAttribute("style","top:20px");
-            headerTop_mo.setAttribute("style","top:0");
+            // headerTop_mo.setAttribute("style","top:0");
         }else{
             header.setAttribute("style","background:transparent");
             headerTop.setAttribute("style","top:transparent");
