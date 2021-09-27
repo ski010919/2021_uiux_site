@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax02</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        body{height: 400vh;background: #060208;}
+        .header{
+            height: 1500px;position: relative;overflow: hidden;
+            background: #FF8197;
+        }
+        .layer{
+            width: 100%;height: 100%;
+            position: absolute;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .p0{background-image: url(images/bg_parallax06.png);}
+        .p1{background-image: url(images/bg_parallax05.png);}
+        .p2{background-image: url(images/bg_parallax04.png);}
+        .p3{background-image: url(images/bg_parallax03.png);}
+        .p4{background-image: url(images/bg_parallax02.png);}
+        .p5{background-image: url(images/bg_parallax01.png);}
+
+        .container{width: 1200px;margin: 0 auto;background: #fff;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="layer p0" data-speed="4"></div>
+        <div class="layer p1" data-speed="5"></div>
+        <div class="layer p2" data-speed="7"></div>
+        <div class="layer p3" data-speed="8"></div>
+        <div class="layer p4" data-speed="20"></div>
+        <div class="layer p5" data-speed="40"></div>
+    </div>
+    <div class="container">
+        아아아아아아아아
+    </div>
+
+    <script>
+        let layer = document.querySelectorAll(".layer");
+
+        window.addEventListener("scroll",function(){
+            let scroll = window.pageYOffset;
+
+            layer.forEach(function(item,idex){
+                let speed = item.dataset.speed;
+                item.style.transform = `translate3d(0,${scroll/speed*4}px,0)`
+            })
+        });
+    </script>
+</body>
+</html>
