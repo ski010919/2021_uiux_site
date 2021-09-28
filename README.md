@@ -7,3 +7,4 @@
 1. 넷마블 https://ski010919.github.io/2021_uiux_site/netmarble
 1. 가비아 https://ski010919.github.io/2021_uiux_site/gabia
 1. company 예시 https://ski010919.github.io/2021_uiux_site/company
+1. parallax_2 https://ski010919.github.io/2021_uiux_site/06parallax_2
