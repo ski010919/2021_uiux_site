@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body{height: 400vh;background: #210002;}
+.nav{background: #210002;}
+#logo{float: left;}
+#logo a{
+    color: #ffaf00;;text-align: center;
+    font-size: 18px;font-weight: bold;line-height: 14px;
+}
+#game a,#blog a,#review a{
+    color: #ffaf00;text-align: center;
+    font-size: 14px;font-weight: bold;line-height: 14px;
+}
+.nav li{float: right;padding: 10px;}
+.nav li:hover{background: #5a1715;}
+#game{background: #a34300;}
+
+.container{width: 900px;margin: 0 auto;_background: #fff;}
+.sec01{margin-bottom: 50px;}
+.con_txt{margin-bottom: 40px;}
+.con_txt h2{
+    font-size: 28px;font-weight:400;letter-spacing:10px;
+    color: #ffaf00;text-align: center;
+}
+.con_txt span{font-size: 34px;}
+.con_link{display: flex;justify-content:center;}
+.link_left,.link_right{margin: 0 25px;}
+.link{
+    width: 325px;height: 32px;margin-bottom: 40px;
+    background: #ffaf00;padding: 4px 0;
+}
+.link>a{display: flex;justify-content: center;align-items: center;}
+.link img{height: 17px;margin-right: 10px;}
+.link h4{
+    font-size: 18px;letter-spacing: 3px;
+    font-weight: 700;color: #210002;
+}
+.sec02{margin-bottom: 120px;}
