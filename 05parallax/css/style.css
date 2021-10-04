@@ -7,11 +7,11 @@ body{height: 400vh;background: #210002;}
 .nav{background: #210002;}
 #logo{float: left;}
 #logo a{
-    color: #ffaf00;;text-align: center;
+    color: #ffaf00;;text-align: center;display: block;
     font-size: 18px;font-weight: bold;line-height: 14px;
 }
 #game a,#blog a,#review a{
-    color: #ffaf00;text-align: center;
+    color: #ffaf00;text-align: center;display: block;
     font-size: 14px;font-weight: bold;line-height: 14px;
 }
 .nav li{float: right;padding: 10px;transition: 0.3s;}
@@ -91,7 +91,9 @@ body{height: 400vh;background: #210002;}
     font-size: 18px;font-weight:700;letter-spacing: 3px;
     line-height: 25px;color: #210002;text-align: center;
     width: 380px;height: 25px;background: #973700;
+    transition: 0.3s;cursor: pointer;
 }
+.sectxt:hover{background: #ffaf00;}
 .sec06_link img{height: 68px;}
 .ft_txt h3{
     font-size: 26px;font-weight:700;letter-spacing: 4px;
@@ -99,15 +101,21 @@ body{height: 400vh;background: #210002;}
 }
 .ft_copyright p{
     font-size: 15px;font-weight:400;letter-spacing: 2px;
-    color: #973700;text-align: center;line-height: 26px;
+    color: #973700;text-align: center;line-height: 26px;margin-bottom: 50px;
 }
-.ft_link{display: flex;justify-content: center;}
-.ft_link li{margin: 30px;background: #973700;}
-.ft_link li a{display: block;height: 69px;}
-.ft_link li a:nth-child(1){
-    background-image: url(../images/ft_link01.png);
+.ft_link{display: flex;justify-content: center;padding-bottom: 50px;padding-right: 50px;}
+.ft_link li{margin: 30px;background: #973700;transition: 0.3s;}
+.ft_link li a{
+    display: block;height: 69px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-indent: -9999px;
 }
-.ft_link li:nth-child(2){}
+.ft_link li:hover{background: #ffaf00;}
+.ft_link .campo a{
+    background-image: url(../images/ft_link01.png);width: 125px;
+}
+.ft_link .panic a{
+    background-image: url(../images/ft_link02.png);width: 62px;
+}
