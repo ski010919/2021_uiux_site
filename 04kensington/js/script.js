@@ -102,5 +102,5 @@ $(document).ready(function(){
             headerTop.setAttribute("style","top:transparent");
         }
     });
-    
+
 });

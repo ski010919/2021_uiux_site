@@ -671,6 +671,7 @@ input[type="text"]{outline: none;}
     }
     .conBottom img{display: none;margin-bottom: 40px;}
     .conBottom img.on{display: block;}
+    .conBottom.mob{display: none;}
 
     .sub.promo #main_header{
         height: 460px;position: relative;
@@ -1205,6 +1206,7 @@ input[type="text"]{outline: none;}
     }
     .conBottom img{display: none;margin-bottom: 20px;width: 100%;}
     .conBottom img.on{display: block;}
+    .conBottom.pc{display: none;}
     .sub.promo #main_header{
         height: 50vh;position: relative;
         background: url(../images/sub02_bg.png) no-repeat center;
