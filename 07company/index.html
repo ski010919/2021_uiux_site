@@ -13,6 +13,9 @@
             --gradient-color:linear-gradient(90deg,#4455cc,#854fee);
             --box-shadow:0 0 15px rgba(0,0,0,0.5);
         }
+        li{list-style: none;}
+        ul{padding: 0;}
+
         .headerWrap{transition: 0.3s;}
         .headerWrap .nav-item{
             font-size: 1.2em;border-bottom: 4px solid transparent;
@@ -34,6 +37,18 @@
         .service .card{background:var(--bg-color1);border: 0 none;transition: 0.3s;}
         .service .card:hover{box-shadow:var(--box-shadow);transform: scale(1.1);}
         .service .card img{height: 200px;}
+
+        .portfolio{background: var(--bg-color1);}
+        .portfolio .row img{border-radius: 10px;}
+
+        .footer .icon li+li{margin-left: 20px;}
+        .footer .icon a{
+            display: block;width: 40px;height: 40px;
+            border-radius: 20px;background:var(--bg-color1);
+            text-align: center;line-height: 35px;
+        }
+        .footer .icon a:hover{box-shadow:var(--box-shadow);}
+        .footer .icon img{width: 20px;}
 
         @media screen and (max-width:576px){
             .headerWrap .nav-item,.headerWrap .nav-item:hover{border-bottom: 4px solid transparent;}
@@ -102,7 +117,7 @@
     </div>
 
     <div class="service">
-        <div class="container py-5 px-5">
+        <div class="container py-5 px-5 px-md-0">
             <h2 class="text-center mb-5">GALLERY</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
@@ -145,8 +160,89 @@
         </div>
     </div>
 
+    <div class="portfolio">
+        <div class="container py-5">
+            <h2 class="text-center mb-5">PORTFOLIO</h2>
+            <div class="btn-group mb-3">
+                <button class="btn btn-primary active" data-filter="*" id="btn1">All</button>
+                <button class="btn btn-primary" data-filter=".web">WEBSITE</button>
+                <button class="btn btn-primary" data-filter=".illust">ILLUST</button>
+                <button class="btn btn-primary" data-filter=".photo">PHOTOSHOP</button>
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-3 element-item web mb-3">
+                    <a href="assets/servicos/1.jpg" class="popup_link"><img src="assets/servicos/1.jpg" alt="port01" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item illust mb-3">
+                    <a href="assets/servicos/2.jpg" class="popup_link"><img src="assets/servicos/2.jpg" alt="port02" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item photo mb-3">
+                    <a href="assets/servicos/3.jpg" class="popup_link"><img src="assets/servicos/3.jpg" alt="port03" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item web mb-3">
+                    <a href="assets/servicos/4.jpg" class="popup_link"><img src="assets/servicos/4.jpg" alt="port04" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item photo mb-3">
+                    <a href="assets/servicos/5.jpg" class="popup_link"><img src="assets/servicos/5.jpg" alt="port05" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item web mb-3">
+                    <a href="assets/servicos/6.jpg" class="popup_link"><img src="assets/servicos/6.jpg" alt="port06" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item web mb-3">
+                    <a href="assets/servicos/7.jpg" class="popup_link"><img src="assets/servicos/7.jpg" alt="port07" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-lg-3 element-item illust mb-3">
+                    <a href="assets/servicos/8.jpg" class="popup_link"><img src="assets/servicos/8.jpg" alt="port08" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer mb-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-3">CUSTOMER</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item d-flex p-4 bg-danger">
+                    <img src="assets/user.svg" alt="user" class="img-fluid" style="width:150px">
+                    <div class="ml-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, alias.</p>
+                        <p><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left mb-5">
+                    <img src="assets/logo.svg" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <ul class="icon d-flex justify-content-center justify-content-md-end">
+                        <li><a href="#!"><img src="assets/facebook.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="assets/twitter.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="assets/instagram.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="assets/linkedin.svg" alt=""></a></li>
+                        <li><a href="#!"><img src="assets/youtube.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-3" style="border-top:1px solid #ccc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, molestias.
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script>
         $(window).scroll(function(){
@@ -155,6 +251,42 @@
                 $(".headerWrap").addClass("fixed-top")
             }else{
                 $(".headerWrap").removeClass("fixed-top")
+            }
+        });
+
+        const btns = $(".portfolio .btn-group .btn");
+
+        btns.click(function(){
+            let i = $(this).index();
+
+            btns.removeClass("active");
+            btns.eq(i).addClass("active");
+            
+            let selector = btns.eq(i).attr("data-filter");
+            console.log(selector)
+
+            $(".portfolio .row").isotope({
+                filter:selector
+            })
+        })
+
+        window.onload = function(){
+            $(".portfolio .btn-group #btn1").trigger("click")
+        }
+
+        $(".portfolio .row .popup_link").magnificPopup({type:"image"})
+
+        $(".customer .owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+            // nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                768:{
+                    items:2
+                },
             }
         });
     </script>
