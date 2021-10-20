@@ -41,6 +41,8 @@
         .portfolio{background: var(--bg-color1);}
         .portfolio .row img{border-radius: 10px;}
 
+        .customer .item{border-radius: 5px;}
+
         .footer .icon li+li{margin-left: 20px;}
         .footer .icon a{
             display: block;width: 40px;height: 40px;
@@ -202,11 +204,11 @@
         <div class="container py-5">
             <h2 class="text-center mb-3">CUSTOMER</h2>
             <div class="owl-carousel owl-theme">
-                <div class="item d-flex p-4 bg-danger">
-                    <img src="assets/user.svg" alt="user" class="img-fluid" style="width:150px">
-                    <div class="ml-4">
+                <div class="item d-flex p-4 bg-danger text-white flex-row flex-lg-column">
+                    <img src="assets/user.svg" alt="user" class="img-fluid m-auto d-block" style="width:150px">
+                    <div class="ml-4 ml-lg-0">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, alias.</p>
-                        <p><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
+                        <p class="d-lg-none"><img src="assets/quote.svg" alt="" class="ml-auto" style="width:35px"></p>
                     </div>
                 </div>
             </div>
@@ -254,6 +256,8 @@
             }
         });
 
+
+        // isostope
         const btns = $(".portfolio .btn-group .btn");
 
         btns.click(function(){
@@ -269,13 +273,16 @@
                 filter:selector
             })
         })
-
+        // isotope load
         window.onload = function(){
             $(".portfolio .btn-group #btn1").trigger("click")
         }
 
+        // pop up / light box - modal
         $(".portfolio .row .popup_link").magnificPopup({type:"image"})
 
+
+        // owl carousel - slider
         $(".customer .owl-carousel").owlCarousel({
             loop:true,
             margin:10,
@@ -284,8 +291,8 @@
                 0:{
                     items:1
                 },
-                768:{
-                    items:2
+                992:{
+                    items:4
                 },
             }
         });
