@@ -55,34 +55,16 @@
 .advan .title2st{color:var(--secondary-color);}
 .advan .title3st{color:var(--third-color);}
 .advan .img-view{position: relative;height: 400px;}
-.advan .img-view div{
+.advan .img-view img{
     position: absolute;border-radius: 5px;
     box-shadow: 10px 10px 25px rgba(0,0,0,0.4);
 }
-.advan .img-view .img-1st{
-    right: 0;top: 0;width: 400px;
-    background: orange;height: 300px;
-}
-.advan .img-view .img-2st{
-    left: 0;bottom: 0;width: 300px;
-    background: skyblue;height: 200px;
-}
-.advan .img-view .img-3st{
-    left: 0;top: 0;width: 400px;
-    background: orange;height: 300px;
-}
-.advan .img-view .img-4st{
-    right: 0;bottom: 0;width: 300px;
-    background: skyblue;height: 200px;
-}
-.advan .img-view .img-5st{
-    right: 0;top: 0;width: 400px;
-    background: orange;height: 300px;
-}
-.advan .img-view .img-6st{
-    left: 0;bottom: 0;width: 300px;
-    background: skyblue;height: 200px;
-}
+.advan .img-view .img-1st{right: 0;top: 0;width: 400px;}
+.advan .img-view .img-2st{left: 0;bottom: 0;width:300px}
+.advan .img-view .img-3st{left: 0;top: 0;width:400px}
+.advan .img-view .img-4st{right: 10px;bottom: 10px;width:400px}
+.advan .img-view .img-5st{right: 0;top: 0;width:400px}
+.advan .img-view .img-6st{left: 0;bottom: 0;width:300px}
 .advan .bgcolor2{
     position: absolute;width: 100%;height: 800px;
     background-color: #0cbaba;
