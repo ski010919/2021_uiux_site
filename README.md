@@ -8,3 +8,6 @@
 1. 가비아 https://ski010919.github.io/2021_uiux_site/gabia
 1. company 예시 https://ski010919.github.io/2021_uiux_site/company
 1. parallax_2 https://ski010919.github.io/2021_uiux_site/06parallax_2
+1. company_boot01 https://ski010919.github.io/2021_uiux_site/07company
+1. company_boot02 https://ski010919.github.io/2021_uiux_site/07company_1
+1. 청년다방_boot https://ski010919.github.io/2021_uiux_site/08company
