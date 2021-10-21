@@ -18,39 +18,40 @@
   <body>
     <div class="headerWrap">
         <div class="swiper">
-            <ul class="swiper-wrapper">
+            <ul class="swiper-wrapper m-0">
                 <li class="swiper-slide">
-                    <img src="images/slide_bg01.png" alt="">
+                    <img src="images/slide_bg01.png" alt="" class="img-fluid">
                     <div class="slide01txt">
-                        <img src="images/mv2_title.png" alt="">
+                        <img src="images/mv2_title.png" alt="" class="img-fluid">
                     </div>
                 </li>
                 <li class="swiper-slide">
-                    <img src="images/slide_bg02.png" alt="">
+                    <img src="images/slide_bg02.png" alt="" class="img-fluid">
     
                     <div class="slide01txt">
-                        <img src="images/mv2_title.png" alt="">
+                        <img src="images/mv2_title.png" alt="" class="img-fluid">
                     </div>
                 </li>
                 <li class="swiper-slide">
-                    <img src="images/slide_bg03.png" alt="">
+                    <img src="images/slide_bg03.png" alt="" class="img-fluid">
     
                     <div class="slide01txt">
-                        <img src="images/mv2_title.png" alt="">
+                        <img src="images/mv2_title.png" alt="" class="img-fluid">
                     </div>
                 </li>
                 <li class="swiper-slide">
-                    <img src="images/slide_bg04.png" alt="">
+                    <img src="images/slide_bg04.png" alt="" class="img-fluid">
     
                     <div class="slide01txt">
-                        <img src="images/mv2_title.png" alt="">
+                        <img src="images/mv2_title.png" alt="" class="img-fluid">
                     </div>
                 </li>
             </ul>
+            <div class="slice"></div>
         </div>
-        <div class="container">
+        <div class="container px-md-0">
             <nav class="navbar navbar-expand-md navbar-dark py10">
-                <a class="navbar-brand" href="#!"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+                <a class="navbar-brand" href="#!"><img src="images/logo.png" alt="logo" class="img-fluid logo"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -74,122 +75,306 @@
             </nav>
         </div>
     </div>
-    <div class="visual">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 visu_left p-0">
-                    <div class="visu_txt">
-                        <img src="images/menu_title.png" alt="">
-                        <ul class="visu_review">
-                            <li class="d-flex mb30">
-                                <img src="images/lux_li01.png" alt="" class="mr10">
-                                <p class="">
-                                    떡볶이에 어묵을 넣고<br>오짱을 넣었는데
-                                    맛이 싱겁네요...<br> 아-! 그대 생각을 빠트렸군
-                                </p>
-                            </li>
-                            <li class="d-flex">
-                                <img src="images/lux_li02.png" alt="" class="mr10">
-                                <p class="pt10">
-                                    한국인은 밥 힘 아입니꺼!<br>밥먹고 힙냅시더
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-8 visu_slide visu_right p-0 pt-4">
-                    <div class="bar"></div>
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/menu_slide01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/menu_slide02.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/menu_slide03.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/menu_slide04.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/menu_slide05.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/menu_slide06.png" alt=""></div>
+    <section>
+        <div class="visual">
+            <div class="container">
+                <h4 class="text-center d-lg-none">NEW MENU</h4>
+                <div class="row">
+                    <div class="col-lg-4 visu_left p-4 p-lg-5 d-none d-lg-block">
+                        <div class="visu_txt d-flex d-lg-block">
+                            <img src="images/menu_title.png" alt="" class="img-fluid mb-lg-5">
+                            <ul class="visu_review d-none d-lg-block">
+                                <li class="d-flex mb-3">
+                                    <img src="images/lux_li01.png" alt="" class="mr10 img-fluid">
+                                    <p>
+                                        떡볶이에 어묵을 넣고<br>오짱을 넣었는데
+                                        맛이 싱겁네요...<br> 아-! 그대 생각을 빠트렸군
+                                    </p>
+                                </li>
+                                <li class="d-flex">
+                                    <img src="images/lux_li02.png" alt="" class="mr10 img-fluid">
+                                    <p>
+                                        한국인은 밥 힘 아입니꺼!<br>밥먹고 힙냅시더
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="visu_btn d-flex">
-                        <div class="swiper-prev"><img src="images/menu_prev.png" alt=""></div>
-                        <div class="swiper-next"><img src="images/menu_next.png" alt=""></div>
+                    <div class="col-lg-8 visu_slide visu_right py-4">
+                        <div class="bar d-none d-lg-block"></div>
+                        <div class="swiper mb-lg-5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="images/menu_slide01.png" alt="" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="images/menu_slide02.png" alt="" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="images/menu_slide03.png" alt="" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="images/menu_slide04.png" alt="" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="images/menu_slide05.png" alt="" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="images/menu_slide06.png" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                        <div class="visu_btn d-none d-lg-block clearfix">
+                            <div class="swiper-prev"><img src="images/menu_prev.png" alt="" class="img-fluid"></div>
+                            <div class="swiper-next"><img src="images/menu_next.png" alt="" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sns_review d-none d-lg-block">
+            <div class="container sns-num px80 mb-5">
+                <div class="row bg-white">
+                    <div class="col-4 d-flex justify-content-center p-0">
+                        <img src="images/sns_blog.png" alt="" class="mr-3">
+                        <div class="sns_txt ml-3">
+                            <p>
+                                #청년다방<br><span>123,030</span>건
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="images/sns_insta.png" alt="" class="mr-3">
+                        <div class="sns_txt ml-3">
+                            <p>
+                                #youngdabang_no.1<br><span>7,497</span>Follow
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center p-0">
+                        <img src="images/sns_fb.png" alt="" class="mr-3">
+                        <div class="sns_txt ml-3">
+                            <p>
+                                @youngdabang.kr<br><span>98,000</span>Follow
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container sns-slide">
+                <div class="row Carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/review_sns01.png" alt="" class="img-fluid">
+                            <div class="card-body p-3">
+                                <h4 class="card-title">
+                                    알바생이 본 손님의 신박한 포장법.jpg #손님_존경합니다
+                                </h4>
+                                <p class="card-txt text-right m-0">facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/review_sns02.png" alt="" class="img-fluid">
+                            <div class="card-body p-3">
+                                <h4 class="card-title">
+                                    알바생이 본 최고의 매너남.jpg #떡볶이맵다고 #오뎅국물에_..
+                                </h4>
+                                <p class="card-txt text-right m-0">facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/review_sns03.png" alt="" class="img-fluid">
+                            <div class="card-body p-3">
+                                <h4 class="card-title">
+                                    청년다방 먹을때 나뉜다는 유형.jpg
+                                </h4>
+                                <p class="card-txt text-right m-0">facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/review_sns04.png" alt="" class="img-fluid">
+                            <div class="card-body p-3">
+                                <h4 class="card-title">
+                                    나 오늘 주머니에 떡볶이 없어서 진짜 식겁했잖아 ㅠㅠㅠ
+                                </h4>
+                                <p class="card-txt text-right m-0">facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="notice px-3 px-md-0 py-5">
+        <div class="container px-0 py-5">
+            <h2 class="mb-2 bold">Notice</h2>
+            <p class="mb-4">청년다방은 고객님들께 항상 좋은 소식만을 전할 수 있도록 최선을 다하겠습니다.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 px-3">
+                    <div class="notice_card p-4 mb-3 mb-lg-0">
+                        <div class="notice_num text-white text-center mb-3">01</div>
+                        <div class="notice_txt">
+                            <h4 class="mb10">2019 매일경제 100대...</h4>
+                            <p class="m-0">
+                                매년 매일경제에서 주관하는
+                                100대 프랜차이즈 인증 <span class="d-lg-none">수여식에
+                                청년다방이 선정되었습니다!</span>...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 px-3">
+                    <div class="notice_card p-4 mb-3 mb-lg-0">
+                        <div class="notice_num text-white text-center mb-3">02</div>
+                        <div class="notice_txt">
+                            <h4 class="mb10">청년다방 2018년 10월...</h4>
+                            <p class="m-0">
+                                한국인은 밥 힘 아입니꺼! 밥먹고 힘냅시더
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 px-3">
+                    <div class="notice_card p-4 mb-3 mb-lg-0">
+                        <div class="notice_num text-white text-center mb-3">03</div>
+                        <div class="notice_txt">
+                            <h4 class="mb10">허위몰카 이슈에 대한...</h4>
+                            <p class="m-0">
+                                안녕하세요 청년다방을 운영하고 있는 <span class="d-lg-none">(주)한경기획입니다. 이번 사건을 계기로</span>...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 px-3">
+                    <div class="notice_card p-4 mb-3 mb-lg-0">
+                        <div class="notice_num text-white text-center mb-3">04</div>
+                        <div class="notice_txt">
+                            <h4 class="mb10">2018년 7월30일_청년...</h4>
+                            <p class="m-0">
+                                환경보존에 앞선 유쾌한 머그컵!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="sns_review">
-        <div class="container px80">
-            <div class="sns-num row bg-white">
-                <div class="col-4 d-flex justify-content-center p-0">
-                    <img src="images/sns_blog.png" alt="" class="mr-3">
-                    <div class="sns_txt ml-3">
-                        <p>
-                            #청년다방<br><span>123,030</span>건
-                        </p>
+    <div class="banner pb165 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-3 py-5 banner-img">
+                    <img src="images/world_ttl.png" alt="" class="img-fluid py-4">
+                    <p class="text-center text-white d-none d-lg-block">
+                        한류 열풍으로 다양한 한국 음식 문화가 알려지며<br>
+                        <span>떡볶이 또한 K-Food의 한 축으로 세계인의 뜨거운 관심을 받고 있습니다.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu pt25">
+        <div class="container">
+            <h2 class="mb-2 bold">Menu</h2>
+            <p class="mb-5">청년다방 활용백서</p>
+            <div class="row">
+                <div class="col-md-4 col-lg-5 menu1 mb-5 mb-md-0">
+                    <div class="card">
+                        <div class="menu-img"><img src="images/menu01.png" alt="" class="img-fluid"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">통큰오짱떡볶이<span>즉석떡볶이</span></h4>
+                            <p class="card-txt">
+                                쫄깃하고 탱탱한 떡과 바삭한 오징어 튀김에<br>매콤달콤한 양념이 어우러진 신개념 떡볶이
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                    <img src="images/sns_insta.png" alt="" class="mr-3">
-                    <div class="sns_txt ml-3">
-                        <p>
-                            #youngdabang_no.1<br><span>7,497</span>Follow
-                        </p>
+                <div class="col-md-4 col-lg-7 menu2 mb-5 mb-md-0">
+                    <div class="card">
+                        <div class="menu-img"><img src="images/menu02.png" alt="" class="img-fluid"></div>
+                        <div class="card-body px30 py-4">
+                            <h4 class="card-title mb20">차돌떡볶이<span>즉석떡볶이</span></h4>
+                            <p class="card-txt">
+                                쫄깃하고 탱탱한 떡과 불향을 가득담은 차돌
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex justify-content-center p-0">
-                    <img src="images/sns_fb.png" alt="" class="mr-3">
-                    <div class="sns_txt ml-3">
-                        <p>
-                            @youngdabang.kr<br><span>98,000</span>Follow
-                        </p>
+                <div class="col-md-4 col-lg-5 menu3 mb-5 mb-md-0">
+                    <div class="card">
+                        <div class="menu-img"><img src="images/menu03.png" alt="" class="img-fluid"></div>
+                        <div class="card-body">
+                            <h4 class="card-title">통닭떡볶이<span>즉석떡볶이</span></h4>
+                            <p class="card-txt">
+                                청년다방 떡볶이에 둥지를 튼 수비드 통닭!<br>청년소스에 놀랍게도 융화되는 맛!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container sns-slide">
-            <div class="row Carousel owl-carousel owl-theme">
-                <div class="item">
-                    <div class="card">
-                        <img src="images/review01.jpg" alt="" class="img-fluid">
-                        <div class="card-body p-3">
-                            <h4 class="card-title">
-                                알바생이 본 손님의 신박한 포장법.jpg #손님_존경합니다
-                            </h4>
-                            <p class="card-txt text-right">facebook</p>
+        <img src="images/store_tdec.png" alt="" class="img-fluid d-none d-lg-block">
+    </div>
+    <div class="store px-3 px-md-0">
+        <div class="container py-5">
+            <h2 class="text-white text-center py-4">가맹문의</h2>
+            <div class="row">
+                <div class="col-md-4 px-1 mb-3 mb-md-0">
+                    <form action="#!" method="post">
+                        <input type="text" id="name" placeholder="성함" class="nameInp text-white">
+                    </form>
+                </div>
+                <div class="col-md-4 px-1 mb-3 mb-md-0">
+                    <form action="#!" method="post">
+                        <input type="text" id="phone" placeholder="연락처" class="numInp text-white">
+                    </form>
+                </div>
+                <div class="col-md-4 px-1 mb-3 mb-md-0">
+                    <form action="#!" method="post">
+                        <input type="text" id="location" placeholder="가맹희망지역" class="locaInp text-white">
+                    </form>
+                </div>
+            </div>
+            <div class="row py-5 align-items-center">
+                <div class="col-md-4 px-0 mb-5 mb-md-0">
+                    <a href="#!" class="btn btn-danger text-white py-3">가맹문의하기</a>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                    <h4 class="text-white m-0">가맹문의 <span>1666·4693</span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="slice02"></div>
+    </div>
+    <div class="open">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 open-title">
+                    <h2 class="mb-2 bold py-2">Open Store</h2>
+                    <p class="mb-2 py-4">
+                        더 가까운곳에서<br> 
+                        고객님이 청년다방을<br> 
+                        만나실 수 있도록<br> 
+                        항상 최선을 다하겠습니다.<br> 
+                    </p>
+                    <a href="#!" class="btn btn-primary text-white px-4">찾아보기</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card d-flex flex-row">
+                        <div class="card-body py-5">
+                            <div class="card-title">
+                                <h4>미아사거리점</h4>
+                                <p class="py-3">서울 강북구 미아동 860-32</p>
+                            </div>
+                            <p class="card-txt m-0">2021.10.14 <span>open</span></p>
                         </div>
+                        <div class="open-img"><img src="images/openstore.png" alt="" class="img-fluid"></div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="images/review02.jpg" alt="">
-                        <div class="card-body p-3">
-                            <h4 class="card-title">
-                                알바생이 본 최고의 매너남.jpg #떡볶이맵다고 #오뎅국물에_..
-                            </h4>
-                            <p class="card-txt text-right">facebook</p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card d-flex flex-row">
+                        <div class="card-body py-5">
+                            <div class="card-title m-0">
+                                <h4>김포걸포북변점</h4>
+                                <p class="py-3">경기 김포시 걸포동 335-1</p>
+                            </div>
+                            <p class="card-txt m-0">2021.10.17 <span>open</span></p>
                         </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="images/review03.jpg" alt="">
-                        <div class="card-body p-3">
-                            <h4 class="card-title">
-                                청년다방 먹을때 나뉜다는 유형.jpg
-                            </h4>
-                            <p class="card-txt text-right">facebook</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="images/review04.jpg" alt="">
-                        <div class="card-body p-3">
-                            <h4 class="card-title">
-                                나 오늘 주머니에 떡볶이 없어서 진짜 식겁했잖아 ㅠㅠㅠ
-                            </h4>
-                            <p class="card-txt text-right">facebook</p>
-                        </div>
+                        <div class="open-img"><img src="images/openstore.png" alt="" class="img-fluid"></div>
                     </div>
                 </div>
             </div>
@@ -203,29 +388,43 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <script>
-        $(function(){
-            const swiper01 = new Swiper('.headerWrap .swiper', {
-                loop: true,
-                autoplay:{delay:3000}
-            });
-            const swiper02 = new Swiper('.visu_slide .swiper', {
-                loop: true,
-                slidesPerView: 2,
-                spaceBetween:25,
-                centeredSlides:true,
-                autoplay:{delay:3000},
-                navigation: {
-                    nextEl: '.swiper-next',
-                    prevEl: '.swiper-prev'
-                }
-            });
-            $(".sns-slide .owl-carousel").owlCarousel({
-                loop:true,
-                margin:0,
-                nav:false,
-                dots:false,
-            })
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop();
+            if(scrollY > 100){
+                $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+            }else{
+                $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+            }
+
         });
+        const swiper01 = new Swiper('.headerWrap .swiper', {
+            loop: true,
+            autoplay:{delay:3000}
+        });
+        const swiper02 = new Swiper('.visu_slide .swiper', {
+            loop: true,
+            slidesPerView: 5,
+            spaceBetween:10,
+            centeredSlides:true,
+            autoplay:{delay:3000},
+            navigation: {
+                nextEl: '.swiper-next',
+                prevEl: '.swiper-prev'
+            },
+            breakpoints: {
+                992: {
+                slidesPerView: 2,
+                spaceBetween: 25
+                },
+            }
+        });
+        $(".sns-slide .owl-carousel").owlCarousel({
+            loop:true,
+            items:4,
+            margin:20,
+            nav:false,
+            dots:false,
+        })
     </script>
   </body>
 </html>
