@@ -399,6 +399,48 @@
                 prevEl: '.swiper-prev',
             },
         });
+
+        $(window).scroll(function(){
+            let scrollY = $(window).scrollTop(); // window.pageYOffset
+            console.log(scrollY)
+
+            if(scrollY > 300){
+                $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+            }else{
+                $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+            }
+        });
+
+        let winWidth = $(window).width();
+        winSize();
+    
+        $(window).resize(function(){
+            winWidth = $(window).width();
+            console.log(winWidth);
+            winSize();
+        })
+
+        function winSize(){
+            let onView = true;
+            if(winWidth < 768){
+
+                $(".navbar-toggle").click(function(){
+                    // $(".navbar").toggleClass("onView")
+                    // toggleClass > toggle에 onview있으면 넣고 없으면 빼줌
+
+                    if(onView == true){
+                        $(".navbar").addClass("onView");
+                        onView = false;
+                    }else{
+                        $(".navbar").removeClass("onView");
+                        onView = true;
+                    }
+                });
+            }else{
+                $(".navbar").removeClass("onView");
+                $(".navbar-collapse").removeClass("show")
+            }
+        }
     </script>
   </body>
 </html>

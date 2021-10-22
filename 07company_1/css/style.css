@@ -5,7 +5,7 @@
     --secondary-color:#ff5483;
     --third-color:#a951ed;
 }
-
+.navbar.onView{background: #000;}
 #headerWrap .bgcolor{
     position: absolute;width: 100%;height: 600px;
     background-color: #0cbaba;
