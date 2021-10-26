@@ -65,12 +65,13 @@ body{
 .dep-store{left: 35px;}
 .dep-customer{left: 35px;}
 .subwrap{
-    width: 100%;background: #fff;display: block;
+    width: 100%;background:var(--primary-color1);display: block;
     height: 200px;border-top: 1px solid #000;
     position: absolute;top: -200px;transition: 0.3s;
+    _box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 .headerWrap:hover .dep-wrap{display: block;top: 101px;}
-.headerWrap:hover{background: #fff;}
+.headerWrap:hover{background:var(--primary-color1);}
 .headerWrap:hover .subwrap{top: 100px;}
 
 .swiper{width: 100%;}
@@ -315,4 +316,7 @@ input[type="text"]{outline: none;}
     .menu-img img{width: 100%;}
     .footer li{font-size: 14px;}
     .footer .btn-ft{font-size: 14px;display: block;}
+
+    .subwrap,.dep2ul{display: none;}
+    .headerWrap:hover{background:transparent;}
 }
