@@ -49,28 +49,30 @@ body{
 
 .headerWrap{position: absolute;width: 100%;z-index: 2;transition: 0.3s;}
 .navbar{transition:0.3s}
-.navbar.onView{background: #000;}
-/* .dep1ul{position: relative;} */
+.navbar.onView{background:var(--primary-color1);}
+.dep1ul .nav-item{position: relative;}
 .dep2a{
-    text-align: center;display: block;
-    font-size: 16px;color: #666;
+    text-align: center;display: block;transition: 0.3s;
+    font-size: 16px;color: #666;letter-spacing:-1px;
 }
+.dep2a:hover{color: #fff;}
 .dep-wrap{
-    display:none;width: 100%;position: absolute;top:-200px;
-    padding-top: 10px;transition: 2s;z-index: 2;height: 100%;
+    display:none;width: 100%;position: relative;
+    padding-top: 10px;height: 100%;
 }
-.dep2ul{position: absolute;}
-.dep-brand{left: -20px;}
-.dep-menu{left: 34px;}
+.dep2ul{position: absolute;top:-220px;transition: 0.3s;z-index: 2;left: 0;width: 100%;}
+/* .dep-brand{left: -20px;} */
+/* .dep-menu{left: 34px;}
 .dep-store{left: 35px;}
-.dep-customer{left: 35px;}
+.dep-customer{left: 35px;} */
 .subwrap{
     width: 100%;background:var(--primary-color1);display: block;
-    height: 200px;border-top: 1px solid #000;
-    position: absolute;top: -200px;transition: 0.3s;
+    height: 220px;border-top: 1px solid #000;
+    position: absolute;top: -220px;transition: 0.3s;
     _box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
-.headerWrap:hover .dep-wrap{display: block;top: 101px;}
+.headerWrap:hover .dep-wrap{display: block;_top: 101px;}
+.headerWrap:hover .dep2ul{top: 90px;}
 .headerWrap:hover{background:var(--primary-color1);}
 .headerWrap:hover .subwrap{top: 100px;}
 

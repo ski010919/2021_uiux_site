@@ -18,8 +18,8 @@
   </head>
   <body>
     <div class="headerWrap">
-        <div class="container px-md-0">
-            <nav class="navbar navbar-expand-md navbar-dark py10">
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-md navbar-dark py10 px-3 px-lg-0">
                 <a class="navbar-brand" href="#!"><img src="images/logo.png" alt="logo" class="img-fluid logo"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,57 +29,49 @@
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0 dep1ul">
                         <li class="nav-item fz20 px50">
                             <a class="nav-link dep1 text-white mx-3" href="#!">브랜드</a>
-                            <div class="dep-wrap">
-                                <ul class="dep2ul dep-brand">
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">청년다방</a>
-                                    </li>
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">지표가 되다</a>
-                                    </li>
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">한류 열풍에 동참하다</a>
-                                    </li>
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">인테리어 갤러리</a>
-                                    </li>
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">BI</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="dep2ul dep-brand">
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">청년다방</a>
+                                </li>
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">지표가 되다</a>
+                                </li>
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">한류 열풍에 동참하다</a>
+                                </li>
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">인테리어 갤러리</a>
+                                </li>
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">BI</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item fz20 px50">
                             <a class="nav-link dep1 text-white mx-3" href="#!">메뉴안내</a>
-                            <div class="dep-wrap">
-                                <ul class="dep2ul dep-menu">
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">메뉴안내</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="dep2ul dep-menu">
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">메뉴안내</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item fz20 px50">
                             <a class="nav-link dep1 text-white mx-3" href="#!">매장안내</a>
-                            <div class="dep-wrap">
-                                <ul class="dep2ul dep-store">
-                                    <li class="dep2li">
-                                        <a href="#!" class="dep2a mb15">매장안내</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="dep2ul dep-store">
+                                <li class="dep2li">
+                                    <a href="#!" class="dep2a mb15">매장안내</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item fz20 px50">
                             <a class="nav-link dep1 text-white mx-3" href="#!">고객센터</a>
-                            <div class="dep-wrap">
-                                <ul class="dep2ul dep-customer">
-                                    <li class="dep2li"><a href="#!" class="dep2a mb15">공지사항</a></li>
-                                    <li class="dep2li"><a href="#!" class="dep2a mb15">보도자료</a></li>
-                                    <li class="dep2li"><a href="#!" class="dep2a mb15">SNS</a></li>
-                                    <li class="dep2li"><a href="#!" class="dep2a mb15">이벤트</a></li>
-                                    <li class="dep2li"><a href="#!" class="dep2a mb15">고객센터</a></li>
-                                </ul>
-                            </div>
+                            <ul class="dep2ul dep-customer">
+                                <li class="dep2li"><a href="#!" class="dep2a mb15">공지사항</a></li>
+                                <li class="dep2li"><a href="#!" class="dep2a mb15">보도자료</a></li>
+                                <li class="dep2li"><a href="#!" class="dep2a mb15">SNS</a></li>
+                                <li class="dep2li"><a href="#!" class="dep2a mb15">이벤트</a></li>
+                                <li class="dep2li"><a href="#!" class="dep2a mb15">고객센터</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -553,20 +545,20 @@
         function winSize(){
             let onView = true;
             if(winWidth < 768){
-
-                $(".navbar-toggle").click(function(){
-
+                
+                $(".navbar-toggler").click(function(){
                     if(onView == true){
-                        $(".navbar").addClass("onView");
+                        $(".navbar").addClass("onView")
                         onView = false;
                     }else{
                         $(".navbar").removeClass("onView");
                         onView = true;
                     }
+                    
                 });
             }else{
                 $(".navbar").removeClass("onView");
-                $(".navbar-collapse").removeClass("show")
+                $(".navbar-collapse").removeClass("show");
             }
         }
     </script>
