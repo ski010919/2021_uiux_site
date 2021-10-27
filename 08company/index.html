@@ -27,51 +27,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0 dep1ul">
-                        <li class="nav-item fz20 px50 dropdown">
-                            <a class="nav-link dep1 text-white mx-3" href="brand01.html">브랜드</a>
-                            <ul class="dep2ul dep-brand dropdown-menu">
-                                <li class="dep2li dropdown-item">
-                                    <a href="brand01.html" class="dep2a mb15">청년다방</a>
-                                </li>
-                                <li class="dep2li dropdown-item">
-                                    <a href="brand02.html" class="dep2a mb15">지표가 되다</a>
-                                </li>
-                                <li class="dep2li dropdown-item">
-                                    <a href="brand03.html" class="dep2a mb15">한류 열풍에 동참하다</a>
-                                </li>
-                                <li class="dep2li dropdown-item">
-                                    <a href="brand04.html" class="dep2a mb15">인테리어 갤러리</a>
-                                </li>
-                                <li class="dep2li dropdown-item">
-                                    <a href="brand05.html" class="dep2a mb15">BI</a>
-                                </li>
-                            </ul>
+                        <li class="nav-item dropdown fz20 px50">
+                            <a class="nav-link dropdown-toggle dep1 text-white mx-3" href="brand01.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">브랜드</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="brand01.html">청년다방</a>
+                                <a class="dropdown-item" href="brand02.html">지표가 되다</a>
+                                <a class="dropdown-item" href="brand03.html">한류 열풍에 동참하다</a>
+                                <a class="dropdown-item" href="brand04.html">인테리어 갤러리</a>
+                                <a class="dropdown-item" href="brand05.html">BI</a>
+                            </div>
                         </li>
                         <li class="nav-item fz20 px50 dropdown">
-                            <a class="nav-link dep1 text-white mx-3" href="menu01.html">메뉴안내</a>
-                            <ul class="dep2ul dep-menu dropdown-menu">
-                                <li class="dep2li dropdown-item">
-                                    <a href="menu01.html" class="dep2a mb15">메뉴안내</a>
-                                </li>
-                            </ul>
+                            <a class="nav-link dropdown-toggle dep1 text-white mx-3" href="brand01.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">메뉴안내</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="menu01.html">메뉴안내</a>
+                            </div>
                         </li>
                         <li class="nav-item fz20 px50 dropdown">
-                            <a class="nav-link dep1 text-white mx-3" href="store01.html">매장안내</a>
-                            <ul class="dep2ul dep-store dropdown-menu">
-                                <li class="dep2li dropdown-item">
-                                    <a href="store01.html" class="dep2a mb15">매장안내</a>
-                                </li>
-                            </ul>
+                            <a class="nav-link dropdown-toggle dep1 text-white mx-3" href="brand01.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매장안내</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="store01.html">매장안내</a>
+                            </div>
                         </li>
                         <li class="nav-item fz20 px50 dropdown">
-                            <a class="nav-link dep1 text-white mx-3" href="customer01.html">고객센터</a>
-                            <ul class="dep2ul dep-customer dropdown-menu">
-                                <li class="dep2li dropdown-item"><a href="customer01.html" class="dep2a mb15">공지사항</a></li>
-                                <li class="dep2li dropdown-item"><a href="customer02.html" class="dep2a mb15">보도자료</a></li>
-                                <li class="dep2li dropdown-item"><a href="customer03.html" class="dep2a mb15">SNS</a></li>
-                                <li class="dep2li dropdown-item"><a href="customer04.html" class="dep2a mb15">이벤트</a></li>
-                                <li class="dep2li dropdown-item"><a href="customer05.html" class="dep2a mb15">고객센터</a></li>
-                            </ul>
+                            <a class="nav-link dropdown-toggle dep1 text-white mx-3" href="brand01.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">고객센터</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="customer01.html">공지사항</a>
+                                <a class="dropdown-item" href="customer02.html">보도자료</a>
+                                <a class="dropdown-item" href="customer03.html">SNS</a>
+                                <a class="dropdown-item" href="customer04.html">이벤트</a>
+                                <a class="dropdown-item" href="customer05.html">고객센터</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -136,7 +122,7 @@
                         </div>
                     </div>
                     <div class="col-lg-8 visu_slide visu_right py-4">
-                        <div class="bar d-none d-lg-block"></div>
+                        <!-- <div class="bar d-none d-lg-block"></div> -->
                         <div class="swiper mb-lg-5">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="images/menu_slide01.png" alt="" class="img-fluid"></div>
@@ -498,9 +484,9 @@
         $(window).scroll(function(){
             let scrollY = $(window).scrollTop();
             if(scrollY > 100){
-                $(".navbar").addClass("fixed-top bg-dark px-lg-5")
+                $(".navbar").addClass("fixed-top primary px-lg-5 b-shadow")
             }else{
-                $(".navbar").removeClass("fixed-top bg-dark px-lg-5")
+                $(".navbar").removeClass("fixed-top primary px-lg-5 b-shadow")
             }
 
         });
@@ -510,7 +496,7 @@
         });
         const swiper02 = new Swiper('.visu_slide .swiper', {
             loop: true,
-            slidesPerView: 5,
+            slidesPerView: 3,
             spaceBetween:10,
             centeredSlides:true,
             autoplay:{delay:3000},
