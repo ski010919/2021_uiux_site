@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#fullpage").fullpage({
+                menu:".navbar-nav",
+                anchors:["m1st","m2st","m3st","m4st"],
+                navigation:true,
+                navigationPosition: 'fp-right',
+                navigationTooltips: ['First', 'Second', 'Third','fourth'],
+                responsiveWidth: 768
+            })
+        })
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light mt-4 fixed-top px-3 px-lg-5">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-3 ml-lg-5">
+                    <a class="nav-link menu" href="#">프로그램 소개</a>
+                </li>
+                <li class="nav-item ml-3 ml-lg-5">
+                    <a class="nav-link menu" href="#">세미나 알림 신청하기</a>
+                </li>
+                <li class="nav-item ml-3 ml-lg-5">
+                    <a class="nav-link menu" href="#">이전 세미나 영상</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="fullpage">
+        <div class="section main">
+            <div class="container">
+                <div class="maintxt d-flex justify-content-center flex-column align-items-center">
+                    <img src="images/visual.png" alt="" class="img-fluid">
+                    <h2 class="text-white mb-5">앞으로의 사무환경을 위한 실험</h2>
+                    <div class="main_date d-flex text-white text-center pt-5">
+                        <p class="mr-3 mr-md-5">
+                            세미나 알림 신청<br><span>10.25(월) - 11.7(일)</span>
+                        </p>
+                        <p class="ml-3 ml-md-5">
+                            세미나 기간<br><span>11.8(월) - 11.12(금)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bt_scroll">
+                    <a href=""><img src="images/bt_arrow.png" alt="" class="img-fluid" style="width: 50px;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="section sec01 clearfix">
+            <div class="sec01_lf">
+                <div class="sec01_lf_txt">
+                    <div class="lf_title mb20">
+                        <img src="images/sec1_logo.png" alt="" class="img-fluid mb20">
+                    </div>
+                    <div class="lf_copy text-white">
+                        <p class="mb20">
+                            이번 세미나에서는 구성원들이<br>
+                            디지털 환경을 기반으로<br>
+                            시공간의 장벽 없이 효율적으로 일할 수 있도록.<br>
+                            최적의 오피스를 위한 고민과<br>
+                            실험에 대해 이야기합니다.
+                        </p>
+                        <p class="mb20">
+                            세미나 영상은 11월 8일(월) 전체 공개됩니다.<br>
+                            알림 신청을 해주시면,<br>
+                            세미나 오픈 시 문자와 메일로 알려 드릴게요.
+                        </p>
+                        <p>
+                            참여해 주셔서 감사합니다!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec01_rt">
+                <div class="sec01_wrap">
+                    <div class="slide01_title rt_up text-center">
+                        <h2 class="text-white mb-4">프로그램 소개</h2>
+                        <h4>
+                            2021. 11. 8(월) 오전 9시 <span class="text-white">공개</span>
+                        </h4>
+                    </div>
+                    <div class="swiper swiper01">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rt_md">
+                                    <div class="rt_index text-white mb-5">특별인터뷰</div>
+                                    <div class="rt_txt mb-5">
+                                        <h2 class="mb20">오피스의 미래</h2>
+                                        <h4>
+                                            홍익대 건축도시대학 | <span>유현준 교수</span>
+                                        </h4>
+                                    </div>
+                                    <div class="rt_hash pt-3">
+                                        <p class="mb10">#공간의미래</p>
+                                        <p class="mb10">#일하는공간의본질</p>
+                                        <p>#유현준건축가</p>
+                                    </div>
+                                </div>
+                                <div class="rt_bt text-center">
+                                    <p>
+                                        급격한 변화 속에서 일하는 공간을<br>
+                                        바라보는 관점은 어떻게 달라져야 할까?<br>
+                                        일하는 공간의 본질에 대한 건축적인 통찰을 통해<br>
+                                        미래 오피스를 예측하고 계획해 보자.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec02"></div>
+        <div class="section sec03"></div>
+    </div>
+</body>
+</html>

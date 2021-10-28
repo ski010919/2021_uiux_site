@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+html,body{height: 100%;}
+body{font-family: 'Noto Sans KR', sans-serif;color: #262626;}
+
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+
+.navbar .navbar-nav .menu{
+    font-weight: 500;font-size: 16px;color: #262626;
+}
+.main{
+    background: url(../images/main_bg.png) no-repeat center;
+    background-size: cover;height: 100vh;
+    position: relative;
+}
+.main .container{
+    height: 100vh;
+    display: flex;justify-content: center;align-items: center;
+}
+.maintxt h2{font-weight: 500;font-size: 36px;}
+.maintxt p{font-weight: 700;font-size: 18px;}
+.maintxt span{font-size: 24px;}
+.bt_scroll{
+    position: absolute;bottom: 50px;left: 50%;
+    transform: translateX(-50%);
+    animation: bt_arrow 0.7s infinite alternate;
+}
+@keyframes bt_arrow{
+    100%{bottom: 30px;}
+}
+
+.sec01{background: pink;}
+.sec01 .sec01_lf{
+    background:url(../images/sec01_lf_bg.png) no-repeat center;
+    background-size: cover;
+    height: 100%;width: 50%;
+    float: left;position: relative;
+}
+.sec01 .sec01_lf .sec01_lf_txt{
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec01 .sec01_rt{
+    background:url(../images/sec01_rt_bg.png) no-repeat center;
+    background-size: cover;
+    height: 100%;width: 50%;
+    float: left;
+}
+.sec01 .lf_copy p{font-size: 20px;}
+
+.sec01_rt{position: relative;}
+.sec01_rt .sec01_wrap{
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.rt_up h2{font-weight: 700;font-size: 40px;position: relative;}
+.rt_up h2:after{
+    content:"";display: block;
+    width: 15px;height: 15px;
+    background: #0AF783;border-radius: 8px;
+    position: absolute;right: -10px;bottom: 0;
+}
+.rt_up h4{font-weight: 500;font-size: 24px;color: #6DE6E4;}
+.rt_md{
+    border-radius: 30px;padding: 30px;
+    background:#fff url(../images/sec1_slide_img01.png) no-repeat;
+}
+.rt_index{
+    display: inline-block;border-radius: 60px;
+    font-weight: 500;font-size: 14px;padding: 6px 18px;
+    background: linear-gradient(270deg, #D084FF 0.9%, #2E40FA 109.58%);
+}
+.rt_md .rt_txt h2{font-weight: 500;font-size: 24px;}
+.rt_md .rt_txt h4{font-weight: 500;font-size: 18px;}
+.rt_md .rt_txt span{font-weight: 700;}
+.rt_hash p{
+    display: inline-block;
+    background: #EEEEEE;border-radius: 30px;
+    padding: 8px 12px;font-weight: 500;
+    font-size: 12px;color: #704BE3;
+}
+
+@media screen and (max-width:757px){
+    .maintxt h2{font-size: 4vw;}
+    .maintxt p{font-weight: 700;font-size: 16px;}
+    .maintxt span{font-size: 18px;}
+}

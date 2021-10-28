@@ -11,3 +11,4 @@
 1. company_boot01 https://ski010919.github.io/2021_uiux_site/07company
 1. company_boot02 https://ski010919.github.io/2021_uiux_site/07company_1
 1. 청년다방_boot https://ski010919.github.io/2021_uiux_site/08company
+1. 세미나_fullpage https://ski010919.github.io/2021_uiux_site/09fullpage
