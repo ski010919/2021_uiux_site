@@ -27,7 +27,15 @@
                 navigationPosition: 'fp-right',
                 navigationTooltips: ['First', 'Second', 'Third','fourth'],
                 responsiveWidth: 768
-            })
+            });
+
+            const swiper = new Swiper(".swiper.swiper01", {
+                loop:true,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
         })
     </script>
 </head>
@@ -100,30 +108,36 @@
             <div class="sec01_rt">
                 <div class="sec01_wrap">
                     <div class="slide01_title rt_up text-center">
-                        <h2 class="text-white mb-4">프로그램 소개</h2>
-                        <h4>
+                        <h2 class="text-white">프로그램 소개</h2>
+                        <h4 class="mb50 pt-4">
                             2021. 11. 8(월) 오전 9시 <span class="text-white">공개</span>
                         </h4>
                     </div>
                     <div class="swiper swiper01">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="rt_md">
-                                    <div class="rt_index text-white mb-5">특별인터뷰</div>
+                                <div class="rt_md slide01">
+                                    <div class="rt_index purple text-white mb-5">특별인터뷰</div>
                                     <div class="rt_txt mb-5">
                                         <h2 class="mb20">오피스의 미래</h2>
                                         <h4>
                                             홍익대 건축도시대학 | <span>유현준 교수</span>
                                         </h4>
                                     </div>
-                                    <div class="rt_hash pt-3">
-                                        <p class="mb10">#공간의미래</p>
-                                        <p class="mb10">#일하는공간의본질</p>
-                                        <p>#유현준건축가</p>
-                                    </div>
+                                    <ul class="rt_hash m-0 pt-3">
+                                        <li class="mb10">
+                                            <p class="m-0">#공간의미래</p>
+                                        </li>
+                                        <li class="mb10">
+                                            <p class="m-0">#일하는공간의본질</p>
+                                        </li>
+                                        <li>
+                                            <p class="m-0">#유현준건축가</p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="rt_bt text-center">
-                                    <p>
+                                <div class="rt_bt text-center pt30">
+                                    <p class="m-0">
                                         급격한 변화 속에서 일하는 공간을<br>
                                         바라보는 관점은 어떻게 달라져야 할까?<br>
                                         일하는 공간의 본질에 대한 건축적인 통찰을 통해<br>
@@ -131,15 +145,334 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="rt_md slide02">
+                                    <div class="rt_index green text-white mb-5">주제 세미나</div>
+                                    <div class="rt_txt mb-5">
+                                        <h2 class="mb20">
+                                            하이브리드 워크 시대,<br>오피스의 가치를 높여라.
+                                        </h2>
+                                        <h4>
+                                            퍼시스 | <span>김정윤</span>
+                                        </h4>
+                                    </div>
+                                    <ul class="rt_hash m-0 pt-3">
+                                        <li class="mb10">
+                                            <p class="m-0">#하이브리드워크</p>
+                                        </li>
+                                        <li class="mb10">
+                                            <p class="m-0">#연결</p>
+                                            <p class="m-0">#유연</p>
+                                        </li>
+                                        <li>
+                                            <p class="m-0">#개인화</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rt_bt text-center pt30">
+                                    <p class="m-0">
+                                        공간과 시간의 제약에서 벗어나<br>
+                                        디지털을 기반으로 유연하게 일하는 시대.<br>
+                                        이제 오피스는 새로운 가치와 가능성의 공간이 되어야 한다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rt_md slide03">
+                                    <div class="rt_index green text-white mb-5">공간 스토리</div>
+                                    <div class="rt_txt mb-5">
+                                        <h2 class="mb20">실험하는 오피스를<br>위한 가이드</h2>
+                                        <h4>퍼시스</h4>
+                                    </div>
+                                    <ul class="rt_hash m-0 pt-3">
+                                        <li class="mb10">
+                                            <p class="m-0">#실험하는오피스</p>
+                                        </li>
+                                        <li class="mb10">
+                                            <p class="m-0">#공간솔루션</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rt_bt text-center pt30">
+                                    <p class="m-0">
+                                        하이브리드 워크 시대, 사무환경 전략에 정해진 답은 없다.<br>
+                                        일하는 방식의 변화에 맞추어 끊임없이 공간을 고민하고<br>
+                                        새로운 실험을 반복해야 하는 이유다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rt_md slide04">
+                                    <div class="rt_index purple text-white mb-5">기업 인터뷰 #1</div>
+                                    <div class="rt_txt mb-5">
+                                        <h2 class="mb20">지속적인 이노베이션<br>여정을 디자인하다</h2>
+                                        <h4>
+                                            두산디지털이노베이션 
+                                            <br>| <span>소다미, 최남주</span>                                        </h4>
+                                    </div>
+                                    <ul class="rt_hash m-0 pt-3">
+                                        <li class="mb10">
+                                            <p class="m-0">#오픈이노베이션</p>
+                                        </li>
+                                        <li class="mb10">
+                                            <p class="m-0">#창의혁신</p>
+                                        </li>
+                                        <li>
+                                            <p class="m-0">#디자인씽킹</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rt_bt text-center pt30">
+                                    <p class="m-0">
+                                        분당 두산 신사옥 24층에 위치한 오픈이노베이션센터.<br>
+                                        디자인씽킹과 애자일을 기반으로 오늘도 이 공간에서는<br>
+                                        새롭고 다양한 혁신 활동들이 일어나고 있다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rt_md slide05">
+                                    <div class="rt_index purple text-white mb-5">기업 인터뷰 #2</div>
+                                    <div class="rt_txt mb-5">
+                                        <h2 class="mb20">거점 오피스를 통한<br>스마트워크 실현</h2>
+                                        <h4>
+                                            한화시스템 | <span>조우열</span>                                    </div>
+                                    <ul class="rt_hash m-0 pt-3">
+                                        <li class="mb10">
+                                            <p class="m-0">#스마트워크</p>
+                                        </li>
+                                        <li class="mb10">
+                                            <p class="m-0">#거점오피스</p>
+                                        </li>
+                                        <li>
+                                            <p class="m-0">#원격근무</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rt_bt text-center pt30">
+                                    <p class="m-0">
+                                        자율성과 업무 효율성을 증진하는 스마트워크 실현을 위해<br>
+                                        한화시스템은 2020년 5곳의 거점 오피스를 신설하고<br>
+                                        본격적인 원격근무 제도를 도입하였다.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next next-btn"></div>
+                        <div class="swiper-button-prev prev-btn"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section sec02"></div>
-        <div class="section sec03"></div>
+        <div class="section sec02">
+            <div class="container px-0 pt60">
+                <div class="sec02_title text-center text-white mb-5">
+                    <h2>세미나 알림 신청하기</h2>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-0">
+                        <div class="sec2-box">
+                            <div class="sec2-event">
+                                <div class="e-wrap d-flex flex-column align-items-center">
+                                    <div class="e-index green text-white mb-4">알림 신청 이벤트</div>
+                                    <div class="e-txt text-center mb-4">
+                                        사전 신청 기간 동안 세미나 알림 신청을 한 분들에게<br>
+                                        <span>세미나 스페셜 패키지</span>(선착순 <span>100</span>명)를,<br>
+                                        새롭게 발간되는 <span>Office we love 매거진</span> vol.7(추첨 <span>500</span>명)을 드립니다.
+                                    </div>
+                                    <div class="e-img d-flex">
+                                        <div class="e-left">
+                                            <img src="images/sec2_img01.png" alt="" class="img-fluid mb-2" style="width: 212px;">
+                                            <p class="text-center m-0">세미나 스페셜 패키지</p>
+                                        </div>
+                                        <div class="e-right">
+                                            <img src="images/sec2_img02.png" alt="" class="img-fluid mb-2" style="width: 212px;">
+                                            <p class="text-center m-0">Office we love 매거진 vol.7</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="e-date text-center text-white">
+                                    <p class="m-1">이벤트 기간: 10.25(월) - 11.7일(일)</p>
+                                    <p class="m-1">당첨자 발표: 11.15(월)</p>
+                                    <span>*당첨자 별도 연락</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <div class="row">
+                            <div class="col-6">
+                                <form action="#!" method="post">
+                                    <fieldset>
+                                        <div class="sec2_info mb30">
+                                            <div class="i-title mb20 text-center text-white">신청자 정보 (필수)</div>
+                                            <input type="text" id="name" name="name" placeholder="이름" class="box-info">
+                                            <input type="text" id="company" name="company" placeholder="회사" class="box-info">
+                                            <input type="text" id="group" name="group" placeholder="소속" class="box-info">
+                                            <input type="text" id="phone" name="phone" placeholder="휴대폰 번호" class="box-info">
+                                            <input type="text" id="email" name="email" placeholder="이메일" class="box-info">
+                                            <div class="caution text-center text-white">
+                                                휴대폰 번호, 메일로 온라인 세미나 URL이<br>발송될 예정이오니 정확히 입력 바랍니다.
+                                            </div>
+                                        </div>
+                                        <div class="sec2_adr">
+                                            <div class="i-title mb20 text-center text-white">경품 발송 주소 (필수)</div>
+                                            <div class="box-info">
+                                                <input type="text" id="zipcode" name="zipcode" placeholder="우편번호" class="zipcode">
+                                                <button class="btn-zip">우편번호 찾기</button>
+                                            </div>
+                                            <input type="text" id="address" name="address" placeholder="주소" class="box-info">
+                                            <input type="text" id="address2" name="address2" placeholder="상세 주소" class="box-info">
+                                            <input type="text" id="email" name="email" placeholder="이메일" class="box-info">
+                                            <div class="caution text-center text-white">
+                                                이벤트 당첨 시 기입해주신 주소로<br>경품이 발송될 예정이오니, 정확히 입력 바랍니다.
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                <form action="">
+                                    <div class="i-title mb20 text-center text-white">세미나 신청 이유 (선택)</div>
+                                    <div class="i-box mb-4">
+                                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="ex) 일하는 방식이 빠르게 변화하는 지금 오피스는 어떤 역할을 해야하는지 궁금합니다"></textarea>
+                                        <!-- <input type="text" class="comment" name="comment" placeholder="ex) 일하는 방식이 빠르게 변화하는 지금 오피스는 어떤 역할을 해야하는지 궁금합니다"> -->
+                                    </div>
+                                    <div class="i-box mb-4">
+                                        <div class="i-box-txt mb-2">
+                                            <textarea name="privacy" id="privacy_scroll" cols="30" rows="10">개인정보 수집 및 이용안내
+1. 수집항목 : 이름, 회사명, 팀명 ,연락처(휴대폰 번호, 이메일주소), 주소
+2. 수집목적 : 세미나 공지 알림 메시지 및 땡큐레터 발송, 이벤트 경품 발송
+이름, 회사명, 팀명, 직급 : 신청자 확인
+연락처(휴대폰 번호, 이메일) : 알림 메시지/이메일 발송, 땡큐레터, 뉴스레터 구독
+주소 : 이벤트 경품 발송
+3. 보유기간 : 세미나 종료 후 6개월
+※ 그 밖의 사항은 퍼시스(www.fursys.com)의 개인정보처리방침을 준수합니다.
+※ 개인정보 위탁안내(주)퍼시스는 서비스 향상을 위해 아래와 같이 개인정보를 위탁하고 있으며, 관계법령에 따라 위탁 계약시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다.
+- 업체명 : 데이드, 타라, 모아패키지
+- 개인정보 위탁목적 : 알림 확인 메시지, 이메일 발송과 이벤트 경품 발송
+- 개인정보 위탁내용 : 이름, 회사명, 팀명, 이메일, 휴대폰 번호, 주소
+- 보유 및 이용기간 : 세미나 종료 후 6개월 또는 위탁계약 종료시</textarea>
+                                        </div>
+                                        <div class="check-box">
+                                            <label for="prv" class="mb10">
+                                                <input type="checkbox" name="agree" id="privacy-agree">
+                                                개인정보 수집 및 이용에 동의합니다. (필수)
+                                            </label>
+                                            <label for="news" class="mb-0">
+                                                <input type="checkbox" name="news" id="privacy-news">
+                                                퍼시스 뉴스레터 구독에 동의합니다. (선택)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="i-box mb-4">
+                                        <div class="i-box-txt mb-2">
+                                            <textarea name="privacy" id="privacy_scroll" cols="30" rows="10">개인정보 제 3자 제공 동의
+1. 제공자 : ㈜퍼시스
+2. 제공받는 자 : 퍼시스 공식 유통망 (퍼시스 홈페이지> 고객서비스 > 대리점안내 게시 대리점)
+3. 제공받는 자의 이용목적 : 사무환경, 제품 상담 등
+4. 제공하는 개인정보 항목 : 이름, 회사명, 소속, 팀, 직급, 연락처, 이메일, 문의내용
+5. 보유 및 이용기간 : 상담 과정 종료 후 6개월</textarea>
+                                        </div>
+                                        <div class="check-box">
+                                            <label for="prv3">
+                                                <input type="checkbox" name="agree-3" id="privacy-agree3">
+                                                개인정보 제3자 제공에 동의합니다 (필수)
+                                            </label>
+                                            <label for="news">
+                                                <input type="checkbox" name="news" id="privacy-news">
+                                                퍼시스 뉴스레터 구독에 동의합니다. (선택)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="button" id="privacy_submit" class="green text-white" onclick="alert('약관 동의 후 이용 가능합니다.');" value="신청하기">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section sec03 clearfix">
+            <div class="sec03_lf">
+                <div class="lf03_wrap text-white pt50">
+                    <div class="lf03_title text-center mb50">
+                        <h2>자주 묻는 질문</h2>
+                    </div>
+                    <div class="lf03-box mb-3">
+                        <h4>퍼시스 사무환경 세미나는 무료로 참여가능한가요?</h4>
+                        <p class="m-0">퍼시스 사무환경 세미나 2021은 온라인으로 진행되며 무료로 참여 가능합니다.</p>
+                    </div>
+                    <div class="lf03-box mb-3">
+                        <h4>사전 신청이 완료되었는지 어떻게 확인할 수 있나요?</h4>
+                        <p class="m-0">사전 신청이 완료되면 자동으로 확인 이메일이 발송됩니다.</p>
+                    </div>
+                    <div class="lf03-box mb-3">
+                        <h4>알림은 어떻게 오나요?</h4>
+                        <p class="m-0">사전 신청을 해주신 분들께는 세미나 오픈 기간 동안 휴대폰 메세지와 이메일 알림을 보내드립니다.</p>
+                    </div>
+                    <div class="lf03-box mb-3">
+                        <h4>세미나 영상은 언제 어디서 볼 수 있나요?</h4>
+                        <p class="m-0">11월 8일에 세미나 웹사이트와 퍼시스 유튜브 채널을 통해 공개됩니다.</p>
+                    </div>
+                    <div class="lf03-box mb-3">
+                        <h4>사전 신청을 하지 않으면 세미나 영상을 시청할 수 없나요?</h4>
+                        <p class="m-0">사전 신청을 하지 않으셨어도 세미나 기간에 영상을 시청하실 수 있습니다.</p>
+                    </div>
+                    <div class="lf03-box mb-3">
+                        <h4>이벤트 당첨은 언제 알 수 있나요?</h4>
+                        <p class="m-0">이벤트 당첨자는 11월 15일 별도 안내 드리고, 순차적으로 경품 발송할 예정입니다.</p>
+                    </div>
+                    <div class="lf03-box">
+                        <h4>궁금한 점이 있어요.</h4>
+                        <p class="m-0">궁금하신 사항은 officewelove@fursys.com으로 문의해주세요.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec03_rt">
+                <div class="rt03_wrap">
+                    <div class="rt03_title text-center text-white mb50">
+                        <h2 class="mb30">
+                            퍼시스 사무환경 세미나<br>주제 강연 다시보기
+                        </h2>
+                        <p>
+                            퍼시스는 더 좋은 사무환경을 고민하는 기업의 경영자, 인사총무 담당자들과<br>
+                            트렌드와 노하우를 공유하고자 매년 사무환경 세미나를 진행하고 있습니다.
+                        </p>
+                    </div>
+                    <ul class="view clearfix">
+                        <li>
+                            <a href="#!"><img src="images/sec3_img01.png" alt=""></a>
+                            <div class="view-txt">
+                                <h4>2020</h4>
+                                <p>오피스의 존재 이유를 고민하다</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="images/sec3_img02.png" alt=""></a>
+                            <div class="view-txt">
+                                <h4>2019</h4>
+                                <p>업무 몰입도를 높이는 사무환경</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="images/sec3_img03.png" alt=""></a>
+                            <div class="view-txt">
+                                <h4>2018</h4>
+                                <p>기업의 혁신을 창출하는<br>사무환경 전략</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="images/sec3_img04.png" alt=""></a>
+                            <div class="view-txt">
+                                <h4>2017</h4>
+                                <p>일하고 싶은 오피스의 조건</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
