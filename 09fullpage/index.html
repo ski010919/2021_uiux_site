@@ -25,15 +25,32 @@
                 anchors:["m1st","m2st","m3st","m4st"],
                 navigation:true,
                 navigationPosition: 'fp-right',
-                navigationTooltips: ['First', 'Second', 'Third','fourth'],
+                navigationTooltips: ['main', 'First', 'Second','Third'],
                 responsiveWidth: 768
             });
 
             const swiper = new Swiper(".swiper.swiper01", {
+                slidesPerView:3,
                 loop:true,
+                autoplay: {
+                    delay: 2000,
+                },
                 navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    758: {
+                        slidesPerView: 2,
+                        // spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        // spaceBetween: 10,
+                    },
+                    993: {
+                        slidesPerView: 1,
+                    },
                 },
             });
         })
@@ -41,27 +58,27 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light mt-4 fixed-top px-3 px-lg-5">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <a class="navbar-brand" data-menuachor="m1st" href="#m1st"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="colla rt03_lipse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item ml-3 ml-lg-5">
-                    <a class="nav-link menu" href="#">프로그램 소개</a>
+                    <a class="nav-link menu" data-menuachor="m2st" href="#m2st">프로그램 소개</a>
                 </li>
                 <li class="nav-item ml-3 ml-lg-5">
-                    <a class="nav-link menu" href="#">세미나 알림 신청하기</a>
+                    <a class="nav-link menu" data-menuachor="m3st" href="#m3st">세미나 알림 신청하기</a>
                 </li>
                 <li class="nav-item ml-3 ml-lg-5">
-                    <a class="nav-link menu" href="#">이전 세미나 영상</a>
+                    <a class="nav-link menu" data-menuachor="m4st" href="#m4st">이전 세미나 영상</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div id="fullpage">
-        <div class="section main">
+        <div class="section main" data-achor="m1st">
             <div class="container">
                 <div class="maintxt d-flex justify-content-center flex-column align-items-center">
                     <img src="images/visual.png" alt="" class="img-fluid">
@@ -76,27 +93,28 @@
                     </div>
                 </div>
                 <div class="bt_scroll">
-                    <a href=""><img src="images/bt_arrow.png" alt="" class="img-fluid" style="width: 50px;"></a>
+                    <a href="#m2st"><img src="images/bt_arrow.png" alt="" class="img-fluid" style="width: 50px;"></a>
                 </div>
             </div>
         </div>
-        <div class="section sec01 clearfix">
+        <div class="section sec01 clearfix" data-achor="m2st">
             <div class="sec01_lf">
-                <div class="sec01_lf_txt">
-                    <div class="lf_title mb20">
+                <div class="sec01_lf_txt d-lg-block d-flex justify-content-center align-items-center">
+                    <div class="lf_title mb-0 mb-lg-4 mr-md-3 mr-lg-0">
                         <img src="images/sec1_logo.png" alt="" class="img-fluid mb20">
+                        <a href="#!" class="btn d-md-none">자세히 알아보기</a>
                     </div>
-                    <div class="lf_copy text-white">
+                    <div class="lf_copy text-white d-none d-md-block">
                         <p class="mb20">
-                            이번 세미나에서는 구성원들이<br>
+                            이번 세미나에서는 구성원들이<br class="d-none d-lg-block">
                             디지털 환경을 기반으로<br>
                             시공간의 장벽 없이 효율적으로 일할 수 있도록.<br>
-                            최적의 오피스를 위한 고민과<br>
+                            최적의 오피스를 위한 고민과<br class="d-none d-lg-block">
                             실험에 대해 이야기합니다.
                         </p>
                         <p class="mb20">
                             세미나 영상은 11월 8일(월) 전체 공개됩니다.<br>
-                            알림 신청을 해주시면,<br>
+                            알림 신청을 해주시면,<br class="d-none d-lg-block">
                             세미나 오픈 시 문자와 메일로 알려 드릴게요.
                         </p>
                         <p>
@@ -105,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sec01_rt">
+            <div class="sec01_rt px-2 px-md-0">
                 <div class="sec01_wrap">
                     <div class="slide01_title rt_up text-center">
                         <h2 class="text-white">프로그램 소개</h2>
@@ -117,15 +135,15 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="rt_md slide01">
-                                    <div class="rt_index purple text-white mb-5">특별인터뷰</div>
+                                    <div class="rt_index purple text-white mb-4 mb-lg-5">특별인터뷰</div>
                                     <div class="rt_txt mb-5">
                                         <h2 class="mb20">오피스의 미래</h2>
                                         <h4>
                                             홍익대 건축도시대학 | <span>유현준 교수</span>
                                         </h4>
                                     </div>
-                                    <ul class="rt_hash m-0 pt-3">
-                                        <li class="mb10">
+                                    <ul class="rt_hash m-0 pt-0 pt-lg-3 d-none d-md-flex flex-wrap justify-content-center d-lg-block">
+                                        <li class="mb10 mr-2 mr-lg-0">
                                             <p class="m-0">#공간의미래</p>
                                         </li>
                                         <li class="mb10">
@@ -147,8 +165,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="rt_md slide02">
-                                    <div class="rt_index green text-white mb-5">주제 세미나</div>
-                                    <div class="rt_txt mb-5">
+                                    <div class="rt_index green text-white mb-4 mb-lg-5">주제 세미나</div>
+                                    <div class="rt_txt mb-4 mb-lg-5">
                                         <h2 class="mb20">
                                             하이브리드 워크 시대,<br>오피스의 가치를 높여라.
                                         </h2>
@@ -156,8 +174,8 @@
                                             퍼시스 | <span>김정윤</span>
                                         </h4>
                                     </div>
-                                    <ul class="rt_hash m-0 pt-3">
-                                        <li class="mb10">
+                                    <ul class="rt_hash m-0 pt-0 pt-lg-3 d-none d-md-flex flex-wrap justify-content-center d-lg-block">
+                                        <li class="mb10 mr-2 mr-lg-0">
                                             <p class="m-0">#하이브리드워크</p>
                                         </li>
                                         <li class="mb10">
@@ -179,13 +197,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="rt_md slide03">
-                                    <div class="rt_index green text-white mb-5">공간 스토리</div>
+                                    <div class="rt_index green text-white mb-4 mb-lg-5">공간 스토리</div>
                                     <div class="rt_txt mb-5">
                                         <h2 class="mb20">실험하는 오피스를<br>위한 가이드</h2>
                                         <h4>퍼시스</h4>
                                     </div>
-                                    <ul class="rt_hash m-0 pt-3">
-                                        <li class="mb10">
+                                    <ul class="rt_hash m-0 pt-0 pt-lg-3 d-none d-md-flex flex-wrap justify-content-center d-lg-block">
+                                        <li class="mb10 mr-2 mr-lg-0">
                                             <p class="m-0">#실험하는오피스</p>
                                         </li>
                                         <li class="mb10">
@@ -203,15 +221,16 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="rt_md slide04">
-                                    <div class="rt_index purple text-white mb-5">기업 인터뷰 #1</div>
-                                    <div class="rt_txt mb-5">
+                                    <div class="rt_index purple text-white mb-3 mb-lg-5">기업 인터뷰 #1</div>
+                                    <div class="rt_txt mb-4 mb-lg-5">
                                         <h2 class="mb20">지속적인 이노베이션<br>여정을 디자인하다</h2>
                                         <h4>
                                             두산디지털이노베이션 
-                                            <br>| <span>소다미, 최남주</span>                                        </h4>
+                                            <br>| <span>소다미, 최남주</span>
+                                        </h4>
                                     </div>
-                                    <ul class="rt_hash m-0 pt-3">
-                                        <li class="mb10">
+                                    <ul class="rt_hash m-0 pt-0 pt-lg-3 d-none d-md-flex flex-wrap justify-content-center d-lg-block">
+                                        <li class="mb10 mr-2 mr-lg-0">
                                             <p class="m-0">#오픈이노베이션</p>
                                         </li>
                                         <li class="mb10">
@@ -232,13 +251,15 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="rt_md slide05">
-                                    <div class="rt_index purple text-white mb-5">기업 인터뷰 #2</div>
-                                    <div class="rt_txt mb-5">
+                                    <div class="rt_index purple text-white mb-4 mb-lg-5">기업 인터뷰 #2</div>
+                                    <div class="rt_txt mb-4 mb-lg-5">
                                         <h2 class="mb20">거점 오피스를 통한<br>스마트워크 실현</h2>
                                         <h4>
-                                            한화시스템 | <span>조우열</span>                                    </div>
-                                    <ul class="rt_hash m-0 pt-3">
-                                        <li class="mb10">
+                                            한화시스템 | <span>조우열</span>
+                                        </h4>
+                                    </div>
+                                    <ul class="rt_hash m-0 pt-0 pt-lg-3 d-none d-md-flex flex-wrap justify-content-center d-lg-block">
+                                        <li class="mb10 mr-2 mr-lg-0">
                                             <p class="m-0">#스마트워크</p>
                                         </li>
                                         <li class="mb10">
@@ -264,15 +285,15 @@
                 </div>
             </div>
         </div>
-        <div class="section sec02">
+        <div class="section sec02" data-achor="m3st">
             <div class="container px-0 pt60">
                 <div class="sec02_title text-center text-white mb-5">
                     <h2>세미나 알림 신청하기</h2>
                 </div>
                 <div class="row">
-                    <div class="col-6 p-0">
-                        <div class="sec2-box">
-                            <div class="sec2-event">
+                    <div class="col-md-6 p-0">
+                        <div class="sec2-box d-flex flex-column align-items-center px-5 px-md-0">
+                            <div class="sec2-event mb-5">
                                 <div class="e-wrap d-flex flex-column align-items-center">
                                     <div class="e-index green text-white mb-4">알림 신청 이벤트</div>
                                     <div class="e-txt text-center mb-4">
@@ -297,9 +318,10 @@
                                     <span>*당첨자 별도 연락</span>
                                 </div>
                             </div>
+                            <a href="#!" class="btn d-md-none d-block">신청하기</a>
                         </div>
                     </div>
-                    <div class="col-6 p-0">
+                    <div class="col-6 p-0 d-none d-md-block">
                         <div class="row">
                             <div class="col-6">
                                 <form action="#!" method="post">
@@ -393,83 +415,89 @@
                 </div>
             </div>
         </div>
-        <div class="section sec03 clearfix">
+        <div class="section sec03 clearfix" data-achor="m4st">
             <div class="sec03_lf">
                 <div class="lf03_wrap text-white pt50">
                     <div class="lf03_title text-center mb50">
                         <h2>자주 묻는 질문</h2>
+                        <div class="bar d-lg-none"><a href="#!">
+                            <div class="bar1 plus_bar"></div>
+                            <div class="bar2 plus_bar"></div>
+                        </a></div>
                     </div>
                     <div class="lf03-box mb-3">
                         <h4>퍼시스 사무환경 세미나는 무료로 참여가능한가요?</h4>
-                        <p class="m-0">퍼시스 사무환경 세미나 2021은 온라인으로 진행되며 무료로 참여 가능합니다.</p>
+                        <p class="m-0 d-none d-md-block">퍼시스 사무환경 세미나 2021은 온라인으로 진행되며 무료로 참여 가능합니다.</p>
                     </div>
                     <div class="lf03-box mb-3">
                         <h4>사전 신청이 완료되었는지 어떻게 확인할 수 있나요?</h4>
-                        <p class="m-0">사전 신청이 완료되면 자동으로 확인 이메일이 발송됩니다.</p>
+                        <p class="m-0 d-none d-md-block">사전 신청이 완료되면 자동으로 확인 이메일이 발송됩니다.</p>
                     </div>
-                    <div class="lf03-box mb-3">
+                    <div class="lf03-box mb-3 d-none d-lg-block">
                         <h4>알림은 어떻게 오나요?</h4>
                         <p class="m-0">사전 신청을 해주신 분들께는 세미나 오픈 기간 동안 휴대폰 메세지와 이메일 알림을 보내드립니다.</p>
                     </div>
-                    <div class="lf03-box mb-3">
+                    <div class="lf03-box mb-3 d-none d-lg-block">
                         <h4>세미나 영상은 언제 어디서 볼 수 있나요?</h4>
                         <p class="m-0">11월 8일에 세미나 웹사이트와 퍼시스 유튜브 채널을 통해 공개됩니다.</p>
                     </div>
-                    <div class="lf03-box mb-3">
+                    <div class="lf03-box mb-3 d-none d-lg-block">
                         <h4>사전 신청을 하지 않으면 세미나 영상을 시청할 수 없나요?</h4>
                         <p class="m-0">사전 신청을 하지 않으셨어도 세미나 기간에 영상을 시청하실 수 있습니다.</p>
                     </div>
-                    <div class="lf03-box mb-3">
+                    <div class="lf03-box mb-3 d-none d-xl-block">
                         <h4>이벤트 당첨은 언제 알 수 있나요?</h4>
                         <p class="m-0">이벤트 당첨자는 11월 15일 별도 안내 드리고, 순차적으로 경품 발송할 예정입니다.</p>
                     </div>
-                    <div class="lf03-box">
+                    <div class="lf03-box d-none d-xl-block">
                         <h4>궁금한 점이 있어요.</h4>
                         <p class="m-0">궁금하신 사항은 officewelove@fursys.com으로 문의해주세요.</p>
                     </div>
                 </div>
             </div>
             <div class="sec03_rt">
-                <div class="rt03_wrap">
-                    <div class="rt03_title text-center text-white mb50">
-                        <h2 class="mb30">
+                <div class="rt03_wrap pt-5 d-lg-block d-md-flex justify-content-center align-items-center px-4 px-lg-0">
+                    <div class="rt03_title text-lg-center text-white mb-4 mb-md-5 pt-3 mr-3 mr-lg-0">
+                        <h2 class="mb-3">
                             퍼시스 사무환경 세미나<br>주제 강연 다시보기
                         </h2>
-                        <p>
+                        <p class="d-none d-md-block">
                             퍼시스는 더 좋은 사무환경을 고민하는 기업의 경영자, 인사총무 담당자들과<br>
                             트렌드와 노하우를 공유하고자 매년 사무환경 세미나를 진행하고 있습니다.
                         </p>
                     </div>
-                    <ul class="view clearfix">
-                        <li>
-                            <a href="#!"><img src="images/sec3_img01.png" alt=""></a>
-                            <div class="view-txt">
-                                <h4>2020</h4>
-                                <p>오피스의 존재 이유를 고민하다</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#!"><img src="images/sec3_img02.png" alt=""></a>
-                            <div class="view-txt">
-                                <h4>2019</h4>
-                                <p>업무 몰입도를 높이는 사무환경</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#!"><img src="images/sec3_img03.png" alt=""></a>
-                            <div class="view-txt">
-                                <h4>2018</h4>
-                                <p>기업의 혁신을 창출하는<br>사무환경 전략</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#!"><img src="images/sec3_img04.png" alt=""></a>
-                            <div class="view-txt">
-                                <h4>2017</h4>
-                                <p>일하고 싶은 오피스의 조건</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="container px-lg-3">
+                        <ul class="view row text-center rt03_ul text-white m-0">
+                            <li class="col-6 rt03_li md-2 mb-md-4">
+                                <div class="rt03-img mb-2 mb-md-3 img1"><a href="https://www.youtube.com/watch?v=EjTP-YNZpXY"></a></div>
+                                <div class="view-txt d-flex justify-content-center align-items-center">
+                                    <h4 class="mr-lg-2">2020</h4>
+                                    <p class="d-none d-lg-block">오피스의 존재 이유를 고민하다</p>
+                                </div>
+                            </li>
+                            <li class="col-6 rt03_li">
+                                <div class="rt03-img mb-2 mb-md-3 img2"><a href="https://www.youtube.com/watch?v=QWzKiKSPz9g"></a></div>
+                                <div class="view-txt d-flex justify-content-center align-items-center">
+                                    <h4 class="mr-lg-2">2019</h4>
+                                    <p class="d-none d-lg-block">업무 몰입도를 높이는 사무환경</p>
+                                </div>
+                            </li>
+                            <li class="col-6 rt03_li">
+                                <div class="rt03-img mb-2 mb-md-3 img3"><a href="https://www.youtube.com/watch?v=tjYrKWOMXYo"></a></div>
+                                <div class="view-txt d-flex justify-content-center align-items-center">
+                                    <h4 class="mr-lg-2">2018</h4>
+                                    <p class="d-none d-lg-block">기업의 혁신을 창출하는<br class="d-none">사무환경 전략</p>
+                                </div>
+                            </li>
+                            <li class="col-6 rt03_li">
+                                <div class="rt03-img mb-2 mb-md-3 img4"><a href="https://www.youtube.com/watch?v=xYMY6mN679Q"></a></div>
+                                <div class="view-txt d-flex justify-content-center align-items-center">
+                                    <h4 class="mr-lg-2">2017</h4>
+                                    <p class="d-none d-lg-block">일하고 싶은 오피스의 조건</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
