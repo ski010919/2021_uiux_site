@@ -26,7 +26,7 @@
                 navigation:true,
                 navigationPosition: 'fp-right',
                 navigationTooltips: ['main', 'First', 'Second','Third','footer'],
-                responsiveWidth: 768
+                responsiveWidth: 768,
             });
 
             const swiper = new Swiper(".swiper.swiper01", {
@@ -54,29 +54,65 @@
                 },
             });
 
-            // window.addEventListener("scroll",function(){
-            //     let scrollY = window.pageYOffset;
-            //     console.log(scrollY);
-            //     if(scrollY > 300){
-            //         $(".navbar").addClass("fixed-top bg-blk px-lg-5")
-            //     }else{
-            //         $(".navbar").removeClass("fixed-top bg-blk px-lg-5")
-            //     }
-            // });
+            window.addEventListener("scroll",function(){
+                let scrollY = window.pageYOffset;
+                console.log(scrollY);
+                if(scrollY > 100){
+                    $(".navbar").addClass("bg-blk px-lg-5")
+                    $(".navbar").removeClass("mt-4")
+                    $(".navbar .navbar-brand").addClass("ud")
+                }else{
+                    $(".navbar").removeClass("bg-blk px-lg-5")
+                    $(".navbar").addClass("mt-4")
+                    $(".navbar .navbar-brand").removeClass("ud")
+                }
+            });
             
-            // let winWidth = window.width();
-            // winSize();
+            let winWidth = window.width();
+            winSize();
 
-            // window.addEventListener("resize",function(){
-            //     winWidth = window.width();
-            //     winSize()
-            // })
+            window.addEventListener("resize",function(){
+                winWidth = window.width();
+                winSize()
+            });
+
+            function winSize(){
+                let onView = true;
+                if(winWidth < 768){
+                    $(".navbar-toggle").click(function(){
+                        if(onView == true){
+                            $(".navbar").addClass("onView");
+                            onView = false;
+                        }else{
+                            $(".navbar").removeClass("onView");
+                            onView = true;
+                        }
+                    })
+                }
+            };
+
+            $("body").append(`
+            <div class="glaylayer"></div>
+            <div class="overlayer"></div>
+            `)
+
+            $("#btn01").click(function(e){
+                e.preventDefault();
+                $(".glaylayer").fadeIn();
+
+                let ahref = $(this).attr("href");
+                $(".overlayer").fadeIn().html(`<img src="${ahref}">`);
+            });
+
+            $(".glaylayer,.overlayer").click(function(){
+                $(".glaylayer,.overlayer").fadeOut();
+            })
         })
     </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light mt-4 fixed-top px-3 px-lg-5">
-        <a class="navbar-brand" data-menuachor="m1st" href="#m1st"><img src="images/logo.png" alt=""></a>
+        <div class="navbar-brand"><a class="logo" data-menuachor="m1st" href="#m1st">logo</a></div>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -113,6 +149,7 @@
                 <div class="bt_scroll">
                     <a href="#m2st"><img src="images/bt_arrow.png" alt="" class="img-fluid" style="width: 50px;"></a>
                 </div>
+                <div class="bt-top"></div>
             </div>
         </div>
         <div class="section sec01 clearfix" data-achor="m2st">
@@ -120,7 +157,9 @@
                 <div class="sec01_lf_txt d-lg-block d-flex justify-content-center align-items-center">
                     <div class="lf_title mb-0 mb-lg-4 mr-md-3 mr-lg-0">
                         <img src="images/sec1_logo.png" alt="" class="img-fluid mb20">
-                        <a href="#!" class="btn d-md-none">자세히 알아보기</a>
+                        <a href="images/modal01.png" class="btn d-md-none" id="btn01">
+                            자세히 알아보기
+                        </a>
                     </div>
                     <div class="lf_copy text-white d-none d-md-block">
                         <p class="mb20">
@@ -139,6 +178,7 @@
                             참여해 주셔서 감사합니다!
                         </p>
                     </div>
+                    
                 </div>
             </div>
             <div class="sec01_rt px-2 px-md-0">
@@ -309,8 +349,8 @@
                     <h2>세미나 알림 신청하기</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 p-0">
-                        <div class="sec2-box d-flex flex-column align-items-center px-5 px-md-0">
+                    <div class="col-lg-6 p-0">
+                        <div class="sec2-box d-flex flex-column align-items-center px-5 px-lg-0">
                             <div class="sec2-event mb-5">
                                 <div class="e-wrap d-flex flex-column align-items-center">
                                     <div class="e-index green text-white mb-4">알림 신청 이벤트</div>
@@ -336,10 +376,10 @@
                                     <span>*당첨자 별도 연락</span>
                                 </div>
                             </div>
-                            <a href="#!" class="btn d-md-none d-block">신청하기</a>
+                            <a href="#!" class="btn d-lg-none d-block">신청하기</a>
                         </div>
                     </div>
-                    <div class="col-6 p-0 d-none d-md-block">
+                    <div class="col-6 p-0 d-none d-lg-block">
                         <div class="row">
                             <div class="col-6">
                                 <form action="#!" method="post">
