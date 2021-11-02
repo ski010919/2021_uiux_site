@@ -25,7 +25,7 @@
                 anchors:["m1st","m2st","m3st","m4st"],
                 navigation:true,
                 navigationPosition: 'fp-right',
-                navigationTooltips: ['main', 'First', 'Second','Third'],
+                navigationTooltips: ['main', 'First', 'Second','Third','footer'],
                 responsiveWidth: 768
             });
 
@@ -53,13 +53,31 @@
                     },
                 },
             });
+
+            // window.addEventListener("scroll",function(){
+            //     let scrollY = window.pageYOffset;
+            //     console.log(scrollY);
+            //     if(scrollY > 300){
+            //         $(".navbar").addClass("fixed-top bg-blk px-lg-5")
+            //     }else{
+            //         $(".navbar").removeClass("fixed-top bg-blk px-lg-5")
+            //     }
+            // });
+            
+            // let winWidth = window.width();
+            // winSize();
+
+            // window.addEventListener("resize",function(){
+            //     winWidth = window.width();
+            //     winSize()
+            // })
         })
     </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light mt-4 fixed-top px-3 px-lg-5">
         <a class="navbar-brand" data-menuachor="m1st" href="#m1st"><img src="images/logo.png" alt=""></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="colla rt03_lipse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -497,6 +515,35 @@
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section footer fp-auto-height">
+            <div class="myContent">
+                <div class="container py-5 ft-wrap">
+                    <div class="ft-logo mr-4 mr-lg-0">
+                        <h2>(주)퍼시스</h2>
+                        <p>www.fursys.com</p>
+                    </div>
+                    <div class="ft-copy mr-4 mr-lg-0">
+                        <p>
+                            대표이사: 배상돈, 윤기언<br>
+                            사업자번호: 215-81-20534<br>
+                            주소: 138-857 / 서울특별시 송파구 오금로 311 (오금동 45-1) 퍼시스 빌딩<br>
+                            대표번호: 02-443-9999
+                        </p>
+                        <p>Copyright (c) 2020 Fursys Inc.</p>
+                        <p>All right reserved.</p>
+                    </div>
+                    <div class="ft-rt">
+                        <div class="ft-btn mb-4"><a href="#!">캠페인 사이트 가기</a></div>
+                        <div class="ft-sns d-flex">
+                            <div class="blog mr-2"><a href="https://blog.naver.com/fursys_official">blog</a></div>
+                            <div class="facebook mr-2"><a href="https://www.facebook.com/fursys.official">facebook</a></div>
+                            <div class="instagram mr-2"><a href="https://www.instagram.com/fursys.official">instagram</a></div>
+                            <div class="youtube"><a href="https://www.youtube.com/c/fursys_official">youtube</a></div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -15,6 +15,9 @@ body{
 .pt60{padding-top: 60px;}
 
 .navbar{z-index: 3;}
+.navbar.bg-blk{
+    background: rgba(0,0,0,0.3);
+}
 .navbar .navbar-nav .menu{
     font-weight: 500;font-size: 16px;color: #262626;
 }
@@ -307,8 +310,58 @@ input.zipcode{
 .bar1{width: 25px;height: 3px;background: #fff;}
 .bar2{width: 3px;height: 25px;background: #fff;}
 
+.footer{background: #2a2a2a;color: #8a8a8a;}
+.ft-wrap{display: flex;justify-content: space-between;width: 100%;}
+.ft-logo h2{font-size: 20px;}
+.ft-copy{font-size: 15px;}
+.ft-btn{
+    width: 150px;text-align: center;
+    transition: 0.3s;
+    border: 2px solid #8a8a8a;
+    border-radius: 30px;font-size: 12px;
+}
+.ft-btn a{display: block;color: #8a8a8a;transition: 0.3s;padding: 15px 20px;}
+.ft-btn:hover{
+    border: 2px solid #6DE6E4;color: #6DE6E4;
+}
+.ft-btn:hover a{color: #6DE6E4;}
 
-@media screen and (min-width:758px) and (max-width:991px){ /* sm */
+.ft-sns div{width: 30px;height: 30px;text-indent: -9999px;transition: 0.3s;}
+.ft-sns div a{display: block;height: 30px;}
+.ft-sns .blog{
+    background-image: url(../images/sns01.png);
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;
+}
+.ft-sns .blog:hover{
+    background-image: url(../images/sns-hover01.png);
+}
+.ft-sns .facebook{
+    background-image: url(../images/sns02.png);
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;
+}
+.ft-sns .facebook:hover{
+    background-image: url(../images/sns-hover02.png);
+}
+.ft-sns .instagram{
+    background-image: url(../images/sns03.png);
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;
+}
+.ft-sns .instagram:hover{
+    background-image: url(../images/sns-hover03.png);
+}
+.ft-sns .youtube{
+    background-image: url(../images/sns04.png);
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;
+}
+.ft-sns .youtube:hover{
+    background-image: url(../images/sns-hover04.png);
+}
+
+@media screen and (min-width:758px) and (max-width:991px){ /* md */
     .sec01 .sec01_lf,.sec01 .sec01_rt{
         background-size:cover;
         width: 100%;
@@ -363,6 +416,8 @@ input.zipcode{
         height: 100px;
     }
     .rt03_li .rt03-img:hover{height: 100px;}
+
+    .ft-copy{font-size: 13px;}
 }
 @media screen and (max-width:757px){ /* sm */
     .maintxt h2{font-size: 4vw;}
@@ -441,4 +496,6 @@ input.zipcode{
     .rt03_li .rt03-img a{display: block;height: 100px;}
     .rt03_li .rt03-img:hover{height: 100px;}
     .view-txt h4{font-size: 20px;}
+
+    .ft-copy{font-size: 12px;}
 }
