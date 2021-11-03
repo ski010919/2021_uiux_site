@@ -18,97 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script>
-        $(function(){
-            $("#fullpage").fullpage({
-                menu:".navbar-nav",
-                anchors:["m1st","m2st","m3st","m4st"],
-                navigation:true,
-                navigationPosition: 'fp-right',
-                navigationTooltips: ['main', 'First', 'Second','Third','footer'],
-                responsiveWidth: 768,
-            });
-
-            const swiper = new Swiper(".swiper.swiper01", {
-                slidesPerView:3,
-                loop:true,
-                autoplay: {
-                    delay: 2000,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                    758: {
-                        slidesPerView: 2,
-                        // spaceBetween: 20,
-                    },
-                    992: {
-                        slidesPerView: 2,
-                        // spaceBetween: 10,
-                    },
-                    993: {
-                        slidesPerView: 1,
-                    },
-                },
-            });
-
-            window.addEventListener("scroll",function(){
-                let scrollY = window.pageYOffset;
-                console.log(scrollY);
-                if(scrollY > 100){
-                    $(".navbar").addClass("bg-blk px-lg-5")
-                    $(".navbar").removeClass("mt-4")
-                    $(".navbar .navbar-brand").addClass("ud")
-                }else{
-                    $(".navbar").removeClass("bg-blk px-lg-5")
-                    $(".navbar").addClass("mt-4")
-                    $(".navbar .navbar-brand").removeClass("ud")
-                }
-            });
-            
-            let winWidth = window.width();
-            winSize();
-
-            window.addEventListener("resize",function(){
-                winWidth = window.width();
-                winSize()
-            });
-
-            function winSize(){
-                let onView = true;
-                if(winWidth < 768){
-                    $(".navbar-toggle").click(function(){
-                        if(onView == true){
-                            $(".navbar").addClass("onView");
-                            onView = false;
-                        }else{
-                            $(".navbar").removeClass("onView");
-                            onView = true;
-                        }
-                    })
-                }
-            };
-
-            $("body").append(`
-            <div class="glaylayer"></div>
-            <div class="overlayer"></div>
-            `)
-
-            $("#btn01").click(function(e){
-                e.preventDefault();
-                $(".glaylayer").fadeIn();
-
-                let ahref = $(this).attr("href");
-                $(".overlayer").fadeIn().html(`<img src="${ahref}">`);
-            });
-
-            $(".glaylayer,.overlayer").click(function(){
-                $(".glaylayer,.overlayer").fadeOut();
-            })
-        })
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light mt-4 fixed-top px-3 px-lg-5">
@@ -157,9 +66,10 @@
                 <div class="sec01_lf_txt d-lg-block d-flex justify-content-center align-items-center">
                     <div class="lf_title mb-0 mb-lg-4 mr-md-3 mr-lg-0">
                         <img src="images/sec1_logo.png" alt="" class="img-fluid mb20">
-                        <a href="images/modal01.png" class="btn d-md-none" id="btn01">
+                        <!-- <a href="#!" class="btn d-md-none" id="btn01">
                             자세히 알아보기
-                        </a>
+                        </a> -->
+                        <div class="btn d-md-none" id="btn01">자세히 알아보기</div>
                     </div>
                     <div class="lf_copy text-white d-none d-md-block">
                         <p class="mb20">
@@ -178,7 +88,6 @@
                             참여해 주셔서 감사합니다!
                         </p>
                     </div>
-                    
                 </div>
             </div>
             <div class="sec01_rt px-2 px-md-0">
@@ -339,6 +248,28 @@
                         </div>
                         <div class="swiper-button-next next-btn"></div>
                         <div class="swiper-button-prev prev-btn"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="modal" class="modal_overlay">
+                <div class="modal-window">
+                    <img src="images/close.png" alt="" class="close">
+                    <div class="modal-content">
+                        <p class="mb20">
+                            이번 세미나에서는 구성원들이<br>
+                            디지털 환경을 기반으로<br>
+                            시공간의 장벽 없이 효율적으로 일할 수 있도록.<br>
+                            최적의 오피스를 위한 고민과<br>
+                            실험에 대해 이야기합니다.
+                        </p>
+                        <p class="mb20">
+                            세미나 영상은 11월 8일(월) 전체 공개됩니다.<br>
+                            알림 신청을 해주시면,<br>
+                            세미나 오픈 시 문자와 메일로 알려 드릴게요.
+                        </p>
+                        <p>
+                            참여해 주셔서 감사합니다!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -589,5 +520,8 @@
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
