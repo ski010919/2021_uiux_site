@@ -330,8 +330,8 @@ input[type="text"]{outline: none;}
     body.sub .visu_txt p{font-size: 14px;}
     body.sub.menu01 .visual{background-image: url(../images/mo_menu01.png);}
 }
-.sub .dropdown-menu{background: none;border: 0 none;display: block;}
-.sub .dropdown-item:hover{background: none;}
+/* .sub .dropdown-menu{background: none;border: 0 none;display: block;}
+.sub .dropdown-item:hover{background: none;} */
 .sub .visual{ 
     background-repeat: no-repeat;
     background-size: cover;
