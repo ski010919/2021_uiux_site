@@ -47,11 +47,11 @@ window.addEventListener("scroll",function(){
     }
 });
 
-let winWidth = window.width();
+let winWidth = $(window).width();
 winSize();
 
 window.addEventListener("resize",function(){
-    winWidth = window.width();
+    winWidth = $(window).width();
     winSize()
 });
 
@@ -87,9 +87,39 @@ function winSize(){
 //     $(".glaylayer,.overlayer").fadeOut();
 // })
 
+if(winWidth < 700){
 
-const modal = document.getElementById("#modal.modal_overlay")
-const btnModal = document.getElementById(".sec01_lf #btn01")
+
+    $(".youtube").colorbox({
+        iframe:true,
+        innerWidth:300,
+        innerHeight:200
+    })
+}else{
+   $(".youtube").colorbox({
+    iframe:true,
+    innerWidth:700,
+    innerHeight:394
+    }) 
+}
+
+const modal = document.querySelector("#modal")
+const btnModal = document.querySelector("#btn01")
+const closeBtn = modal.querySelector(".close")
+
 btnModal.addEventListener("click",function(){
-    modal.style.display = "flex"
+    modal.style.display = "block"
+})
+closeBtn.addEventListener("click",function(){
+    modal.style.display = "none"
+})
+const modal02 = document.querySelector("#modal02")
+const btnModal02 = document.querySelector("#morebar")
+const closeBtn02 = modal02.querySelector(".close02")
+
+btnModal02.addEventListener("click",function(){
+    modal02.style.display = "block"
+})
+closeBtn02.addEventListener("click",function(){
+    modal02.style.display = "none"
 })

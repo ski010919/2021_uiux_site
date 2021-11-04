@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
 
 </head>
 <body>
@@ -409,7 +411,7 @@
                 <div class="lf03_wrap text-white pt50">
                     <div class="lf03_title text-center mb50">
                         <h2>자주 묻는 질문</h2>
-                        <div class="bar d-lg-none"><a href="#!">
+                        <div class="bar d-lg-none" id="morebar"><a href="#!">
                             <div class="bar1 plus_bar"></div>
                             <div class="bar2 plus_bar"></div>
                         </a></div>
@@ -458,34 +460,69 @@
                     <div class="container px-lg-3">
                         <ul class="view row text-center rt03_ul text-white m-0">
                             <li class="col-6 rt03_li md-2 mb-md-4">
-                                <div class="rt03-img mb-2 mb-md-3 img1"><a href="https://www.youtube.com/watch?v=EjTP-YNZpXY"></a></div>
+                                <div class="rt03-img mb-2 mb-md-3 img1"><a href="https://www.youtube.com/embed/EjTP-YNZpXY" class="youtube"></a></div>
                                 <div class="view-txt d-flex justify-content-center align-items-center">
                                     <h4 class="mr-lg-2">2020</h4>
                                     <p class="d-none d-lg-block">오피스의 존재 이유를 고민하다</p>
                                 </div>
                             </li>
                             <li class="col-6 rt03_li">
-                                <div class="rt03-img mb-2 mb-md-3 img2"><a href="https://www.youtube.com/watch?v=QWzKiKSPz9g"></a></div>
+                                <div class="rt03-img mb-2 mb-md-3 img2"><a href="https://www.youtube.com/embed/QWzKiKSPz9g" class="youtube"></a></div>
                                 <div class="view-txt d-flex justify-content-center align-items-center">
                                     <h4 class="mr-lg-2">2019</h4>
                                     <p class="d-none d-lg-block">업무 몰입도를 높이는 사무환경</p>
                                 </div>
                             </li>
                             <li class="col-6 rt03_li">
-                                <div class="rt03-img mb-2 mb-md-3 img3"><a href="https://www.youtube.com/watch?v=tjYrKWOMXYo"></a></div>
+                                <div class="rt03-img mb-2 mb-md-3 img3"><a href="https://www.youtube.com/embed/tjYrKWOMXYo" class="youtube"></a></div>
                                 <div class="view-txt d-flex justify-content-center align-items-center">
                                     <h4 class="mr-lg-2">2018</h4>
                                     <p class="d-none d-lg-block">기업의 혁신을 창출하는<br class="d-none">사무환경 전략</p>
                                 </div>
                             </li>
                             <li class="col-6 rt03_li">
-                                <div class="rt03-img mb-2 mb-md-3 img4"><a href="https://www.youtube.com/watch?v=xYMY6mN679Q"></a></div>
+                                <div class="rt03-img mb-2 mb-md-3 img4"><a href="https://www.youtube.com/embed/xYMY6mN679Q" class="youtube"></a></div>
                                 <div class="view-txt d-flex justify-content-center align-items-center">
                                     <h4 class="mr-lg-2">2017</h4>
                                     <p class="d-none d-lg-block">일하고 싶은 오피스의 조건</p>
                                 </div>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="modal02" class="modal-overlay02">
+                <div class="modal-window02">
+                    <img src="images/close.png" alt="" class="close02">
+                    <div class="modal-content02">
+                        <div class="lf03-box mb-3">
+                            <h4>퍼시스 사무환경 세미나는 무료로 참여가능한가요?</h4>
+                            <p class="m-0">퍼시스 사무환경 세미나 2021은 온라인으로 진행되며 무료로 참여 가능합니다.</p>
+                        </div>
+                        <div class="lf03-box mb-3">
+                            <h4>사전 신청이 완료되었는지 어떻게 확인할 수 있나요?</h4>
+                            <p class="m-0">사전 신청이 완료되면 자동으로 확인 이메일이 발송됩니다.</p>
+                        </div>
+                        <div class="lf03-box mb-3">
+                            <h4>알림은 어떻게 오나요?</h4>
+                            <p class="m-0">사전 신청을 해주신 분들께는 휴대폰 메세지와 이메일 알림을 보내드립니다.</p>
+                        </div>
+                        <div class="lf03-box mb-3">
+                            <h4>세미나 영상은 언제 어디서 볼 수 있나요?</h4>
+                            <p class="m-0">11월 8일에 세미나 웹사이트와 퍼시스 유튜브 채널을 통해 공개됩니다.</p>
+                        </div>
+                        <div class="lf03-box mb-3">
+                            <h4>사전 신청을 하지 않으면 세미나 영상을 시청할 수 없나요?</h4>
+                            <p class="m-0">사전 신청을 하지 않으셨어도 세미나 기간에 영상을 시청하실 수 있습니다.</p>
+                        </div>
+                        <div class="lf03-box mb-3">
+                            <h4>이벤트 당첨은 언제 알 수 있나요?</h4>
+                            <p class="m-0">이벤트 당첨자는 11월 15일 별도 안내 후, 순차적으로 경품 발송할 예정입니다.</p>
+                        </div>
+                        <div class="lf03-box">
+                            <h4>궁금한 점이 있어요.</h4>
+                            <p class="m-0">궁금하신 사항은 officewelove@fursys.com으로 문의해주세요.</p>
+                        </div>
                     </div>
                 </div>
             </div>
