@@ -139,4 +139,13 @@ btnModal02.addEventListener("click",function(){
 closeBtn02.addEventListener("click",function(){
     modal02.style.display = "none"
 })
+const modal03 = document.querySelector("#modal03")
+const btnModal03 = document.querySelector("#btn03")
+const closeBtn03 = modal03.querySelector(".close03")
 
+btnModal03.addEventListener("click",function(){
+    modal03.style.display = "block"
+})
+closeBtn03.addEventListener("click",function(){
+    modal03.style.display = "none"
+})

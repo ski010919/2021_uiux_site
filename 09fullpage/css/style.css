@@ -427,6 +427,56 @@ input.zipcode{
 }
 #modal02 .modal-window02 .modal-content02 .lf03-box{padding: 10px;width: 350px;height: 60px;}
 
+#modal03.modal-overlay03{
+    width: 100%;height: 100%;transition: 0.3s;
+    position: absolute;left: 0;top: 0;;z-index: 5;
+    display: none;
+}
+#modal03 .modal-window03{
+    width: 90%;height: 90%;background: #A58EE4;
+    position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);
+    border-radius: 10px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px 10px;padding-top: 80px;
+}
+#modal03 .modal-window03 img{
+    position: absolute;top: 30px;right: 30px;
+    cursor: pointer;z-index: 5;
+}
+.modal-content03 .sec2_info,.modal-content03 .sec2_adr{width:calc(50% - 10px);float: left;margin-bottom: 20px;}
+.modal-content03 input[type="text"]::placeholder{font-size: 14px;}
+.modal-content03 input.box-info{
+    text-indent: 10px;
+    width: 100%;height: 30px;
+    border-radius: 5px;margin-bottom: 5px;
+}
+.modal-content03 input.zipcode{
+    width: 50%;height: 30px;border-radius: 5px;
+    margin-bottom: 5px;margin-right: 6px;text-indent: 10px;
+}
+.modal-content03 .btn-zip{
+    width:40%;height: 32px;transition: 0.3s;transform: translateY(-2px);
+    font-weight: 500;font-size: 12px;color: #fff;
+    background: none;border: 1px solid #fff;border-radius: 5px;
+}
+.modal-content03 .btn-zip:hover{background: #fff;color:#191046;}
+.modal-content03 .caution{font-size: 10px;}
+
+.modal-content03 .i-box textarea{
+    width: 100%;height: 100px;border-radius: 5px;
+    color: #666;font-size: 12px;padding: 10px;
+}
+.modal-content03 .i-box-wrap{width: 100%;}
+.modal-content03 .i-box-priv{float: left;width: calc(50%-10px);}
+.modal-content03 .i-box-txt{
+    border-radius: 5px;overflow: hidden;width: 100%;height: 120px;
+}
+.modal-content03 .i-box-txt textarea{
+    height: 120px;padding: 10px;
+    font-size: 10px;color: #666;
+    border: 0 none;
+}
+
+
 @media screen and (min-width:758px) and (max-width:991px){ /* md */
     .sec01 .sec01_lf,.sec01 .sec01_rt{
         background-size:cover;

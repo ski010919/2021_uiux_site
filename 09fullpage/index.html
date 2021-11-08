@@ -309,7 +309,8 @@
                                     <span>*당첨자 별도 연락</span>
                                 </div>
                             </div>
-                            <a href="#!" class="btn d-lg-none d-block">신청하기</a>
+                            <!-- <a href="#!" class="btn d-lg-none d-block">신청하기</a> -->
+                            <div class="btn d-md-none" id="btn03">신청하기</div>
                         </div>
                     </div>
                     <div class="col-6 p-0 d-none d-lg-block">
@@ -403,6 +404,97 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="modal03" class="modal-overlay03">
+                <div class="modal-window03">
+                    <img src="images/close.png" alt="" class="close03">
+                    <div class="modal-content03">
+                        <form action="#!" method="post">
+                            <fieldset class="clearfix">
+                                <div class="sec2_info mr-3">
+                                    <div class="i-title mb-3 text-center text-white">신청자 정보 (필수)</div>
+                                    <input type="text" id="name" name="name" placeholder="이름" class="box-info">
+                                    <input type="text" id="company" name="company" placeholder="회사" class="box-info">
+                                    <input type="text" id="group" name="group" placeholder="소속" class="box-info">
+                                    <input type="text" id="phone" name="phone" placeholder="휴대폰 번호" class="box-info">
+                                    <input type="text" id="email" name="email" placeholder="이메일" class="box-info">
+                                    <div class="caution text-white">
+                                        휴대폰 번호, 메일로 온라인 세미나 URL이<br>발송될 예정이오니 정확히 입력 바랍니다.
+                                    </div>
+                                </div>
+                                <div class="sec2_adr">
+                                    <div class="i-title mb-3 text-center text-white">경품 발송 주소 (필수)</div>
+                                    <div class="box-info">
+                                        <input type="text" id="zipcode" name="zipcode" placeholder="우편번호" class="zipcode">
+                                        <button class="btn-zip">우편번호 찾기</button>
+                                    </div>
+                                    <input type="text" id="address" name="address" placeholder="주소" class="box-info">
+                                    <input type="text" id="address2" name="address2" placeholder="상세 주소" class="box-info">
+                                    <input type="text" id="email" name="email" placeholder="이메일" class="box-info">
+                                    <div class="caution text-white">
+                                        이벤트 당첨 시 기입해주신 주소로 경품이<br>발송될 예정이오니, 정확히 입력 바랍니다.
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                        <form action="" class="">
+                            <div class="i-title mb-3 text-center text-white">세미나 신청 이유 (선택)</div>
+                            <div class="i-box mb-3">
+                                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="ex) 일하는 방식이 빠르게 변화하는 지금 오피스는 어떤 역할을 해야하는지 궁금합니다"></textarea>
+                            </div>
+                        <div class="i-box-wrap clearfix row mb-3">
+                            <div class="i-box mb-3 i-box-priv col-6">
+                                <div class="i-box-txt mb-3">
+                                    <textarea name="privacy" id="privacy_scroll" cols="30" rows="10">개인정보 수집 및 이용안내
+1. 수집항목 : 이름, 회사명, 팀명 ,연락처(휴대폰 번호, 이메일주소), 주소
+2. 수집목적 : 세미나 공지 알림 메시지 및 땡큐레터 발송, 이벤트 경품 발송
+이름, 회사명, 팀명, 직급 : 신청자 확인
+연락처(휴대폰 번호, 이메일) : 알림 메시지/이메일 발송, 땡큐레터, 뉴스레터 구독
+주소 : 이벤트 경품 발송
+3. 보유기간 : 세미나 종료 후 6개월
+※ 그 밖의 사항은 퍼시스(www.fursys.com)의 개인정보처리방침을 준수합니다.
+※ 개인정보 위탁안내(주)퍼시스는 서비스 향상을 위해 아래와 같이 개인정보를 위탁하고 있으며, 관계법령에 따라 위탁 계약시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다.
+- 업체명 : 데이드, 타라, 모아패키지
+- 개인정보 위탁목적 : 알림 확인 메시지, 이메일 발송과 이벤트 경품 발송
+- 개인정보 위탁내용 : 이름, 회사명, 팀명, 이메일, 휴대폰 번호, 주소
+- 보유 및 이용기간 : 세미나 종료 후 6개월 또는 위탁계약 종료시</textarea>
+                                </div>
+                                <div class="check-box">
+                                    <label for="prv" class="mb-0">
+                                        <input type="checkbox" name="agree" id="privacy-agree">
+                                        개인정보 수집 및 이용에 동의합니다. (필수)
+                                    </label>
+                                    <label for="news" class="mb-0">
+                                        <input type="checkbox" name="news" id="privacy-news">
+                                        퍼시스 뉴스레터 구독에 동의합니다. (선택)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="i-box mb-3 i-box-priv col-6">
+                                <div class="i-box-txt mb-3">
+                                    <textarea name="privacy" id="privacy_scroll" cols="30" rows="10">개인정보 제 3자 제공 동의
+1. 제공자 : ㈜퍼시스
+2. 제공받는 자 : 퍼시스 공식 유통망 (퍼시스 홈페이지> 고객서비스 > 대리점안내 게시 대리점)
+3. 제공받는 자의 이용목적 : 사무환경, 제품 상담 등
+4. 제공하는 개인정보 항목 : 이름, 회사명, 소속, 팀, 직급, 연락처, 이메일, 문의내용
+5. 보유 및 이용기간 : 상담 과정 종료 후 6개월</textarea>
+                                </div>
+                                <div class="check-box">
+                                    <label for="prv3" class="mb-0">
+                                        <input type="checkbox" name="agree-3" id="privacy-agree3">
+                                        개인정보 제3자 제공에 동의합니다 (필수)
+                                    </label>
+                                    <label for="news" class="mb-0">
+                                        <input type="checkbox" name="news" id="privacy-news">
+                                        퍼시스 뉴스레터 구독에 동의합니다. (선택)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                            <input type="button" id="privacy_submit" class="green text-white" onclick="alert('약관 동의 후 이용 가능합니다.');" value="신청하기">
+                        </form>
                 </div>
             </div>
         </div>
