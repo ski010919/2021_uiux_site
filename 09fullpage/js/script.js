@@ -6,6 +6,22 @@ $("#fullpage").fullpage({
     navigationPosition: 'fp-right',
     navigationTooltips: ['main', 'First', 'Second','Third','footer'],
     responsiveWidth: 768,
+    afterLoad:function(anchorslink,index){
+        console.log(anchorslink+','+index)
+
+        if(index == 1){
+            $(".navbar-brand").addClass("on")
+            $(".navbar-brand").removeClass("ud")
+            $(".nav-link.menu").addClass("on")
+            $(".nav-link.menu").removeClass("ud")
+        }else{
+            $(".navbar-brand").removeClass("on")
+            $(".navbar-brand").addClass("ud")
+            $(".nav-link.menu").removeClass("on")
+            $(".nav-link.menu").addClass("ud")
+        }
+
+    }
 });
 
 const swiper = new Swiper(".swiper.swiper01", {
@@ -123,3 +139,4 @@ btnModal02.addEventListener("click",function(){
 closeBtn02.addEventListener("click",function(){
     modal02.style.display = "none"
 })
+

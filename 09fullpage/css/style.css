@@ -19,7 +19,7 @@ body{
 .navbar.bg-blk{
     background: rgba(0,0,0,0.5);
 }
-.navbar .navbar-brand{
+.navbar .navbar-brand.on{
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;background-position:center;
     background-size: contain;width: 248px;height: 38px;transition: 0.3s;
@@ -27,11 +27,14 @@ body{
 .navbar .navbar-brand.ud{
     background-image: url(../images/logo_bt.png);
     background-repeat: no-repeat;background-position:center;
-    background-size: contain;width: 248px;height: 38px;
+    background-size: contain;width: 248px;height: 38px;transition: 0.3s;
 }
 .navbar .navbar-brand a.logo{text-indent: -9999px;display: block;width: 248px;height: 38px;}
-.navbar .navbar-nav .menu{
-    font-weight: 500;font-size: 16px;color: #262626;
+.navbar .navbar-nav .menu.on{
+    font-weight: 500;font-size: 16px;color: #262626;transition: 0.3s;
+}
+.navbar .navbar-nav .menu.ud{
+    font-weight: 500;font-size: 16px;color: #fff;transition: 0.3s;
 }
 .main{
     background: url(../images/main_bg.png) no-repeat center;
