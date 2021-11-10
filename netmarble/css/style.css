@@ -3,16 +3,35 @@
 body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* header */
-#header{position: fixed;background: #fff;z-index: 100;width: 100%;height: 76px;}
+#header{position: fixed;z-index: 100;background:none;width: 100%;height: 76px;transition: 0.3s;}
 #header .headWrap{
     width: 1215px;margin: 0 auto;position: relative;
 }
-.headWrap img{width: 165px;height: 35px;position: absolute;left: 0;margin: 20px 0;}
+.headWrap h2{
+    background-image: url(../images/logo_footer.png);transition: 0.3s;
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;width: 165px;position: absolute;margin: 20px 0;
+}
+.headWrap h2 a{
+    width: 165px;height: 35px;display: block;
+    text-indent: -9999px;
+}
 nav{width: 510px;position: absolute;right: 0;_margin: 0 10px;}
 .headWrap li{float: left;width: calc(100% / 3);}
 .headWrap li a{
     text-align: center;display: block;line-height: 76px;
-    font-size: 20px;font-weight: 700;color:#1e1e1e
+    font-size: 20px;font-weight: 700;color:#fff;transition: 0.3s;
+}
+
+#header.ud{position: fixed;background: #fff;z-index: 100;width: 100%;height: 76px;}
+.headWrap h2.ud{
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;width: 165px;position: absolute;margin: 20px 0;
+}
+.headWrap li a.ud{
+    text-align: center;display: block;line-height: 76px;
+    font-size: 20px;font-weight: 700;color:#1e1e1e;
 }
 
 /* banner */
@@ -29,7 +48,16 @@ nav{width: 510px;position: absolute;right: 0;_margin: 0 10px;}
     margin-bottom: 0;
     background: none;
 }
-.bannerWrap .slideLi{height: 100vh;}
+.bannerWrap .slideLi{
+    height: 100vh;
+    background-repeat: no-repeat;background-position:center;
+    background-size: cover;
+}
+.bann01{background-image: url(../images/slider1.jpg);}
+.bann02{background-image: url(../images/slider2.jpg);}
+.bann03{background-image: url(../images/slider3.jpg);}
+.bann04{background-image: url(../images/slider4.jpg);}
+.bann05{background-image: url(../images/slider5.jpg);}
 .sliderBox{position: relative;}
 .bannertxt{
     width: 456px;height: 384px;

@@ -11,13 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="js/wow.js"></script>
 
     <script>
         $(document).ready(function(){
-           var myslide = $('.banner').bxSlider({
+
+           const myslide = $('.banner').bxSlider({
                 pager:false,
                 controls:false,
                 auto:true
@@ -36,7 +39,35 @@
                 slideWidth:360,
                 slideMargin:32,
                 pager:false,
+            });
+
+            window.addEventListener("scroll",function(){
+                let scrollY = window.pageYOffset;
+                console.log(scrollY);
+                if(scrollY > 100){
+                    $("#header").addClass("ud");
+                    $(".headWrap h2").addClass("ud");
+                    $(".headWrap li a").addClass("ud");
+                }else{
+                    $("#header").removeClass("ud");
+                    $(".headWrap h2").removeClass("ud");
+                    $(".headWrap li a").removeClass("ud");
+                }
             })
+
+            document.querySelector("#header").addEventListener("mouseover",function(){
+                $("#header").addClass("ud");
+                $(".headWrap h2").addClass("ud");
+                $(".headWrap li a").addClass("ud");
+            })
+            document.querySelector("#header").addEventListener("mouseout",function(){
+                if(window.pageYOffset < 100){
+                    $("#header").removeClass("ud");
+                    $(".headWrap h2").removeClass("ud");
+                    $(".headWrap li a").removeClass("ud");
+                }
+            });
+            new WOW().init();
         })
     </script>
 </head>
@@ -44,7 +75,7 @@
     <!-- header start -->
     <header id="header">
         <div class="headWrap">
-            <a href="#"><img src="./images/logo.png" alt=""></a>
+            <h2><a href="index.html">logo</a></h2>
             <nav>
                 <ul class="clearfix">
                     <li><a href="#">재단소개</a></li>
@@ -59,8 +90,7 @@
     <!-- banner start -->
     <div class="bannerWrap">
         <ul class="banner">
-            <li class="slideLi">
-                <img src="./images/slider1.jpg" alt="">
+            <li class="slideLi bann01">
                 <div class="slideBox">
                     <div class="bannertxt">
                         <h1><br>게임소통교육</h1>
@@ -82,8 +112,7 @@
                     
                 </div>
             </li>
-            <li class="slideLi">
-                <img src="./images/slider2.jpg" alt="">
+            <li class="slideLi bann02">
                 <div class="slideBox">
                     <div class="bannertxt">
                         <h1>전국장애학생<br>e페스티벌</h1>
@@ -104,8 +133,7 @@
                     </div>
                 </div>
             </li>
-            <li class="slideLi">
-                <img src="./images/slider3.jpg" alt="">
+            <li class="slideLi bann03">
                 <div class="slideBox">
                     <div class="bannertxt">
                         <h1><br>견학프로그램</h1>
@@ -126,8 +154,7 @@
                     </div>
                 </div>
             </li>
-            <li class="slideLi">
-                <img src="./images/slider4.jpg" alt="">
+            <li class="slideLi bann04">
                 <div class="slideBox">
                     <div class="bannertxt">
                         <h1><br>게임아카데미</h1>
@@ -148,8 +175,7 @@
                     </div>
                 </div>
             </li>
-            <li class="slideLi">
-                <img src="./images/slider5.jpg" alt="">
+            <li class="slideLi bann05">
                 <div class="slideBox">
                     <div class="bannertxt">
                         <h1><br>어깨동무문고</h1>
@@ -178,13 +204,13 @@
     <section id="section1">
         <div class="sectionWrap">
             <div class="sectionU clearfix">
-                <h3>문화를 만들고 인재를 키우고<br>마음을 나눕니다</h3>
-                <p>넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자
+                <h3 class="wow fadeInUp" data-wow-delay="0" data-wow-offset="200">문화를 만들고 인재를 키우고<br>마음을 나눕니다</h3>
+                <p class="wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="200">넷마블문화재단은 문화적 가치 확산을 통해 우리 사회의 미래 경쟁력을 높여 가고자
                     <br>다양한 공익 활동을 전개해 나가고 있습니다. </p>
             </div>
             <div class="sectionM">
                 <ul class="clearfix">
-                    <li>
+                    <li class="wow fadeInUp" data-wow-delay="0.3s" data-wow-offset="200">
                         <img src="images/content1.jpg" alt="card1" class="con">
                         <div class="txt">
                             <div class="txtU f21 fwb">
@@ -196,7 +222,7 @@
                             </p>
                         </div>
                     </li>
-                    <li>
+                    <li class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="200">
                         <img src="images/content2.jpg" alt="card2" class="con">
                         <div class="txt">
                             <div class="txtU">
@@ -207,7 +233,7 @@
                                 체계적인 성장 기회를 지원합니다.</p>
                         </div>
                     </li>
-                    <li>
+                    <li class="wow fadeInUp" data-wow-delay="0.7s" data-wow-offset="200">
                         <img src="images/content3.jpg" alt="card3" class="con">
                         <div class="txt">
                             <div class="txtU">
@@ -222,13 +248,13 @@
             </div>
             <div class="sectionD">
                 <div class="conbox">
-                    <div class="txt2">
+                    <div class="txt2 wow fadeInUp" data-wow-delay="0.9" data-wow-offset="200">
                         <h3>
                             우리는 <b>문화적 가치를 확산</b>하여 우리 사회의<br>미래 경쟁력을 높여갑니다
                         </h3>
                         <p>주요목적</p>
                     </div>
-                    <img src="images/purpose.e6f7b36.jpg" alt="">
+                    <img src="images/purpose.e6f7b36.jpg" alt="" class="wow fadeInUp" data-wow-delay="1s" data-wow-offset="200">
                 </div>
             </div>
         </div>
