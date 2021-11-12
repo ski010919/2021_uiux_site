@@ -7,6 +7,11 @@
     <title>parallax</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <style>
         .header{
             height: 100vh;position: relative;overflow: hidden;
@@ -52,18 +57,18 @@
 
     <div class="container">
         <div class="sec01">
-            <div class="con_txt">
-                <h2>AVAILABLE NOW FOR <span>$19.99</span></h2>
+            <div class="con_txt" data-wow-offset="200">
+                <h2 class="wow fadeIn">AVAILABLE NOW FOR <span>$19.99</span></h2>
             </div>
             <div class="con_link">
                 <ul class="link_left">
-                    <li class="link">
+                    <li class="link wow flipInX" data-wow-delay="0.2s">
                         <a href="javascript:void(0)">
                             <img src="images/buyicon_pc.png" alt="">
                             <h4>WINDOWS MAC LINUX</h4>
                         </a>
                     </li>
-                    <li class="link">
+                    <li class="link wow flipInX" data-wow-delay="0.4s">
                         <a href="javascript:void(0)">
                             <img src="images/buyicon_xbone.png" alt="">
                             <h4>PLAYSTATION 4</h4>
@@ -71,13 +76,13 @@
                     </li>
                 </ul>
                 <ul class="link_right">
-                    <li class="link">
+                    <li class="link wow flipInX" data-wow-delay="0.2s">
                         <a href="javascript:void(0)">
                             <img src="images/buyicon_switch.png" alt="">
                             <h4>NINTENDO SWITCH</h4>
                         </a>
                     </li>
-                    <li class="link">
+                    <li class="link wow flipInX" data-wow-delay="0.4s">
                         <a href="javascript:void(0)">
                             <img src="images/buyicon_xbone.png" alt="">
                             <h4>XBOX ONE</h4>
@@ -87,29 +92,29 @@
             </div>
         </div>
         <div class="sec02">
-            <div class="con_youtube">
+            <div class="con_youtube wow zoomIn" data-wow-offset="300">
                 <iframe width="900" height="504.89" src="https://www.youtube.com/embed/cXWlgP5hZzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="sec03">
-            <h4>
+        <div class="sec03" data-wow-offset="300">
+            <h4 class="wow fadeIn">
                 Firewatch is a mystery set in the Wyoming<br> wilderness, where your only emotional lifeline is<br> the person on the other end of a handheld<br> radio.
             </h4>
             <div class="sec03_txt">
-                <p class="sec03_txt_left">
+                <p class="sec03_txt_left wow slideInLeft" data-wow-offset="200">
                     The year is 1989.<br><br>
                     You are a man named Henry who has retreated from your messy life to work as a fire lookout in the Wyoming wilderness. Perched atop a mountain, it's your job to find smoke and keep the wilderness safe.
                     <br><br>
                     An especially hot, dry summer has everyone on edge. Your supervisor, a woman named Delilah, is available to you
                 </p>
-                <p>
+                <p class="wow slideInRight" data-wow-offset="200">
                     at all times over a small, handheld radio—and is your only contact with the world you've left behind.
                     <br><br>
                     But when something strange draws you out of your lookout tower and into the world below, you'll explore a wild and unknown environment, facing questions and making interpersonal choices that can build or destroy the only meaningful relationship you have.
                 </p>
             </div>
         </div>
-        <div class="sec04">
+        <div class="sec04 wow fadeInUp" data-wow-delay="0.2s">
             <div class="sec04_link">
                 <h5>
                     <a href="javascript:void(0)">SCREENS & TRAILERS</a>
@@ -123,22 +128,22 @@
         </div>
         <div class="sec05">
             <ul class="clearfix">
-                <li class="mr50">
+                <li class="mr50 wow jackInTheBox" data-wow-offset="200">
                     <img src="images/sec05_img01.jpg" alt="">
                 </li>
-                <li>
+                <li class="wow jackInTheBox" data-wow-delay="0.1s" data-wow-offset="200">
                     <img src="images/sec05_img02.png" alt="">
                 </li>
-                <li class="mr50">
+                <li class="mr50 wow jackInTheBox" data-wow-delay="0.2s" data-wow-offset="200">
                     <img src="images/sec05_img03.jpg" alt="">
                 </li>
-                <li>
+                <li class="wow jackInTheBox" data-wow-delay="0.3s" data-wow-offset="200">
                     <img src="images/sec05_img04.jpg" alt="">
                 </li>
             </ul>
         </div>
         <div class="sec06">
-            <div class="sec06_txt">
+            <div class="sec06_txt wow fadeInUp" data-wow-offset="200">
                 <h2>"AS VISUALLY STRIKING<br>
                     AS ITS UNIQUE PREMISE."
                 </h2>
@@ -147,14 +152,14 @@
                 </h4>
             </div>
             <ul class="sec06_link">
-                <li class="sectxt">TECH SUPPORT</li>
+                <li class="sectxt wow slideInLeft" data-wow-offset="200">TECH SUPPORT</li>
                 <li><img src="images/sec06_img.png" alt=""></li>
-                <li class="sectxt">STREAMING & LET'S PLAYS</li>
+                <li class="sectxt wow slideInRight" data-wow-offset="200">STREAMING & LET'S PLAYS</li>
             </ul>
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer wow fadeIn" data-wow-offset="200" data-wow-delay="0.4s">
         <div class="ft_txt mb50">
             <h3>
                 日本語に関する情報
