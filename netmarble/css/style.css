@@ -73,9 +73,11 @@ nav{width: 510px;position: absolute;right: 0;_margin: 0 10px;}
     letter-spacing: -3px;width: 100%;
 }
 .bannertxt .bar{
-    width: 456px;height: 2px;margin-top: 60px;
+    width:0;height: 2px;margin-top: 60px;
     text-align: left;display: block;background-color: #fff;
+    animation: bar 4s infinite;
 }
+@keyframes bar{100%{width: 456px;}}
 .bannertxt .consol{width: 456px;height: 32px;margin: 30px 0 0 0;position: relative;}
 .bannertxt .consol .page{line-height: 32px;font-size: 16px;position: absolute;left: 0;}
 .bannertxt .consol .page li{
