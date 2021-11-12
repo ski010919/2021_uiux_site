@@ -178,6 +178,7 @@ body{
 .e-date{background: rgba(25, 16, 70, 0.6);padding: 15px 0;font-weight: 300;}
 .e-date p{font-size: 18px;}
 .e-date span{font-size: 14px;color: #6DE6E4;}
+#btn03{}
 
 .i-title{font-weight: 500;font-size: 16px;}
 input[type="text"]{border: 0 none;}
@@ -367,12 +368,12 @@ input.zipcode{
 .ft-sns .instagram:hover{
     background-image: url(../images/sns-hover03.png);
 }
-.ft-sns .youtube{
+.ft-sns .youtube-btn{
     background-image: url(../images/sns04.png);
     background-repeat: no-repeat;background-position:center;
     background-size: cover;
 }
-.ft-sns .youtube:hover{
+.ft-sns .youtube-btn:hover{
     background-image: url(../images/sns-hover04.png);
 }
 
@@ -385,7 +386,8 @@ input.zipcode{
     display: none;
 }
 #modal .modal-window{
-    width: 400px;height: 563px;background: #48D3CD;
+    width: 400px;height: 563px;
+    background: #48D3CD;
     position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);
     border-radius: 10px;box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
@@ -436,7 +438,7 @@ input.zipcode{
     width: 90%;height: 90%;background: #A58EE4;
     position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);
     border-radius: 10px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    padding: 20px 10px;padding-top: 80px;
+    padding: 20px 10px;padding-top: 80px;z-index: 5;
 }
 #modal03 .modal-window03 img{
     position: absolute;top: 30px;right: 30px;
@@ -522,7 +524,7 @@ input.zipcode{
 
     .sec2-box{padding-right: 0;}
     .sec2-box .btn{
-        transition: 0.3s;width: 50%;
+        transition: 0.3s;width: 70%;
         border: 1px solid #fff;border-radius: 10px;display: block;
         color: #fff;font-weight: 700;padding: 10px 0;
     }
@@ -536,6 +538,7 @@ input.zipcode{
         float:none;position: relative;
     }
     .lf03-box{height: 50%;}
+    .sec03 .sec03_lf h2:after{display: none;}
 
     .rt03_title h2{font-size: 30px;}
     .rt03_li .rt03-img{
@@ -544,6 +547,21 @@ input.zipcode{
     .rt03_li .rt03-img:hover{height: 100px;}
 
     .ft-copy{font-size: 13px;}
+
+    #modal02 .modal-window02{
+        width: 600px;height: 700px;background: #212121;
+        position: relative;top: 50%;left: 50%;transform: translate(-50%,-50%);
+        border-radius: 10px;box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    }
+    #modal02 .modal-window02 .modal-content02 .lf03-box{
+        width: 550px;height: 70px;padding: 13px;
+    }
+    #modal02 .modal-window02 .modal-content02 h4{
+        font-size: 16px;
+    }
+    #modal02 .modal-window02 .modal-content02 p{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:757px){ /* sm */
     .maintxt h2{font-size: 4vw;}

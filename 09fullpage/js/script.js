@@ -86,26 +86,7 @@ function winSize(){
     }
 };
 
-// $("a#btn01").append(`
-// <div class="glaylayer"></div>
-// <div class="overlayer"></div>
-// `)
-
-// $("a#btn01").click(function(e){
-//     e.preventDefault();
-//     $(".glaylayer").fadeIn();
-
-//     let ahref = $(this).attr("href");
-//     $(".overlayer").fadeIn().html(`<img src="${ahref}">`);
-// });
-
-// $(".glaylayer,.overlayer").click(function(){
-//     $(".glaylayer,.overlayer").fadeOut();
-// })
-
 if(winWidth < 700){
-
-
     $(".youtube").colorbox({
         iframe:true,
         innerWidth:300,
@@ -117,7 +98,7 @@ if(winWidth < 700){
     innerWidth:700,
     innerHeight:394
     }) 
-}
+};
 
 const modal = document.querySelector("#modal")
 const btnModal = document.querySelector("#btn01")
