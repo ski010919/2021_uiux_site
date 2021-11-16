@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+html,body{height: 100%;}
+body{background: pink;}
+
+.slide01{background: #B39579;}
+.slide .txt{
+    background: rgba(0,0,0,0.2);padding: 40px;
+    width: 800px;
+    position: absolute;
+}
+.slide h2{font-size: 36px;margin-bottom: 98px;}
+.slide h4{font-size: 24px;margin-bottom: 40px;}
+.slide p{font-size: 21px;margin: 0;}
+.slide p.last{margin-bottom: 45px;}
+.slide .btn{
+    background: #444;color: #fff;
+    font-size: 21px;padding: 10px 50px;border-radius: 10px;
+}
